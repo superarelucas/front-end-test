@@ -19,7 +19,7 @@ Uma das duas opções abaixo é imprescindível que seja feita. Não aceitaremos
 
 * Faça um fork desse repositório e clone para a sua máquina.
 * Crie *uma* das duas páginas dentro da pasta assets.
-* Comitte o projeto e nos avise via e-mail quando finalizar.
+* Dê um commit no projeto e avise-nos via e-mail quando finalizar (junto com o link para o seu repositório).
 
 OU (ganha pontos a mais):
 
