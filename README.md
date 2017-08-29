@@ -5,7 +5,10 @@ Olá caro desenvolvedor front-end, nesse teste analisaremos seu conhecimento ger
 ## Descrição do teste
 Essa avaliação consiste em testar seus conhecimentos de HTML, CSS, JavaScript e etc. Você será responsável por desenvolver um layout simples, presente na pasta **assets** e com algumas partes já recortadas e separadas devidamente.
 
-Você terá no máximo **3 dias para desenvolvimento** de uma das páginas abaixo.
+O tempo ideal para realização da tarefa é de **3 dias**. Também consideramos que, se demorar pouco mais do que isso, mas entregar um projeto melhor estruturado e com tecnologias mais recentes, também será tão válido quanto o de 3 dias.
+
+* Prazo ideal: 3 dias
+* Prazo máximo: 7 dias
 
 Lembrando: Dentro da pasta assets, existem dois arquivos .psd. Você deve fazer **um ou outro**, não os dois (a não ser que realmente consiga fazer no tempo estimado):
 
