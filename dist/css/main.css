@@ -1,0 +1,35 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  position: relative; }
+
+figure {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none; }
+
+/*
+ * Buttons
+ */
+.container {
+  width: 88%; }
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 82%; } }

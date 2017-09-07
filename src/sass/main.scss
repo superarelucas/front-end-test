@@ -1,0 +1,32 @@
+///////////////
+// VARIABLES //
+///////////////
+@import 'common/variables.scss';
+
+
+////////////
+// GLOBAL //
+////////////
+@import 'common/global.scss';
+
+
+////////////////
+// COMPONENTS //
+////////////////
+@import 'common/components.scss';
+
+
+////////////////
+// ANIMATIONS //
+////////////////
+@import 'common/animations.scss';
+
+
+/////////////
+// CONTENT //
+/////////////
+.container { width: 88%; }
+
+@media only screen and (min-width: 48em) {
+    .container { width: 82%; }
+}
