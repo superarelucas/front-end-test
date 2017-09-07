@@ -1,0 +1,7 @@
+mixin menuItem(href, text)
+    li.item
+        a.link(href= href)= text
+
+mixin socialItem(href, iconClass)
+    a.link(href= href)
+        i.icon.fa(class= iconClass)

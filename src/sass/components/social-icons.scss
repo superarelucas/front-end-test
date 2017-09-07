@@ -1,0 +1,14 @@
+.social-icons {
+    display: flex;
+
+    > .link + .link { margin-left: 1.6rem; }
+    
+    > .link > .icon {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 47.99em) {
+    .social-icons { display: none; }
+}

@@ -10,6 +10,12 @@
 @import 'common/global.scss';
 
 
+/////////////
+// HELPERS //
+/////////////
+@import 'common/helpers.scss';
+
+
 ////////////////
 // COMPONENTS //
 ////////////////
@@ -27,6 +33,14 @@
 /////////////
 .container { width: 88%; }
 
-@media only screen and (min-width: 48em) {
-    .container { width: 82%; }
+@media only screen and (min-width: 62em) {
+    .container { width: 64%; }
+}
+
+
+////////////
+// HEADER //
+////////////
+.header {
+    background-color: $color-blue;
 }

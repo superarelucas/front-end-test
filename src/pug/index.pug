@@ -1,1 +1,34 @@
 extends includes/template.pug
+
+include includes/mixins.pug
+
+block content
+    header.header
+        nav.main-navbar.container
+
+            .hamburger-menu
+                .icon
+                    .line
+                .label Menu
+
+            img.logo(src='images/logo.svg', alt='Logo Fun Weather')
+            
+            ul.main-menu
+                +menuItem('#', 'Home')
+                +menuItem('#', 'Feature')
+                +menuItem('#', 'Reviews')
+                +menuItem('#', 'Download')
+
+            .social-icons
+                +socialItem('#', 'fa-facebook')
+                +socialItem('#', 'fa-instagram')
+                +socialItem('#', 'fa-twitter')
+
+        .hero
+    
+    section.section.features
+    section.section.widgets
+    section.section.screenshots
+    section.section.reviews
+    section.section.download
+    footer.footer

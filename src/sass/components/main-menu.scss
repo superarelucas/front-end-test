@@ -1,0 +1,25 @@
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    > .item { list-style: none; }
+
+    > .item > .link {
+        color: #fff;
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .main-menu {
+        flex-grow: 1;
+        padding-right: 6vw;
+        padding-left: 6vw;
+    }
+}
+
+@media only screen and (max-width: 47.99em) {
+    .main-menu { display: none; }
+}
