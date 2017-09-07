@@ -58,7 +58,7 @@ gulp.task('js-watch', ['js'], function() {
 // IMAGES //
 ////////////
 gulp.task('img', function() {
-    gulp.src(['./src/images/*.jpg', './src/images/*.png'])
+    gulp.src(['./src/images/*.jpg', './src/images/*.png', './src/images/*.svg'])
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images/'));
 });
