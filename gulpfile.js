@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
     pug = require('gulp-pug'),
     sass = require('gulp-sass'),
+    sassGlob = require('gulp-sass-glob'),
     autoprefixer = require('gulp-autoprefixer'),
     wait = require('gulp-wait'),
     imagemin = require('gulp-imagemin'),
@@ -28,6 +29,7 @@ gulp.task('pug-watch', ['pug'], function() {
 gulp.task('sass', function() {
     return gulp.src('./src/sass/main.scss')
         .pipe(wait(500))
+        .pipe(sassGlob())
         .pipe(sass())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
