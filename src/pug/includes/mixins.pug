@@ -11,3 +11,11 @@ mixin smartphoneImage(src, variant)
         .receiver
         img.screen(src= src)
         .button
+
+mixin featureItem(image, title, text)
+    .feature-item.row
+        .col.col-2
+            img.image(src= image)
+        .col.col-10
+            h1.title= title
+            p.text= text
