@@ -7,7 +7,8 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    cssmin = require('gulp-cssmin');
 
 
 /////////
@@ -36,6 +37,10 @@ gulp.task('sass', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 4 versions', '> 5%', 'Firefox ESR']
+        }))
+        .pipe(cssmin())
+        .pipe(rename({
+            suffix: '.min'
         }))
         .pipe(gulp.dest('./dist/css/'));
 });
