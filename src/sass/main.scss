@@ -50,6 +50,8 @@
     background-color: $color-blue;
     color: #fff;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: -webkit-paged-y;
 
     background-image: 
         url('../images/wave-back.png'),
@@ -63,6 +65,8 @@
         width: 100%;
         height: 4vw;
         clip-path: ellipse(60% 100%  at 50% 0%);
+        position: relative;
+        z-index: -1;
     }
 }
 
@@ -114,10 +118,10 @@
         }
 
         &:nth-child(4) {
-            bottom: -5%;
-            right: -4.3rem;
-            width: 3rem;
-            height: 3rem;
+            bottom: -4.5%;
+            right: -4.2rem;
+            width: 2.4rem;
+            height: 2.4rem;
         }
 
     }
@@ -125,10 +129,7 @@
 
 
 @media only screen and (max-width: 47.99em) {
-    .header {
-        background-size: 225%;
-        overflow-x: hidden;
-    }
+    .header { background-size: 225%; }
 
     .hero {
 
@@ -142,5 +143,7 @@
         }
 
         .smartphone { margin: 2rem auto; }
+
+        .weather-bubble { transform: scale(.8); }
     }
 }
