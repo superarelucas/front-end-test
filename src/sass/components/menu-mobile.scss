@@ -1,0 +1,41 @@
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // min-height: calc(100vh - #{$navbar-height});
+    min-height: calc(100vh - 67px);
+    margin-top: 67px;
+    z-index: 9;
+
+    > .item {
+        color: #fff;
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    > .item + .item { margin-top: 2rem; }
+
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(37,55,107,.9);
+    }
+}
+
+// Cascade effect
+$map: (1, 2, 3, 4);
+
+@each $item, $color in $map {
+    .menu-mobile.active .item:nth-child(#{$item}) {
+        animation-name: slideRight;
+        animation-duration: .8s;
+        animation-delay: #{$item} * .08s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.25,.03,.25,1);
+    }
+}

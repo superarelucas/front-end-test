@@ -228,6 +228,90 @@ a {
 .main-navbar > .logo {
   max-width: 140px; }
 
+.menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: calc(100vh - 67px);
+  margin-top: 67px;
+  z-index: 9; }
+
+.menu-mobile > .item {
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0; }
+
+.menu-mobile > .item + .item {
+  margin-top: 2rem; }
+
+.menu-mobile.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(37, 55, 107, 0.9); }
+
+.menu-mobile.active .item:nth-child(1) {
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1); }
+
+.menu-mobile.active .item:nth-child(2) {
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: 0.16s;
+          animation-delay: 0.16s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1); }
+
+.menu-mobile.active .item:nth-child(3) {
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1); }
+
+.menu-mobile.active .item:nth-child(4) {
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-delay: 0.32s;
+          animation-delay: 0.32s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.03, 0.25, 1); }
+
 .smartphone-mockup {
   position: relative;
   width: 13rem;
@@ -355,6 +439,24 @@ a {
   60% {
     -webkit-transform: translateY(-0.4rem);
             transform: translateY(-0.4rem); } }
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translate3d(-1.4rem, 0, 0);
+            transform: translate3d(-1.4rem, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translate3d(-1.4rem, 0, 0);
+            transform: translate3d(-1.4rem, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1; } }
 
 .container {
   width: 88%; }
