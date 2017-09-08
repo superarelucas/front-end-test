@@ -5,7 +5,8 @@ const gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     wait = require('gulp-wait'),
     imagemin = require('gulp-imagemin'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    babel = require('gulp-babel');
 
 
 /////////
@@ -47,6 +48,10 @@ gulp.task('sass-watch', ['sass'], function() {
 ////////
 gulp.task('js', function() {
     gulp.src('./src/js/main.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 });
 gulp.task('js-watch', ['js'], function() {
