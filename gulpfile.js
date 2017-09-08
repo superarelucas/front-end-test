@@ -17,7 +17,7 @@ const gulp = require('gulp'),
 gulp.task('pug', function() {
     return gulp.src('./src/pug/*.pug')
         .pipe(pug({
-            pretty: true,
+            pretty: false,
         }))
         .pipe(gulp.dest('./dist/'));
 });
