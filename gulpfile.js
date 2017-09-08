@@ -6,7 +6,8 @@ const gulp = require('gulp'),
     wait = require('gulp-wait'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    rename = require('gulp-rename');
 
 
 /////////
@@ -52,6 +53,7 @@ gulp.task('js', function() {
             presets: ['env']
         }))
         .pipe(uglify())
+        .pipe(rename('main.min.js'))
         .pipe(gulp.dest('./dist/js/'));
 });
 gulp.task('js-watch', ['js'], function() {
