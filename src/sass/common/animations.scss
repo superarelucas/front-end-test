@@ -12,3 +12,19 @@
         opacity: 1;
     }
 }
+
+@keyframes bubble {
+    0% {
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(0);
+        opacity: 0;
+    }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+body:not(.loaded) * { animation: none !important; }

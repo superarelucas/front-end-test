@@ -57,7 +57,9 @@
         url('../images/wave-back.png'),
         url('../images/wave-front.png');
     background-size: contain;
-    background-position: center bottom;
+    background-position: 
+        center 100%,
+        center 100%;
     background-repeat: no-repeat;
 
     &-bottom {
@@ -95,35 +97,39 @@
         max-width: 33vh;
         margin: 0 auto;
         text-align: center;
-    }
 
-    .bubble-group .weather-bubble {
-
-        &:nth-child(1) {
-            top: 50%;
-            left: -5.5rem;
+        .weather-bubble {
+            opacity: 0;
+            animation: bubble 1s ease-in-out forwards;
+    
+            &:nth-child(1) {
+                top: 50%;
+                left: -5.5rem;
+                animation-delay: .1s;
+            }
+    
+            &:nth-child(2) {
+                top: 18%;
+                right: -3.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+    
+            &:nth-child(3) {
+                top: 45%;
+                right: -5.5rem;
+                font-size: .75rem;
+                animation-delay: .2s;
+            }
+    
+            &:nth-child(4) {
+                bottom: -3%;
+                right: -4rem;
+                width: 2.4rem;
+                height: 2.4rem;
+                animation-delay: .1s;
+            }
         }
-
-        &:nth-child(2) {
-            top: 18%;
-            right: -3.5rem;
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-
-        &:nth-child(3) {
-            top: 45%;
-            right: -5.5rem;
-            font-size: .75rem;
-        }
-
-        &:nth-child(4) {
-            bottom: -4.5%;
-            right: -4.2rem;
-            width: 2.4rem;
-            height: 2.4rem;
-        }
-
     }
 }
 
@@ -133,7 +139,7 @@
 
     .hero {
 
-        .hero-title { font-size: 1.9rem; }
+        &-title { font-size: 1.9rem; }
 
         .btn { display: block; }
     
