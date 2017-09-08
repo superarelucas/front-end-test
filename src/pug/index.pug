@@ -66,6 +66,23 @@ block content
                     +featureItem('images/features-colors.png', 'Unlimites Colors', 'Sometimes the simplest things are the hardest to find. So we created a new line for everyday life')
 
     section.section.widgets
+        .container
+            h4.section-title Simple widgets
+            p.section-subtitle Drag and Drop
+
+            .slider-wrapper
+                .slider-image
+                    .item
+                        img(src='images/slider-image-1.png')
+                    .item.active
+                        img(src='images/slider-image-2.png')
+                    .item
+                        img(src='images/slider-image-3.png')
+
+                .controls
+                    button.control.control-left.fa.fa-angle-left(data-control='prev')
+                    button.control.control-right.fa.fa-angle-right(data-control='next')
+
     section.section.screenshots
     section#reviews.section.reviews
     section#download.section.download
