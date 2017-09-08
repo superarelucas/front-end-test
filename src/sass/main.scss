@@ -5,6 +5,12 @@
 
 
 ////////////
+// MIXINS //
+////////////
+@import 'common/mixins.scss';
+
+
+////////////
 // GLOBAL //
 ////////////
 @import 'common/global.scss';
@@ -63,12 +69,18 @@
     background-repeat: no-repeat;
 
     &-bottom {
-        background-color: #5b81ec;
+        background-color: #fff;
         width: 100%;
         height: 4vw;
-        clip-path: ellipse(60% 100%  at 50% 0%);
         position: relative;
-        z-index: -1;
+        
+        &::before {
+            @include pseudo();
+            width: 100%;
+            height: 100%;
+            background-color: #5b81ec;
+            clip-path: ellipse(58% 100%  at 50% 0%);
+        }
     }
 }
 
@@ -100,7 +112,8 @@
 
         .weather-bubble {
             opacity: 0;
-            animation: bubble 1s ease-in-out forwards;
+            // animation: bubble 1s ease-in-out forwards;
+            animation: bubble 1s cubic-bezier(.4, 0, .32, 1.32) forwards;
     
             &:nth-child(1) {
                 top: 50%;
