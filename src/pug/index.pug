@@ -24,11 +24,30 @@ block content
                 +socialItem('#', 'fa-instagram')
                 +socialItem('#', 'fa-twitter')
 
-        .hero
+        .hero.container
+            .row.align-items-center
+                .col-md-6.col-lg-5
+                    h1.hero-title Get the most fun weather app
+                    p.hero-text Simple, nice and user-friendly application of the weather. Only useful information
+                    a.btn(href='#') Download
+                    a.btn.-blue(href='#') Features
+                .col-md-6.col-lg-7
+                    .smartphone-wrapper.bubbles-wrapper
+                        img.smartphone(src='images/phone-white.png')
+                        .bubble-group
+                            .weather-bubble.-orange Sunny
+                            .weather-bubble.-white 9º
+                            .weather-bubble.-blue-dark London
+                            .weather-bubble.-yellow Rio
+                    //- +smartphoneImage('images/screen-cloudy.png', '-light')
+        
+        a.btn-chevron(href='#features')
+
+    .header-bottom
     
-    section.section.features
+    section#features.section.features
     section.section.widgets
     section.section.screenshots
-    section.section.reviews
-    section.section.download
+    section#reviews.section.reviews
+    section#download.section.download
     footer.footer

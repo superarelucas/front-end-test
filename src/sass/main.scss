@@ -33,8 +33,13 @@
 /////////////
 .container { width: 88%; }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 75em) {
     .container { width: 64%; }
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -43,4 +48,99 @@
 ////////////
 .header {
     background-color: $color-blue;
+    color: #fff;
+    position: relative;
+
+    background-image: 
+        url('../images/wave-back.png'),
+        url('../images/wave-front.png');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    &-bottom {
+        background-color: #5b81ec;
+        width: 100%;
+        height: 4vw;
+        clip-path: ellipse(60% 100%  at 50% 0%);
+    }
+}
+
+.hero {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    
+    > .row { min-height: calc(70vh - 67px - 8vw); }
+
+    &-title {
+        font-size: 2.55rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &-text {
+        line-height: 1.5;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .btn + .btn { margin-left: 1rem; }
+
+    .smartphone-wrapper {
+        max-width: 33vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .bubble-group .weather-bubble {
+
+        &:nth-child(1) {
+            top: 50%;
+            left: -5.5rem;
+        }
+
+        &:nth-child(2) {
+            top: 18%;
+            right: -3.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        &:nth-child(3) {
+            top: 45%;
+            right: -5.5rem;
+            font-size: .75rem;
+        }
+
+        &:nth-child(4) {
+            bottom: -5%;
+            right: -4.3rem;
+            width: 3rem;
+            height: 3rem;
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 47.99em) {
+    .header {
+        background-size: 225%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+
+        .hero-title { font-size: 1.9rem; }
+
+        .btn { display: block; }
+    
+        .btn + .btn {
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        .smartphone { margin: 2rem auto; }
+    }
 }

@@ -1,0 +1,29 @@
+.weather-bubble {
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 2;
+    // top: 0;
+    // left: 0;
+    // transform: translate(-50%, -50%);
+
+    &.-orange { background-color: $color-orange; }
+    &.-white { color: $color-blue; }
+    &.-blue-dark { background-color: $color-blue-dark; }
+    &.-yellow {
+        background-color: $color-yellow;
+        color: $color-blue;
+    }
+}
+
+.bubbles-wrapper { position: relative; }

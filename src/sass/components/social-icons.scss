@@ -6,6 +6,9 @@
     > .link > .icon {
         color: #fff;
         font-size: 1.2rem;
+        transition: opacity .3s ease;
+
+        &:hover { opacity: .6; }
     }
 }
 

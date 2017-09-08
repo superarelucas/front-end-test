@@ -5,3 +5,9 @@ mixin menuItem(href, text)
 mixin socialItem(href, iconClass)
     a.link(href= href)
         i.icon.fa(class= iconClass)
+
+mixin smartphoneImage(src, variant)
+    .smartphone-mockup(class= variant)
+        .receiver
+        img.screen(src= src)
+        .button

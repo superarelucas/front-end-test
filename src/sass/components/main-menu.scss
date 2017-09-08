@@ -9,6 +9,9 @@
     > .item > .link {
         color: #fff;
         font-size: .85rem;
+        transition: opacity .2s ease;
+
+        &:hover { opacity: .6; }
     }
 }
 

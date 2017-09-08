@@ -1,3 +1,66 @@
 .btn {
-    background-color: #ddd;
+    background-color: $color-orange;
+    border: 0;
+    border-radius: .3rem;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: .75rem 1.7rem;
+    min-width: 130px;
+    transition:
+        background-color .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($color-orange, 5%);
+        box-shadow: 0 2px 35px 0 transparentize($color-orange, .5);
+    }
+
+    &:active { transform: scale(.95); }
+
+    // Variant - blue
+    &.-blue {
+        background-color: $color-blue-dark;
+
+        &:hover {
+            background-color: lighten($color-blue-dark, 3%);
+            box-shadow: 0 2px 35px 0 transparentize($color-blue-dark, .5);
+        }
+    }
+}
+
+
+.btn-chevron {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.1);
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    // animation: bounceDown 2s ease infinite;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 15%;
+        height: 15%;
+        border-right: 1px solid $color-orange;
+        border-bottom: 1px solid $color-orange;
+    }
+}
+
+@media only screen and (max-width: 47.99em) {
+    .btn-chevron { display: none; }
 }
