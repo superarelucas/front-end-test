@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+*{font-family: 'Open Sans', sans-serif;}
+
+body{margin: 0;}
+
+///////////////////
+// Variaveis //////
+///////////////////
+
+$highlight: #16a085;//Base do site
+
+$white:#fff;
+$black:#000;
+$chumbo: #1D1D1D;
+$red: #e74c3c;
+$orange: #f39c12;
+$yellow:#f1c40f;
+$green:#27ae60;
+$blue:#2980b9;
+$purple:#8e44ad;
+
+
+///////////////////
+// CSS Funcional //
+///////////////////
+
+@for $i from 0 through 10 {
+    .mar-t-#{$i*10} { margin-top:$i*10px}
+    .mar-b-#{$i*10} { margin-bottom:$i*10px}
+    .mar-l-#{$i*10} { margin-left:$i*10px}
+    .mar-r-#{$i*10} { margin-right:$i*10px}
+    .mar-tb-#{$i*10} { margin-top:$i*10px;margin-bottom:$i*10px;}
+    .mar-lr-#{$i*10} { margin-left:$i*10px;margin-right:$i*10px}
+    .mar-all-#{$i*10} { margin:$i*10px}
+    .pad-t-#{$i*10} { padding-top:$i*10px}
+    .pad-b-#{$i*10} { padding-bottom:$i*10px}
+    .pad-l-#{$i*10} { padding-left:$i*10px}
+    .pad-r-#{$i*10} { padding-right:$i*10px}
+    .pad-tb-#{$i*10} { padding-top:$i*10px;padding-bottom:$i*10px;}
+    .pad-lr-#{$i*10} { padding-left:$i*10px;padding-right:$i*10px}
+    .pad-all-#{$i*10} { padding:$i*10px}
+  }
+
+  .font{
+    &-w{
+      &-el{font-weight: 200}//extralight
+      &-l{font-weight: 300}//light
+      &-r{font-weight: 400}//regular
+      &-m{font-weight: 500}//medium
+      &-sb{font-weight: 600}//semibold
+      &-b{font-weight: 700}//bold
+      &-eb{font-weight: 800}//extrabold
+    }
+    &-s{
+      @for $i from 1 through 6 {
+        &-#{$i} { font-size:$i+rem}
+        &-#{$i}-2 { font-size:$i+.2rem}
+        &-#{$i}-5 { font-size:$i+.5rem}
+        &-#{$i}-7 { font-size:$i+.7rem}
+      }
+    }
+    &-st{
+      &-n{font-style: normal;}
+      &-i{font-style: italic;}
+      &-u{text-decoration: underline}
+      &-u{text-decoration: overline}
+      &-upper{text-transform: uppercase}
+      &-lower{text-transform: lowercase}
+      &-cap{text-transform: capitalize}
+    }
+    &-c{
+      &-h{color:$highlight;}
+      &-w{color:$white;}
+      &-b{color:$black;}
+      &-c{color:$chumbo;}
+      &-r{color:$red;}
+      &-o{color:$orange;}
+      &-y{color:$yellow;}
+      &-g{color:$green;}
+      &-blue{color:$blue;}
+      &-p{color:$purple;}
+    }
+  }
+  .bg{
+    &-c{
+      &-h{background-color:$highlight;}
+      &-w{background-color:$white;}
+      &-b{background-color:$black;}
+      &-c{background-color:$chumbo;}
+      &-r{background-color:$red;}
+      &-o{background-color:$orange;}
+      &-y{background-color:$yellow;}
+      &-g{background-color:$green;}
+      &-blue{background-color:$blue;}
+      &-p{background-color:$purple;}
+    }
+  }
+  .text{
+    &-a{
+      &-c{text-align: center;}
+      &-l{text-align: left;}
+      &-r{text-align: right;}
+      &-j{text-align: justify;}
+    }
+  }
