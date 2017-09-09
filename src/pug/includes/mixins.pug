@@ -19,3 +19,28 @@ mixin featureItem(image, title, text)
         .col.col-10
             h1.title= title
             p.text= text
+
+mixin screenshot(weather, degrees, rainfall, image, icon, title, text)
+    .screenshot-app.row.align-items-center.justify-content-md-between
+        .col-md-5
+            .image-wrapper
+                span.background-text= weather
+                img.image(src= `images/${image}`)
+
+                .bubbles
+                    if block
+                        block
+                //- .weather-bubble= degres
+                //- .weather-bubble= weather
+
+        .col-md-6
+            img.icon(src= `images/${icon}`)
+            .title= title
+            .text= text
+            .badges
+                .badge= rainfall
+                .badge= degrees
+                .badge= weather
+
+mixin weatherBubble(text, ...variant)
+    .weather-bubble(class= variant)= text

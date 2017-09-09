@@ -84,6 +84,23 @@ block content
                     button.control.control-right.fa.fa-angle-right(data-control='next')
 
     section.section.screenshots
+        .container
+            h4.section-title Screenshots
+            p.section-subtitle The brightest images
+
+            .screenshot-wrapper
+                +screenshot('Cloudy', '15º', '95%', 'phone-cloudy.png', 'icon-cloudy.png', 'When the clouds', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('15º', '-blue')
+                    +weatherBubble('Cloudy', '-yellow', '-light')
+
+                +screenshot('Sunny', '35º', '0%', 'phone-sunny.png', 'icon-sunny.png', 'When the sun', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('35º', '-orange')
+                    +weatherBubble('Sunny', '-orangelight')
+
+                +screenshot('Rainy', '9º', '50%', 'phone-rainy.png', 'icon-rainy.png', 'When the rain', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('9º', '-bluegray')
+                    +weatherBubble('Rainy', '-bluegreen', '-dark')
+
     section#reviews.section.reviews
     section#download.section.download
     footer.footer
