@@ -89,7 +89,7 @@ block content
             p.section-subtitle The brightest images
 
             .screenshot-wrapper
-                +screenshot('Cloudy', '15º', '95%', 'phone-cloudy.png', 'icon-cloudy.png', 'When the clouds', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                +screenshot('Cloudy', '15º', '50%', 'phone-cloudy.png', 'icon-cloudy.png', 'When the clouds', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
                     +weatherBubble('15º', '-blue')
                     +weatherBubble('Cloudy', '-yellow', '-light')
 
@@ -102,5 +102,19 @@ block content
                     +weatherBubble('Rainy', '-bluegreen', '-dark')
 
     section#reviews.section.reviews
+        .container
+            h4.section-title What people are saying
+            p.section-subtitle Reviews
+
+            .row
+                .col-sm-6
+                    +reviewComment('What art offers is space - a certain breathing room for the spirit. ', 'John Updike')
+                .col-sm-6
+                    +reviewComment('We do not see nature with our eyes, but with our understandings and our hearts.', 'William Hazlitt')
+                .col-sm-6
+                    +reviewComment('The only courage that matters is the kind that gets you from one moment to the next.', 'Mignon McLaughlin')
+                .col-sm-6
+                    +reviewComment('No man has a good enough memory to be a successful liar. ', 'Abraham Lincoln')
+
     section#download.section.download
     footer.footer

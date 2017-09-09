@@ -44,3 +44,8 @@ mixin screenshot(weather, degrees, rainfall, image, icon, title, text)
 
 mixin weatherBubble(text, ...variant)
     .weather-bubble(class= variant)= text
+
+mixin reviewComment(text, author)
+    .review-comment
+        p.comment= text
+        span.author= author
