@@ -5,6 +5,10 @@
 
     > .comment { font-size: 1.1rem; }
 
+    > .comment:first-letter { text-transform: uppercase; }
+
+    > .author { text-transform: capitalize; }
+
     &::before,
     &::after {
         position: absolute;

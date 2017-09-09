@@ -81,7 +81,7 @@
 
         if (scroll > wrapperOffset && scroll <= wrapperArea) {
             wrapperBubbles.forEach((bubble, index) => {
-                bubble.style.transform = `translate3d(0, -${(scroll - wrapperOffset) / (index + 8)}%, 0)`;
+                bubble.style.transform = `translate3d(0, -${(scroll - wrapperOffset) / (index + 7)}%, 0)`;
             });
         }
     }
@@ -110,3 +110,24 @@
     
     controls.forEach(control => control.addEventListener('click', switchSlider));
 })();
+
+
+/**
+ * Load comments
+ */
+const commentsURL = fetch('https://jsonplaceholder.typicode.com/comments');
+
+commentsURL
+    .then(data => data.json())
+    .then(data => {
+        loadComments(data);
+    })
+    .catch(err => console.log(err));
+
+function loadComments(data) {
+    const comments = data
+        .filter((comment, index) => index < 4)
+        .map(comment => comment);
+    
+    commentModule.render(comments);
+}
