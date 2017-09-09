@@ -54,7 +54,7 @@ block content
     
     section#features.section.features
         .container
-            h4.section-title Perfect features
+            h2.section-title Perfect features
             p.section-subtitle Only necessery
 
             .row
@@ -67,7 +67,7 @@ block content
 
     section.section.widgets
         .container
-            h4.section-title Simple widgets
+            h2.section-title Simple widgets
             p.section-subtitle Drag and Drop
 
             .slider-wrapper
@@ -85,7 +85,7 @@ block content
 
     section.section.screenshots
         .container
-            h4.section-title Screenshots
+            h2.section-title Screenshots
             p.section-subtitle The brightest images
 
             .screenshot-wrapper
@@ -103,7 +103,7 @@ block content
 
     section#reviews.section.reviews
         .container
-            h4.section-title What people are saying
+            h2.section-title What people are saying
             p.section-subtitle Reviews
 
             .row
@@ -114,7 +114,24 @@ block content
                 .col-sm-6
                     +reviewComment('The only courage that matters is the kind that gets you from one moment to the next.', 'Mignon McLaughlin')
                 .col-sm-6
-                    +reviewComment('No man has a good enough memory to be a successful liar. ', 'Abraham Lincoln')
+                    +reviewComment('No man has a good enough memory to be a successful liar.', 'Abraham Lincoln')
 
-    section#download.section.download
+    section#download.download
+        .container
+            .row
+                .col-md-7.col-lg-6.download-text-wrapper
+                    h2.download-title How Download the app?
+                    p.download-text
+                        | Just download the app from the store.
+                        br
+                        | Simple, nice and user-friendly application of theweather. Only relevant and useful information.
+                    .download-buttons
+                        a.download-button(href='#')
+                            img(src='images/download-appstore.png')
+                        a.download-button(href='#')
+                            img(src='images/download-googleplay.png')
+
+                .col-md-5.col-lg-6.download-background-wrapper
+                    img.download-background-image(src='images/download-smartphones.png')
+
     footer.footer

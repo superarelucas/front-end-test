@@ -301,3 +301,69 @@
     .screenshot-app .image-wrapper { margin-bottom: 2rem; }
     .screenshot-app .image-wrapper > .background-text { font-size: 8rem; }
 }
+
+
+///////////////
+// DOWNLOAD/ //
+///////////////
+.download {
+    background-color: $color-blue;
+    color: #fff;
+    overflow: hidden;
+
+    &-text-wrapper {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    &-title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    &-text { margin: 2rem 0; }
+    
+    &-background-wrapper { position: relative; }
+   
+    &-background-image {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 120%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .download {
+        &-text-wrapper {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        &-text { max-width: 80%; }
+
+        &-button + &-button { margin-left: .6rem; }
+    }
+}
+
+@media only screen and (max-width: 47.99em) {
+    .download {
+        &-text-wrapper { margin-bottom: 60vw; }
+
+        &-buttons { text-align: center; }
+
+        &-button { display: block; }
+
+        &-button + &-button { margin-top: 1rem; }
+    }
+}
+
+@media only screen and (min-width: 75em) {
+        .download-text-wrapper {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        .download-background-image { max-width: 120%; }
+}

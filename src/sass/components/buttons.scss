@@ -19,6 +19,7 @@
     &:hover {
         background-color: lighten($color-orange, 5%);
         box-shadow: 0 2px 35px 0 transparentize($color-orange, .5);
+        transform: translate3d(0, -.1rem, 0);
     }
 
     &:active { transform: scale(.95); }
@@ -59,4 +60,11 @@
 
 @media only screen and (max-width: 47.99em) {
     .btn-chevron { display: none; }
+}
+
+
+.download-button {
+    transition: opacity .3s ease;
+
+    &:hover { opacity: .8; }
 }
