@@ -135,3 +135,28 @@ block content
                     img.download-background-image(src='images/download-smartphones.png')
 
     footer.footer
+        nav.main-navbar.container
+            .hamburger-menu
+                .icon
+                    .line
+                .label Menu
+
+            img.logo(src='images/logo-colorful.svg', alt='Logo Fun Weather')
+            
+            ul.main-menu.-grey
+                +menuItem('#', 'Home')
+                +menuItem('#', 'Feature')
+                +menuItem('#', 'Reviews')
+                +menuItem('#', 'Download')
+
+            .social-icons.-grey
+                +socialItem('#', 'fa-facebook')
+                +socialItem('#', 'fa-instagram')
+                +socialItem('#', 'fa-twitter')
+
+        .footer-divider
+
+        .footer-rights.container
+            | © 2016 All rights reserved. Weather App Theme by Gravpix
+
+        a.go-top.fa.fa-angle-up(href='#')

@@ -367,3 +367,31 @@
 
         .download-background-image { max-width: 120%; }
 }
+
+
+/////////////
+// FOOTER/ //
+/////////////
+.footer {
+    background-color: #353854;
+    position: relative;
+
+    &-divider {
+        border-top: 1px solid #434769;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &-rights {
+        color: #565b87;
+        font-size: .75rem;
+        text-align: end;
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .main-navbar {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

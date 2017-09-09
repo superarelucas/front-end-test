@@ -68,3 +68,21 @@
 
     &:hover { opacity: .8; }
 }
+
+
+.go-top {
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
+    background-color: #434769;
+    color: #b5b5c8;
+    font-size: 1.6rem;
+    padding: .3rem .7rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .6;
+    }
+}

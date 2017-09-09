@@ -10,6 +10,15 @@
 
         &:hover { opacity: .6; }
     }
+
+    &.-grey {
+        > .link > .icon {
+            color: #fff;
+            opacity: .6;
+
+            &:hover { opacity: 1; }
+        }
+    }
 }
 
 @media only screen and (max-width: 47.99em) {
