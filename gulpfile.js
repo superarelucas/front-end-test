@@ -9,7 +9,8 @@ const gulp = require('gulp'),
     babel = require('gulp-babel'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    webserver = require('gulp-webserver');
 
 
 /////////
@@ -78,5 +79,16 @@ gulp.task('img', function() {
 });
 
 
+////////////
+// SERVER //
+////////////
+gulp.task('server', function () {
+    return gulp.src('./')
+        .pipe(webserver({
+            open: 'http://localhost:8000/dist/index.html'
+        }));
+});
+
+
 // Default task
-gulp.task('default', ['pug-watch', 'sass-watch', 'js-watch', 'img']);
+gulp.task('default', ['pug-watch', 'sass-watch', 'js-watch', 'img', 'server']);

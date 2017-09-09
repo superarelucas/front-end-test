@@ -32,6 +32,7 @@
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.0",
     "gulp-wait": "0.0.2",
+    "gulp-webserver": "^0.9.1",
     "lighthouse": "^2.4.0"
   }
 }
