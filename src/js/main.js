@@ -44,3 +44,47 @@
 
     links.forEach(link => link.addEventListener('click', initScroll));
 })();
+
+
+/**
+ * Parallax effect
+ */
+(function() {
+    const body = document.querySelector('body'),
+          header = document.querySelector('header.header'),
+          headerHeight = header.clientHeight,
+          headerBubbles = header.querySelectorAll('.weather-bubble');
+
+    const wrapper = document.querySelector('.screenshot-wrapper'),
+          wrapperHeight = wrapper.clientHeight + 200,
+          wrapperOffset = scrollModule.getOffset(wrapper) - 400,
+          wrapperBubbles = wrapper.querySelectorAll('.weather-bubble');
+          
+    function scroll() {
+        let scroll = body.scrollTop.toString();
+
+        // Header parallax        
+        if (scroll <= headerHeight) {
+            header.style = `
+                background-position: 
+                    center ${scroll / 20 + 100}%,
+                    center ${scroll / 32 + 100}%;
+            `;
+
+            headerBubbles.forEach((bubble, index) => {
+                bubble.style.transform = `translate3d(0, -${scroll / (index + 2)}%, 0)`;
+            });
+        }
+
+        // Screenshot parallax        
+        const wrapperArea = wrapperHeight + wrapperOffset;
+
+        if (scroll > wrapperOffset && scroll <= wrapperArea) {
+            wrapperBubbles.forEach((bubble, index) => {
+                bubble.style.transform = `translate3d(0, -${(scroll - wrapperOffset) / (index + 8)}%, 0)`;
+            });
+        }
+    }
+
+    window.addEventListener('scroll', scroll);
+})();
