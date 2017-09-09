@@ -88,3 +88,25 @@
 
     window.addEventListener('scroll', scroll);
 })();
+
+
+/**
+ * Image slider
+ */
+(function() {
+    const slider = document.querySelector('.slider-image'),
+          sliderItems = slider.querySelectorAll('.item'),
+          controls = slider.parentNode.querySelectorAll('.control');
+    
+    sliderItems[1].classList.add('active');
+    
+    
+    function switchSlider(event) {
+        event.preventDefault();
+        
+        const direction = this.getAttribute('data-control');
+        sliderModule.change(slider, direction);
+    }
+    
+    controls.forEach(control => control.addEventListener('click', switchSlider));
+})();

@@ -33,11 +33,12 @@
         text-shadow: 0 0 12px #fff;
         border: 0;
         font-size: 3.5rem;
-        transition: opacity .3s ease;
+        transition: color .3s ease;
         outline: 0;
+        z-index: 2;
         cursor: pointer;
 
-        &:hover { opacity: .6; }
+        &:hover { color: #8FA4C5; }
 
         &-left { left: 0; }
 
