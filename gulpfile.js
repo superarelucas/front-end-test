@@ -8,7 +8,8 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
     rename = require('gulp-rename'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'),
+    concat = require('gulp-concat');
 
 
 /////////
@@ -53,11 +54,12 @@ gulp.task('sass-watch', ['sass'], function() {
 // JS //
 ////////
 gulp.task('js', function() {
-    gulp.src('./src/js/main.js')
+    gulp.src(['./src/js/modules/*.js', './src/js/main.js'])
         .pipe(babel({
             presets: ['env']
         }))
         .pipe(uglify())
+        .pipe(concat('main.js'))
         .pipe(rename('main.min.js'))
         .pipe(gulp.dest('./dist/js/'));
 });

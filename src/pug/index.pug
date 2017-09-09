@@ -17,10 +17,10 @@ block content
             img.logo(src='images/logo.svg', alt='Logo Fun Weather')
             
             ul.main-menu
-                +menuItem('#', 'Home')
-                +menuItem('#', 'Feature')
-                +menuItem('#', 'Reviews')
-                +menuItem('#', 'Download')
+                +menuItem('#home', 'Home')
+                +menuItem('#features', 'Feature')
+                +menuItem('#reviews', 'Reviews')
+                +menuItem('#download', 'Download')
 
             .social-icons
                 +socialItem('#', 'fa-facebook')
@@ -140,10 +140,10 @@ block content
             img.logo(src='images/logo-colorful.svg', alt='Logo Fun Weather')
             
             ul.main-menu.-grey
-                +menuItem('#', 'Home')
-                +menuItem('#', 'Feature')
-                +menuItem('#', 'Reviews')
-                +menuItem('#', 'Download')
+                +menuItem('#home', 'Home')
+                +menuItem('#features', 'Feature')
+                +menuItem('#reviews', 'Reviews')
+                +menuItem('#download', 'Download')
 
             .social-icons.-grey
                 +socialItem('#', 'fa-facebook')
@@ -155,4 +155,4 @@ block content
         .footer-rights.container
             | © 2016 All rights reserved. Weather App Theme by Gravpix
 
-        a.go-top.fa.fa-angle-up(href='#')
+        a.go-top.fa.fa-angle-up(href='#home')
