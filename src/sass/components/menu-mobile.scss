@@ -28,7 +28,7 @@
 }
 
 // Cascade effect
-$map: (1, 2, 3, 4);
+$map: (1, 2, 3, 4, 5);
 
 @each $item, $color in $map {
     .menu-mobile.active .item:nth-child(#{$item}) {

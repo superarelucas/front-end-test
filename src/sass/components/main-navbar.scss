@@ -8,3 +8,8 @@
 
     > .logo { max-width: 140px; }
 }
+
+@media only screen and (max-width: 47.99em) {
+    .main-navbar > .social-icons,
+    .main-navbar > .main-menu { display: none; }
+}
