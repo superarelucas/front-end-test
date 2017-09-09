@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
-*{font-family: 'Open Sans', sans-serif;}
-
 body{margin: 0;}
 
 ///////////////////
 // Variaveis //////
 ///////////////////
 
-$highlight: #16a085;//Base do site
+$highlight: #0eb493;//Base do site
+$highlight-2: #32b0ee;//Base do site
+$highlight-3: #32b0ee;//Base do site
+$highlight-4: #32b0ee;//Base do site
 
 $white:#fff;
 $black:#000;
@@ -17,8 +16,62 @@ $red: #e74c3c;
 $orange: #f39c12;
 $yellow:#f1c40f;
 $green:#27ae60;
-$blue:#2980b9;
+$blue:#101636;
 $purple:#8e44ad;
+
+///////////////////
+// Custom Code ////
+///////////////////
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.logo-font{
+  font-family: 'Pacifico', cursive;
+  display: inline-flex;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+*{font-family: 'Open Sans', sans-serif;}
+
+a{  text-decoration: none;}
+
+#slide{
+  transition: background-image 0.2s ease-in-out;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &-01{
+    @extend #slide;
+    background-image: url('../img/slide-01.png')}
+}
+
+header{
+  background-color: rgba(16, 22, 54, .2)
+}
+
+header nav ul li{
+  display: inline-flex;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  text-shadow: 0px 25px 13px rgba(255, 255, 255, 0);
+  transition: .3s;
+  margin: 0 10px;
+}
+
+header nav ul li a{ color: $white;}
+
+header nav ul li:hover{
+  text-shadow: 0px 25px 13px rgba(255, 255, 255, 1);
+  transition: .3s;
+}
+
+header nav ul .active{
+  border-top:1px solid $highlight-2;
+}
 
 
 ///////////////////
@@ -40,6 +93,17 @@ $purple:#8e44ad;
     .pad-tb-#{$i*10} { padding-top:$i*10px;padding-bottom:$i*10px;}
     .pad-lr-#{$i*10} { padding-left:$i*10px;padding-right:$i*10px}
     .pad-all-#{$i*10} { padding:$i*10px}
+  }
+
+  @for $i from 0 through 10 {
+    .o-#{$i*10} {
+      opacity:$i* .1;
+      transition: .3s;
+    }
+    .o-#{$i*10}:hover {
+      opacity: 1;
+      transition: .3s;
+    }
   }
 
   .font{
@@ -71,6 +135,9 @@ $purple:#8e44ad;
     }
     &-c{
       &-h{color:$highlight;}
+      &-h2{color:$highlight-2;}
+      &-h3{color:$highlight-3;}
+      &-h4{color:$highlight-4;}
       &-w{color:$white;}
       &-b{color:$black;}
       &-c{color:$chumbo;}
@@ -85,6 +152,9 @@ $purple:#8e44ad;
   .bg{
     &-c{
       &-h{background-color:$highlight;}
+      &-h2{background-color:$highlight-2;}
+      &-h3{background-color:$highlight-3;}
+      &-h4{background-color:$highlight-4;}
       &-w{background-color:$white;}
       &-b{background-color:$black;}
       &-c{background-color:$chumbo;}
