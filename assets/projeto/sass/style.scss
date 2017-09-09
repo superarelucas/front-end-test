@@ -19,12 +19,26 @@ $green:#27ae60;
 $blue:#101636;
 $purple:#8e44ad;
 
+$xs: '(max-width: 575px)';                              // Extra small(xs) devices (portrait phones, less than 576px)
+$sm: '(min-width: 576px) and (max-width: 767px)';       // Small(sm) devices (landscape phones, 576px and up)
+$md: '(min-width: 768px) and (max-width: 991px)';       // Medium(md) devices (tablets, 768px and up)
+$lg: '(min-width: 992px) and (max-width: 1199px)';      // Large(lg) devices (desktops, 992px and up)
+$xl: '(min-width: 1200px)';                             // Extra large(xl) devices (large desktops, 1200px and up)
+
 ///////////////////
 // Custom Code ////
 ///////////////////
 
+// Presets--------/
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{font-family: 'Open Sans', sans-serif;}
+
+a{  text-decoration: none;}
+
+//---------------/
 
 .logo-font{
   font-family: 'Pacifico', cursive;
@@ -32,10 +46,6 @@ $purple:#8e44ad;
   text-decoration: none;
   padding-top: 10px;
 }
-
-*{font-family: 'Open Sans', sans-serif;}
-
-a{  text-decoration: none;}
 
 #slide{
   transition: background-image 0.2s ease-in-out;
@@ -50,7 +60,12 @@ a{  text-decoration: none;}
 }
 
 header{
-  background-color: rgba(16, 22, 54, .2)
+  background-color: rgba(16, 22, 54, .2);
+  overflow: hidden;
+}
+
+header nav{
+  display: inline-flex;
 }
 
 header nav ul li{
@@ -62,6 +77,12 @@ header nav ul li{
   margin: 0 10px;
 }
 
+@media #{$xs} {
+  header nav ul li{
+    margin: 0 5px;
+  }
+}
+
 header nav ul li a{ color: $white;}
 
 header nav ul li:hover{
@@ -69,9 +90,25 @@ header nav ul li:hover{
   transition: .3s;
 }
 
+
 header nav ul .active{
   border-top:1px solid $highlight-2;
 }
+
+@media #{$xs} {
+  header nav ul .active{
+    border-top:0px solid $highlight-2;
+    border-bottom:1px solid $highlight-2;
+  }
+}
+
+@media #{$sm} {
+  header nav ul .active{
+    border-top:0px solid $highlight-2;
+    border-bottom:1px solid $highlight-2;
+  }
+}
+
 
 
 ///////////////////
@@ -124,6 +161,16 @@ header nav ul .active{
         &-#{$i}-7 { font-size:$i+.7rem}
       }
     }
+    @media #{$xs} {
+      &-s{
+        @for $i from 1 through 6 {
+          &-#{$i} { font-size:$i*.75 +rem}
+          &-#{$i}-2 { font-size:$i+.2 *.75 +rem}
+          &-#{$i}-5 { font-size:$i+.5 *.75 +rem}
+          &-#{$i}-7 { font-size:$i+.7 *.75 +rem}
+        }
+      }
+    }
     &-st{
       &-n{font-style: normal;}
       &-i{font-style: italic;}
@@ -172,5 +219,202 @@ header nav ul .active{
       &-l{text-align: left;}
       &-r{text-align: right;}
       &-j{text-align: justify;}
+    }
+  }
+
+////////////////////////////
+// Alinhamento Responsivo //
+////////////////////////////
+
+
+
+  @media #{$xs} { 
+    .start-xs{
+      -ms-flex-pack: start !important;
+      -webkit-box-pack: start !important;
+      justify-content: flex-start !important;
+      text-align: start !important;
+    }
+    .center-xs {
+      -ms-flex-pack: center !important;
+      -webkit-box-pack: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+    .end-xs {
+      -ms-flex-pack: end !important;
+      -webkit-box-pack: end !important;
+      justify-content: flex-end !important;
+      text-align: end !important;
+    }
+  
+    .top-xs {
+      -ms-flex-align: start !important;
+      -webkit-box-align: start !important;
+      align-items: flex-start !important;
+    }
+  
+    .middle-xs {
+      -ms-flex-align: center !important;
+      -webkit-box-align: center !important;
+      align-items: center !important;
+    }
+  
+    .bottom-xs {
+      -ms-flex-align: end !important;
+      -webkit-box-align: end !important;
+      align-items: flex-end !important;
+    }
+  }
+  @media #{$sm} { 
+    .start-sm{
+      -ms-flex-pack: start !important;
+      -webkit-box-pack: start !important;
+      justify-content: flex-start !important;
+      text-align: start !important;
+    }
+    .center-sm {
+      -ms-flex-pack: center !important;
+      -webkit-box-pack: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+    .end-sm {
+      -ms-flex-pack: end !important;
+      -webkit-box-pack: end !important;
+      justify-content: flex-end !important;
+      text-align: end !important;
+    }
+  
+    .top-sm {
+      -ms-flex-align: start !important;
+      -webkit-box-align: start !important;
+      align-items: flex-start !important;
+    }
+  
+    .middle-sm {
+      -ms-flex-align: center !important;
+      -webkit-box-align: center !important;
+      align-items: center !important;
+    }
+  
+    .bottom-sm {
+      -ms-flex-align: end !important;
+      -webkit-box-align: end !important;
+      align-items: flex-end !important;
+    }
+  }
+  @media #{$md} { 
+    .start-md{
+      -ms-flex-pack: start !important;
+      -webkit-box-pack: start !important;
+      justify-content: flex-start !important;
+      text-align: start !important;
+    }
+    .center-md {
+      -ms-flex-pack: center !important;
+      -webkit-box-pack: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+    .end-md {
+      -ms-flex-pack: end !important;
+      -webkit-box-pack: end !important;
+      justify-content: flex-end !important;
+      text-align: end !important;
+    }
+  
+    .top-md {
+      -ms-flex-align: start !important;
+      -webkit-box-align: start !important;
+      align-items: flex-start !important;
+    }
+  
+    .middle-md {
+      -ms-flex-align: center !important;
+      -webkit-box-align: center !important;
+      align-items: center !important;
+    }
+  
+    .bottom-md {
+      -ms-flex-align: end !important;
+      -webkit-box-align: end !important;
+      align-items: flex-end !important;
+    }
+  }
+  @media #{$lg} { 
+    .start-lg{
+      -ms-flex-pack: start !important;
+      -webkit-box-pack: start !important;
+      justify-content: flex-start !important;
+      text-align: start !important;
+    }
+    .center-lg {
+      -ms-flex-pack: center !important;
+      -webkit-box-pack: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+    .end-lg {
+      -ms-flex-pack: end !important;
+      -webkit-box-pack: end !important;
+      justify-content: flex-end !important;
+      text-align: end !important;
+    }
+  
+    .top-lg {
+      -ms-flex-align: start !important;
+      -webkit-box-align: start !important;
+      align-items: flex-start !important;
+    }
+  
+    .middle-lg {
+      -ms-flex-align: center !important;
+      -webkit-box-align: center !important;
+      align-items: center !important;
+    }
+  
+    .bottom-lg {
+      -ms-flex-align: end !important;
+      -webkit-box-align: end !important;
+      align-items: flex-end !important;
+    }
+  }
+  @media #{$xl} { 
+    .start-xl{
+      -ms-flex-pack: start !important;
+      -webkit-box-pack: start !important;
+      justify-content: flex-start !important;
+      text-align: start !important;
+    }
+    .center-xl {
+      -ms-flex-pack: center !important;
+      -webkit-box-pack: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+    .end-xl {
+      -ms-flex-pack: end !important;
+      -webkit-box-pack: end !important;
+      justify-content: flex-end !important;
+      text-align: end !important;
+    }
+  
+    .top-xl {
+      -ms-flex-align: start !important;
+      -webkit-box-align: start !important;
+      align-items: flex-start !important;
+    }
+  
+    .middle-xl {
+      -ms-flex-align: center !important;
+      -webkit-box-align: center !important;
+      align-items: center !important;
+    }
+  
+    .bottom-xl {
+      -ms-flex-align: end !important;
+      -webkit-box-align: end !important;
+      align-items: flex-end !important;
     }
   }
