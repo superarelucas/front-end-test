@@ -4,7 +4,7 @@
   "description": "Olá caro desenvolvedor front-end, nesse teste analisaremos seu conhecimento geral e inclusive velocidade de desenvolvimento. Abaixo explicaremos tudo o que será necessário, lembrando que, tecnologias mais recentes, aumento de complexidade, foco em performance, serão pontos positivos na sua avaliação.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lighthouse": "./node_modules/.bin/lighthouse"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.0",
-    "gulp-wait": "0.0.2"
+    "gulp-wait": "0.0.2",
+    "lighthouse": "^2.4.0"
   }
 }
