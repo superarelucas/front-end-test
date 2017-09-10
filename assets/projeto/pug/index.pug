@@ -116,17 +116,16 @@ html
                         a.active(slide-control='slide-01')
                         a(slide-control='slide-01')
                         a(slide-control='slide-01')
-        .section.container-fluid#fun-facts
+        .section.container-fluid.pad-tb-50#fun-facts
             .row.center-xs
                 .container
-                   .row
+                    .row
                         .col-12.center-xs
-                            h1.font-c-h.font-st-upper.mar-t-70 Some Fun Facts
+                            h1.font-c-h.font-st-upper.mar-t-0 Some Fun Facts
                             span.ornament.font-s-1.font-c-w
                                 i.fa.fa-heart-o(aria-hidden='true')
-
-                
-                
-                    
-
-
+                    .row
+                        +item-fun('fa-clock-o','3200','Hours of Work')
+                        +item-fun('fa-users','120','Satisfied Clinets')
+                        +item-fun('fa-rocket','360','Projects delivered')
+                        +item-fun('fa-trophy','42','Awards Won')

@@ -378,6 +378,20 @@ header{
   #fun-facts{
     @extend .bg-paralax;
     background-image: url('../img/bg-fun-facts.png');
+
+    .item-fun{
+      i{
+        width: 130px;
+        height:130px;
+        border-radius: 100%;
+        border:solid 1px $white;
+        padding: 32px;
+      }
+      span{
+        display: inline-flex;
+        margin-bottom: 20px;
+      }
+    }
   }
 
 ///////////////////

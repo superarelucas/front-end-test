@@ -22,3 +22,8 @@ mixin item-team(title,desc,img,twitter,facebook,googleplus,name,job)
         .data.center-xs
             h1.font-s-1.name= name
             span.font-c-blue.o-50.job= job
+mixin item-fun(icon,number,desc)
+    .col-12.col-xl-3.font-c-w.item-fun
+        i.fa.font-s-4.item(aria-hidden='true' class=icon)
+        h3.font-s-5.font-w-sb.mar-tb-10= number
+        span.font-s-1-5.font-st-upper= desc

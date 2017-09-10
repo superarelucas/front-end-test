@@ -229,13 +229,27 @@
         </div>
       </div>
     </section>
-    <div class="section container-fluid" id="fun-facts">
+    <div class="section container-fluid pad-tb-50" id="fun-facts">
       <div class="row center-xs">
         <div class="container">
           <div class="row">
             <div class="col-12 center-xs">
-              <h1 class="font-c-h font-st-upper mar-t-70">Some Fun Facts</h1><span class="ornament font-s-1 font-c-w"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+              <h1 class="font-c-h font-st-upper mar-t-0">Some Fun Facts</h1><span class="ornament font-s-1 font-c-w"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
             </div>
+          </div>
+          <div class="row">
+              <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-clock-o" aria-hidden="true"></i>
+                <h3 class="font-s-5 font-w-sb mar-tb-10">3200</h3><span class="font-s-1-5 font-st-upper">Hours of Work</span>
+              </div>
+              <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-users" aria-hidden="true"></i>
+                <h3 class="font-s-5 font-w-sb mar-tb-10">120</h3><span class="font-s-1-5 font-st-upper">Satisfied Clinets</span>
+              </div>
+              <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-rocket" aria-hidden="true"></i>
+                <h3 class="font-s-5 font-w-sb mar-tb-10">360</h3><span class="font-s-1-5 font-st-upper">Projects delivered</span>
+              </div>
+              <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-trophy" aria-hidden="true"></i>
+                <h3 class="font-s-5 font-w-sb mar-tb-10">42</h3><span class="font-s-1-5 font-st-upper">Awards Won</span>
+              </div>
           </div>
         </div>
       </div>
