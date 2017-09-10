@@ -147,7 +147,7 @@ header{
     transition: .3s;
   }
 }
-.social-buttons{
+#home .social-buttons{
   display: flex;
   position: absolute;
   bottom:10%;
@@ -279,10 +279,106 @@ header{
       background-image: url('../img/item-'+$i+'.png');
     }
   }
-
-  
 }
 
+.item-team{
+  
+  .data{
+    .name{
+      transition: .3s;
+      margin-bottom: 5px;
+    }
+    .job{
+      display: inline-flex;
+      margin-bottom: 20px;
+      font-size: .8rem;
+    }
+  }
+  
+
+  .item-content{
+    height: 300px;
+    @extend .bg-paralax;
+    background-attachment: initial;
+
+    .item-info{
+      height: 300px;
+      background-color: $highlight;
+      opacity: 0;
+      transition: .3s;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      h2{
+        padding-top: 15%;
+      }
+    }
+    
+  }
+  
+  @for $i from 0 through 8 {
+    .content-#{$i}{
+      background-image: url('../img/team-'+$i+'.png');
+    }
+  }
+  .social-buttons{
+    display: flex;
+    position: absolute;
+    bottom:30%;
+    left: 50%;
+    margin-left: -78px;
+    flex-wrap: wrap;
+    width: 156px;
+
+    .social{
+      opacity: 1;
+      transition: .3s;
+      color: $white;
+      background-color: rgba(0,0,0,.3);
+      margin: 5px;
+      padding: 5px;
+      width: 42px;
+      height: 42px;
+      
+      i{
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+
+    .social:hover{
+      opacity: .8;
+      transition: .3s;
+    }
+
+    .social:active,.social:visited,{
+      opacity: 1;
+      transition: .3s;
+    }
+  }
+}
+
+.item-team:hover{
+  .item-info{
+    
+    background-color: $highlight;
+    opacity: .95;
+    transition: .3s;
+  }
+
+    .data{
+      .name{
+        color: $highlight;
+        transition: .3s;
+      }
+    }
+    
+  }
+
+  #fun-facts{
+    @extend .bg-paralax;
+    background-image: url('../img/bg-fun-facts.png');
+  }
 
 ///////////////////
 // CSS Funcional //

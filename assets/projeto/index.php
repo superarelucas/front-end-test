@@ -5,7 +5,7 @@
   <meta name="description" content="Projeto criado por Kaue Prata"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-  <link href="css/style.css?16" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css?27" rel="stylesheet" type="text/css"/>
   <body>
     <section class="container-fluid" id="slide-01">
       <header class="row">
@@ -26,7 +26,7 @@
           </div>
         </div>
       </header>
-      <section class="row">
+      <section class="row" id="home">
         <div class="container-fluid">
           <div class="row center-xs bottom-xs">
             <div class="col-xs-12 col-lg-12 col-xl-12 title-slider">
@@ -108,63 +108,137 @@
         </nav>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-1">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-1">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-2">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-2">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-3">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-3">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-4">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-4">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-5">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-5">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-6">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-6">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-7">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-7">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
             </div>
           </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+            <div class="item-content content-8">
+              <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-12 center-xs">
+          <h1 class="font-c-h font-st-upper mar-t-70">Meet Our Team</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works">
-          <div class="item-content content-8">
-            <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-              <h2 class="font-w-b">Labore et dolore magnam</h2><span>Photography</span>
+      </div>
+      <div class="row">
+        <div class="col-12 center-xs">
+          <p class="font-c-blue font-w-eb o-80">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-1">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">John Filmr Doe</h1><span class="font-c-blue o-50 job">Managing Director</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-2">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Chystine Hineu</h1><span class="font-c-blue o-50 job">Lead Designer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-3">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Martin Matrone</h1><span class="font-c-blue o-50 job">Lead Developer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-4">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Steve Flaulkin</h1><span class="font-c-blue o-50 job">Sr. UI Designer</span>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="slide-controler-2 center-xs"><a class="active" slide-control="slide-01"></a><a slide-control="slide-01"></a><a slide-control="slide-01"></a></div>
+        </div>
+      </div>
+    </section>
+    <div class="section container-fluid" id="fun-facts">
+      <div class="row center-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 center-xs">
+              <h1 class="font-c-h font-st-upper mar-t-70">Some Fun Facts</h1><span class="ornament font-s-1 font-c-w"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>

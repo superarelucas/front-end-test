@@ -1,0 +1,24 @@
+mixin item-work(title,desc,img)
+    .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works(tag=desc)
+                    .item-content(class=img)
+                        .item-info.center-xs.middle-xs.font-c-w
+                            i.fa.fa-eye(aria-hidden='true')
+                            h2.font-w-b= title
+                            span= desc
+
+mixin item-team(title,desc,img,twitter,facebook,googleplus,name,job)
+    .col-xs-12.col-sm-6.col-md-4.col-xl-3.item-team
+        .item-content(class=img)
+            .item-info.center-xs.middle-xs.font-c-w
+                h2.font-w-b.font-s-1= title
+                span= desc
+                .social-buttons
+                    a.social(href=twitter)
+                        i.fa.fa-twitter(aria-hidden='true')
+                    a.social(href=facebook)
+                        i.fa.fa-facebook(aria-hidden='true')
+                    a.social(href=googleplus)
+                        i.fa.fa-google-plus(aria-hidden='true')
+        .data.center-xs
+            h1.font-s-1.name= name
+            span.font-c-blue.o-50.job= job

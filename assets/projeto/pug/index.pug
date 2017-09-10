@@ -1,9 +1,10 @@
 html
     include parts/head.pug
+    include parts/mixin.pug
     body
         section.container-fluid#slide-01
             include parts/header.pug
-            section.row
+            section.row#home
                 .container-fluid
                     .row.center-xs.bottom-xs
                         .col-xs-12.col-lg-12.col-xl-12.title-slider
@@ -86,54 +87,46 @@ html
                         li  Logo Design
                         li  Photography
             .row
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-1
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-2
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-3
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-4
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-5
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-6
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-7
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
-                .col-xs-12.col-sm-6.col-md-4.col-xl-3.pad-lr-0.bg-c-h.item-works
-                    .item-content.content-8
-                        .item-info.center-xs.middle-xs.font-c-w
-                            i.fa.fa-eye(aria-hidden='true')
-                            h2.font-w-b Labore et dolore magnam
-                            span Photography
+                +item-work('Labore et dolore magnam ','Photography','content-1')
+                +item-work('Labore et dolore magnam ','Photography','content-2')
+                +item-work('Labore et dolore magnam ','Photography','content-3')
+                +item-work('Labore et dolore magnam ','Photography','content-4')
+                +item-work('Labore et dolore magnam ','Photography','content-5')
+                +item-work('Labore et dolore magnam ','Photography','content-6')
+                +item-work('Labore et dolore magnam ','Photography','content-7')
+                +item-work('Labore et dolore magnam ','Photography','content-8')
+                
+        section.container
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-st-upper.mar-t-70 Meet Our Team
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row
+                .col-12.center-xs
+                    p.font-c-blue.font-w-eb.o-80 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row
+                .col-12
+                    .slide-controler-2.center-xs
+                        a.active(slide-control='slide-01')
+                        a(slide-control='slide-01')
+                        a(slide-control='slide-01')
+        .section.container-fluid#fun-facts
+            .row.center-xs
+                .container
+                   .row
+                        .col-12.center-xs
+                            h1.font-c-h.font-st-upper.mar-t-70 Some Fun Facts
+                            span.ornament.font-s-1.font-c-w
+                                i.fa.fa-heart-o(aria-hidden='true')
+
+                
+                
                     
 
 
