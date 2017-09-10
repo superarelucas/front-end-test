@@ -10,6 +10,13 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+.bg-paralax, #slide, #slide-01, .item-works .item-content {
+  transition: background-image 0.2s ease-in-out;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .logo-font {
   font-family: 'Pacifico', cursive;
   display: -webkit-inline-box;
@@ -19,11 +26,6 @@ a {
   padding-top: 10px; }
 
 #slide, #slide-01 {
-  transition: background-image 0.2s ease-in-out;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh; }
 
 #slide-01 {
@@ -188,6 +190,82 @@ header nav ul .active {
   background-color: #062033;
   opacity: 1;
   transition: .3s; }
+
+.filter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0; }
+
+.filter li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  margin: 3px; }
+
+.filter li:hover {
+  transition: .3s;
+  border: solid 1px #0eb493; }
+
+.filter .active {
+  background-color: #0eb493;
+  color: #fff; }
+
+.item-works .item-content {
+  height: 300px;
+  background-attachment: initial; }
+
+.item-works .item-content .item-info {
+  height: 300px;
+  background-color: #0eb493;
+  opacity: 0;
+  transition: .3s; }
+
+.item-works .item-content .item-info i {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-top: 20%; }
+
+.item-works .item-content .item-info:hover {
+  background-color: #0eb493;
+  opacity: .8;
+  transition: .3s; }
+
+.item-works .content-0 {
+  background-image: url("../img/item-0.png"); }
+
+.item-works .content-1 {
+  background-image: url("../img/item-1.png"); }
+
+.item-works .content-2 {
+  background-image: url("../img/item-2.png"); }
+
+.item-works .content-3 {
+  background-image: url("../img/item-3.png"); }
+
+.item-works .content-4 {
+  background-image: url("../img/item-4.png"); }
+
+.item-works .content-5 {
+  background-image: url("../img/item-5.png"); }
+
+.item-works .content-6 {
+  background-image: url("../img/item-6.png"); }
+
+.item-works .content-7 {
+  background-image: url("../img/item-7.png"); }
+
+.item-works .content-8 {
+  background-image: url("../img/item-8.png"); }
 
 .mar-t-0 {
   margin-top: 0px; }
