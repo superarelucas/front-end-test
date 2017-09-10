@@ -62,50 +62,108 @@ a{  text-decoration: none;}
 header{
   background-color: rgba(16, 22, 54, .2);
   overflow: hidden;
-}
 
-header nav{
-  display: inline-flex;
-}
+  nav{
+    display: inline-flex;
 
-header nav ul li{
-  display: inline-flex;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  text-shadow: 0px 25px 13px rgba(255, 255, 255, 0);
-  transition: .3s;
-  margin: 0 10px;
-}
+    ul{
+      li{
+        display: inline-flex;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        text-shadow: 0px 25px 13px rgba(255, 255, 255, 0);
+        transition: .3s;
+        margin: 0 10px;
+  
+        a{ color: $white;}
+      }
+      @media #{$xs} {
+        li{
+          margin: 0 5px;
+        }
+      }
+      li:hover{
+        text-shadow: 0px 25px 13px rgba(255, 255, 255, 1);
+        transition: .3s;
+      }
+      .active{
+        border-top:1px solid $highlight-2;
+      }
+      
+      @media #{$xs} {
+        .active{
+          border-top:0px solid $highlight-2;
+          border-bottom:1px solid $highlight-2;
+        }
+      }
+      
+      @media #{$sm} {
+        .active{
+          border-top:0px solid $highlight-2;
+          border-bottom:1px solid $highlight-2;
+        }
+      }
 
-@media #{$xs} {
-  header nav ul li{
-    margin: 0 5px;
+    }
   }
 }
 
-header nav ul li a{ color: $white;}
-
-header nav ul li:hover{
-  text-shadow: 0px 25px 13px rgba(255, 255, 255, 1);
-  transition: .3s;
+.title-slider{
+  margin-top: 30%;
 }
 
+.slide-controler{
+  display: flex;
+  position: absolute;
+  top:50%;
+  right: 1%;
+  flex-wrap: wrap;
+  width: 30px;
 
-header nav ul .active{
-  border-top:1px solid $highlight-2;
-}
-
-@media #{$xs} {
-  header nav ul .active{
-    border-top:0px solid $highlight-2;
-    border-bottom:1px solid $highlight-2;
+  a{
+    display: flex;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 1px solid $white;
+    transition: .3s;
+    opacity: .4;
+    margin: 10px;
+  }
+  a:hover{
+    opacity: 1;
+    transition: .3s;
+  }
+  a.active{
+    background-color: $white;
+    opacity: 1;
+    transition: .3s;
   }
 }
+.social-buttons{
+  display: flex;
+  position: absolute;
+  bottom:10%;
+  left: 50%;
+  margin-left: -50px;
+  flex-wrap: wrap;
+  width: 100px;
 
-@media #{$sm} {
-  header nav ul .active{
-    border-top:0px solid $highlight-2;
-    border-bottom:1px solid $highlight-2;
+  .social{
+    opacity: .4;
+    transition: .3s;
+    color: $white;
+    margin: 5px;
+  }
+
+  .social:hover{
+    opacity: .8;
+    transition: .3s;
+  }
+
+  .social:active,.social:visited,{
+    opacity: 1;
+    transition: .3s;
   }
 }
 
@@ -228,44 +286,44 @@ header nav ul .active{
 
 
 
-  @media #{$xs} { 
+
     .start-xs{
-      -ms-flex-pack: start !important;
-      -webkit-box-pack: start !important;
-      justify-content: flex-start !important;
-      text-align: start !important;
+      -ms-flex-pack: start ;
+      -webkit-box-pack: start ;
+      justify-content: flex-start ;
+      text-align: start ;
     }
     .center-xs {
-      -ms-flex-pack: center !important;
-      -webkit-box-pack: center !important;
-      justify-content: center !important;
-      text-align: center !important;
+      -ms-flex-pack: center ;
+      -webkit-box-pack: center ;
+      justify-content: center ;
+      text-align: center ;
     }
     .end-xs {
-      -ms-flex-pack: end !important;
-      -webkit-box-pack: end !important;
-      justify-content: flex-end !important;
-      text-align: end !important;
+      -ms-flex-pack: end ;
+      -webkit-box-pack: end ;
+      justify-content: flex-end ;
+      text-align: end ;
     }
   
     .top-xs {
-      -ms-flex-align: start !important;
-      -webkit-box-align: start !important;
-      align-items: flex-start !important;
+      -ms-flex-align: start ;
+      -webkit-box-align: start ;
+      align-items: flex-start ;
     }
   
     .middle-xs {
-      -ms-flex-align: center !important;
-      -webkit-box-align: center !important;
-      align-items: center !important;
+      -ms-flex-align: center ;
+      -webkit-box-align: center ;
+      align-items: center ;
     }
   
     .bottom-xs {
-      -ms-flex-align: end !important;
-      -webkit-box-align: end !important;
-      align-items: flex-end !important;
+      -ms-flex-align: end ;
+      -webkit-box-align: end ;
+      align-items: flex-end ;
     }
-  }
+  
   @media #{$sm} { 
     .start-sm{
       -ms-flex-pack: start !important;

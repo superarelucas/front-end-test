@@ -2,23 +2,32 @@ html
 include parts/head.pug
 body
     section.container-fluid#slide-01
-        header.row
-            .container.pad-lr-0
-                .row.mar-lr-0
-                    .col-xl-6.start-xl.col-lg-6.start-lg.col-md-5.center-md.col-sm-12.center-sm.center-xs
-                        a.logo-font.font-c-w.font-w-r.font-s-2.mar-tb-0(href='#') Brandi
-                        span.font-c-h2.font-w-l.font-s-1.mar-lr-20 |
-                        span.font-c-w.o-30.font-w-l.font-s-1 I’am your tag line
-                    .col-xl-6.end-xl.col-lg-6.end-lg.col-md-7.center-md.col-sm-12.center-sm.center-xs
-                        nav.text-a-r
-                            ul.mar-tb-0.font-w-r.font-s-1.pad-l-0
-                                li.active 
-                                    a(href='#') Home
-                                li
-                                    a(href='#') Features
-                                li
-                                    a(href='#') Works
-                                li
-                                    a(href='#') Team
-                                li
-                                    a(href='#') Contact
+        include parts/header.pug
+        section.row
+            .container-fluid
+                .row.center-xs.bottom-xs
+                    .col-xs-12.col-lg-12.col-xl-12.title-slider
+                        h1.font-s-4.font-w-l.font-c-w.mar-tb-0
+                            | Meet 
+                            span.font-w-b Brandi
+                            | !
+                        p.font-s-2.font-w-l.font-c-h.mar-tb-0
+                            | /creative 
+                            span.font-c-w one page template.
+                        p.font-s-1.font-w-l.font-c-h.mar-tb-10
+                            | - 
+                            span.font-c-w We are a team of professionals 
+                            | -
+                .social-buttons
+                    a.social(href='#')
+                        i.fa.fa-twitter(aria-hidden='true')
+                    a.social(href='#')
+                        i.fa.fa-facebook(aria-hidden='true')
+                    a.social(href='#')
+                        i.fa.fa-google-plus(aria-hidden='true')
+                    a.social(href='#')
+                        i.fa.fa-dribbble(aria-hidden='true')
+                .slide-controler
+                    a.active(href='#' slide-control='slide-01')
+                    a(href='#' slide-control='slide-01')
+                    a(href='#' slide-control='slide-01')
