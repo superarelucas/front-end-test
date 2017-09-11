@@ -1,14 +1,20 @@
-// Mobile menu
+/**
+ * Mobile menu toggle
+ */
 (function() {
     const hamburger = document.querySelector('.hamburger-menu'),
-          mobileMenu = document.querySelector('.menu-mobile');
+          mobileMenu = document.querySelector('.menu-mobile'),
+          menuLinks = mobileMenu.querySelectorAll('.item');
     
     function toggleMenu() {
-        this.classList.toggle('active');
+        hamburger.classList.toggle('active');
         mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('stop-scrolling');
     }
     
     hamburger.addEventListener('click', toggleMenu);
+
+    menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
 })();
 
 

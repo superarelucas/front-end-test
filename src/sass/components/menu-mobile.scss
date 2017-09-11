@@ -4,9 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    // min-height: calc(100vh - #{$navbar-height});
-    min-height: calc(100vh - 67px);
-    margin-top: 67px;
+    min-height: 100vh;
     z-index: 9;
 
     > .item {
