@@ -162,19 +162,6 @@
     }
 }
 
-// Bubbles parallax
-.header .weather-bubble {
-    // transform: translate3d(0, var(--position), 0);
-}
-
-// $bubbles: (1, 2, 3, 4);
-
-// @each $item in $bubbles {
-//     .header .weather-bubble:nth-child(#{$item}) {
-//         transform: translate3d(0, var(--position), 0);
-//     }
-// }
-
 
 @media only screen and (max-width: 47.99em) {
     .header { background-size: 225%; }

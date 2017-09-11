@@ -59,12 +59,8 @@
     const body = document.querySelector('body'),
           header = document.querySelector('header.header'),
           headerHeight = header.clientHeight,
-          headerBubbles = header.querySelectorAll('.weather-bubble');
-
-    const wrapper = document.querySelector('.screenshot-wrapper'),
-          wrapperHeight = wrapper.clientHeight + 200,
-          wrapperOffset = scrollModule.getOffset(wrapper) - 400,
-          wrapperBubbles = wrapper.querySelectorAll('.weather-bubble');
+          headerBubbles = header.querySelectorAll('.weather-bubble'),
+          screenshots = document.querySelectorAll('.screenshot-app');
           
     function scroll() {
         let scroll = body.scrollTop.toString();
@@ -73,8 +69,8 @@
         if (scroll <= headerHeight) {
             header.style = `
                 background-position: 
-                    center ${scroll / 20 + 100}%,
-                    center ${scroll / 32 + 100}%;
+                    center ${scroll / 30 + 100}%,
+                    center bottom;
             `;
 
             headerBubbles.forEach((bubble, index) => {
@@ -83,13 +79,23 @@
         }
 
         // Screenshot parallax        
-        const wrapperArea = wrapperHeight + wrapperOffset;
+        screenshots.forEach(screenshot => {
+            const screenshotHeight = screenshot.clientHeight + 500,
+                  screenshotOffset = scrollModule.getOffset(screenshot) - 550,
+                  screenshotBubbles = screenshot.querySelectorAll('.weather-bubble'),
+                  backgroundText = screenshot.querySelector('.background-text');
 
-        if (scroll > wrapperOffset && scroll <= wrapperArea) {
-            wrapperBubbles.forEach((bubble, index) => {
-                bubble.style.transform = `translate3d(0, -${(scroll - wrapperOffset) / (index + 7)}%, 0)`;
-            });
-        }
+            const screenshotArea = screenshotHeight + screenshotOffset;
+
+            if (scroll > screenshotOffset && scroll <= screenshotArea) {
+                screenshotBubbles.forEach((bubble, index) => {
+                    bubble.style.transform = `translate3d(0, -${(scroll - screenshotOffset) / (index + 7)}%, 0)`;
+                });
+
+                backgroundText.style.transform = 
+                    `translate3d(-50%, ${(scroll - screenshotOffset) / 40 - 50}%, 0) rotate(90deg)`;
+            }
+        });
     }
 
     window.addEventListener('scroll', scroll);
