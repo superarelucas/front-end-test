@@ -1,0 +1,37 @@
+.bubbles-wrapper { position: relative; }
+
+.weather-bubble {
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-blue;
+    color: #fff;
+    border-radius: 50%;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.-blue { background-color: $color-blue; }
+    &.-blue-dark { background-color: $color-blue-dark; }
+    &.-bluegray { background-color: #7693c8; }
+    &.-bluegreen { background-color: #b8faee; }
+    &.-orange { background-color: $color-orange; }
+    &.-orangelight { background-color: #f2a14e; }
+    &.-white {
+        background-color: #fff;
+        color: $color-blue;
+    }
+    &.-yellow {
+        background-color: $color-yellow;
+        color: $color-blue;
+    }
+    &.-light { color: #fff }
+    &.-dark { color: #7e8c91; }
+}
+
+
+@media only screen and (max-width: 47.99em) {
+    .weather-bubble { transform: scale(.8); }
+}

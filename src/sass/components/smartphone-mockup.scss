@@ -1,0 +1,51 @@
+.smartphone-mockup {
+    position: relative;
+
+    width: $phone-width;
+    height: $phone-width * 2.08;
+    background-color: #353854;
+    border-radius: $phone-width / 7.5;
+    margin-left: auto;
+    margin-right: auto;
+
+    > .receiver {
+        top: $phone-width / 10;
+        width: $phone-width / 5.5;
+        height: $phone-width / 50;
+        border-radius: $phone-width / 50;
+        background-color: #212335;
+    }
+
+    > .screen {
+        top: $phone-width / 5.5;
+        bottom: $phone-width / 4.1;
+        width: $phone-width / 1.1;
+        background-color: #212335;
+    }
+
+    > .button {
+        bottom: $phone-width / 18;
+        width: $phone-width / 6.5;
+        height: $phone-width / 6.5;
+        border-radius: 50%;
+        border: $phone-width / 90 solid #2d3048;
+    }
+
+    .receiver,
+    .screen,
+    .button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    // Variant - light
+    &.-light {
+        background-color: #fff;
+
+        > .receiver,
+        > .screen { background-color: #f3f0f0; }
+        > .button { border-color: #f3f0f0; }
+    }
+  
+}

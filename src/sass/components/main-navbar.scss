@@ -1,0 +1,31 @@
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    > .logo { width: 140px; }
+}
+
+@media only screen and (max-width: 47.99em) {
+    .main-navbar {
+
+        > .main-menu,
+        > .social-icons { display: none; }
+
+        &.-mobile {
+            flex-direction: column;
+            align-items: flex-start;
+
+            > .main-menu,
+            > .social-icons {
+                display: block;
+                margin-top: 2rem;
+            }
+
+            > .main-menu > .item + .item { margin-top: 1rem}
+        }
+    }
+}

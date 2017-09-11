@@ -1,0 +1,146 @@
+extends includes/template.pug
+
+include includes/mixins.pug
+
+block content
+
+    include includes/menu-mobile.pug
+
+    header.header
+        nav.main-navbar.container
+
+            a.hamburger-menu(href='#home')
+                .icon
+                    .line
+                .label Menu
+
+            img.logo(src='images/logo.svg', alt='Logo Fun Weather')
+            
+            ul.main-menu
+                +menuItem('#home', 'Home')
+                +menuItem('#features', 'Feature')
+                +menuItem('#reviews', 'Reviews')
+                +menuItem('#download', 'Download')
+
+            .social-icons
+                +socialItem('#', 'fa-facebook')
+                +socialItem('#', 'fa-instagram')
+                +socialItem('#', 'fa-twitter')
+
+        .hero.container
+            .row.align-items-center
+                .col-md-6.col-lg-5
+                    h1.hero-title Get the most fun weather app
+                    p.hero-text Simple, nice and user-friendly application of the weather. Only useful information
+                    a.btn(href='#') Download
+                    a.btn.-blue(href='#features') Features
+                .col-md-6.col-lg-7
+                    .smartphone-wrapper.bubbles-wrapper
+                        img.smartphone(src='images/phone-white.png')
+                        .bubble-group
+                            .weather-bubble.-orange Sunny
+                            .weather-bubble.-white 9º
+                            .weather-bubble.-blue-dark London
+                            .weather-bubble.-yellow Rio
+                    //- +smartphoneImage('images/screen-cloudy.png', '-light')
+        
+        a.btn-chevron(href='#features')
+
+        .header-bottom
+    
+    section#features.section.features
+        .container
+            h2.section-title Perfect features
+            p.section-subtitle Only necessery
+
+            .row
+                .col-md-4
+                    +featureItem('images/features-usability.png', 'Usability ', 'Sometimes the simplest things are the hardest to find. So we created a new line for everyday life')
+                .col-md-4
+                    +featureItem('images/features-parallax.png', 'Parallax Effect', 'Sometimes the simplest things are the hardest to find. So we created a new line for everyday life')
+                .col-md-4
+                    +featureItem('images/features-colors.png', 'Unlimites Colors', 'Sometimes the simplest things are the hardest to find. So we created a new line for everyday life')
+
+    section.section.widgets
+        .container
+            h2.section-title Simple widgets
+            p.section-subtitle Drag and Drop
+
+            .slider-wrapper
+                .slider-image
+                    .item
+                        img(src='images/slider-image-1.png')
+                    .item
+                        img(src='images/slider-image-2.png')
+                    .item
+                        img(src='images/slider-image-3.png')
+
+                .controls
+                    button.control.control-left.fa.fa-angle-left(data-control='prev')
+                    button.control.control-right.fa.fa-angle-right(data-control='next')
+
+    section.section.screenshots
+        .container
+            h2.section-title Screenshots
+            p.section-subtitle The brightest images
+
+            .screenshot-wrapper
+                +screenshot('Cloudy', '15º', '50%', 'phone-cloudy.png', 'icon-cloudy.png', 'When the clouds', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('15º', '-blue')
+                    +weatherBubble('Cloudy', '-yellow', '-light')
+
+                +screenshot('Sunny', '35º', '0%', 'phone-sunny.png', 'icon-sunny.png', 'When the sun', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('35º', '-orange')
+                    +weatherBubble('Sunny', '-orangelight')
+
+                +screenshot('Rainy', '9º', '50%', 'phone-rainy.png', 'icon-rainy.png', 'When the rain', 'Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends')
+                    +weatherBubble('9º', '-bluegray')
+                    +weatherBubble('Rainy', '-bluegreen', '-dark')
+
+    section#reviews.section.reviews
+        .container
+            h2.section-title What people are saying
+            p.section-subtitle Reviews
+
+            .row.comments-wrapper
+
+    section#download.download
+        .container
+            .row
+                .col-md-7.col-lg-6.download-text-wrapper
+                    h2.download-title How Download the app?
+                    p.download-text
+                        | Just download the app from the store.
+                        br
+                        | Simple, nice and user-friendly application of theweather. Only relevant and useful information.
+                    .download-buttons
+                        a.download-button(href='#')
+                            img(src='images/download-appstore.png')
+                        a.download-button(href='#')
+                            img(src='images/download-googleplay.png')
+
+                .col-md-5.col-lg-6.download-background-wrapper
+                    img.download-background-image(src='images/download-smartphones.png')
+
+    footer.footer
+        nav.main-navbar.-mobile.container
+
+            img.logo(src='images/logo-colorful.svg', alt='Logo Fun Weather')
+            
+            ul.main-menu.-grey
+                +menuItem('#home', 'Home')
+                +menuItem('#features', 'Feature')
+                +menuItem('#reviews', 'Reviews')
+                +menuItem('#download', 'Download')
+
+            .social-icons.-grey
+                +socialItem('#', 'fa-facebook')
+                +socialItem('#', 'fa-instagram')
+                +socialItem('#', 'fa-twitter')
+
+        .footer-divider
+
+        .footer-rights.container
+            | © 2016 All rights reserved. Weather App Theme by Gravpix
+
+        a.go-top.fa.fa-angle-up(href='#home')

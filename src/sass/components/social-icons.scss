@@ -1,0 +1,22 @@
+.social-icons {
+    display: flex;
+
+    > .link + .link { margin-left: 1.6rem; }
+    
+    > .link > .icon {
+        color: #fff;
+        font-size: 1.2rem;
+        transition: opacity .3s ease;
+
+        &:hover { opacity: .6; }
+    }
+
+    &.-grey {
+        > .link > .icon {
+            color: #fff;
+            opacity: .6;
+
+            &:hover { opacity: 1; }
+        }
+    }
+}

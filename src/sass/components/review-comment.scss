@@ -1,0 +1,30 @@
+.review-comment {
+    color: #353854;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+
+    > .comment { font-size: 1.1rem; }
+
+    > .comment:first-letter { text-transform: uppercase; }
+
+    > .author { text-transform: capitalize; }
+
+    &::before,
+    &::after {
+        position: absolute;
+        color: $color-blue;
+        font-size: 6rem;
+    }
+
+    &::before {
+        content: '“';
+        top: 0;
+        left: .6rem;
+    }
+
+    &::after {
+        content: '”';
+        right: .8rem;
+        bottom: -2rem;
+    }
+}

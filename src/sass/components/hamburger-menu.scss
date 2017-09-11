@@ -1,0 +1,81 @@
+/* Hamburger menu icon */
+.hamburger-menu {
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    > .icon {
+        width: $hamburger-width;
+        height: $hamburger-height;
+        position: relative;
+        z-index: 9;
+    }
+
+    > .icon > .line {
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        transition: transform .3s ease;
+    
+        &,
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            width: $hamburger-width;
+            height: calc(#{$hamburger-height} / 9);
+            background-color: #fff;
+            border-radius: 2rem;
+        }
+    
+        &::before {
+            content: '';
+            top: calc(-#{$hamburger-height} + 500%);
+            transition:
+                top .1s .25s ease-in,
+                opacity .1s ease-in;
+        }
+    
+        &::after {
+            content: '';
+            bottom: calc(-#{$hamburger-height} + 500%);
+            transition:
+                bottom .1s .25s ease-in,
+                transform .22s cubic-bezier(.55,.055,.675,.2);
+        }
+    }
+
+    > .label { padding-left: .5rem; }
+
+    &.active {
+    
+        > .icon > .line {
+            transform: rotate(45deg);
+    
+            &::before {
+                top: 0;
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
+    
+            &::after {
+                bottom: 0;
+                transform: rotate(90deg);
+                transition:
+                    bottom .1s ease-out,
+                    transform .22s .12s cubic-bezier(.215,.61,.355,1);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 48em) {
+    .hamburger-menu { display: none; }
+}

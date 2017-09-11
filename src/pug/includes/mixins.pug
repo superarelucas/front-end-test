@@ -1,0 +1,51 @@
+mixin menuItem(href, text)
+    li.item
+        a.link(href= href)= text
+
+mixin socialItem(href, iconClass)
+    a.link(href= href)
+        i.icon.fa(class= iconClass)
+
+mixin smartphoneImage(src, variant)
+    .smartphone-mockup(class= variant)
+        .receiver
+        img.screen(src= src)
+        .button
+
+mixin featureItem(image, title, text)
+    .feature-item.row
+        .col.col-2
+            img.image(src= image)
+        .col.col-10
+            h1.title= title
+            p.text= text
+
+mixin screenshot(weather, degrees, rainfall, image, icon, title, text)
+    .screenshot-app.row.align-items-center.justify-content-md-between
+        .col-md-5
+            .image-wrapper
+                span.background-text= weather
+                img.image(src= `images/${image}`)
+
+                .bubbles
+                    if block
+                        block
+                //- .weather-bubble= degres
+                //- .weather-bubble= weather
+
+        .col-md-6
+            img.icon(src= `images/${icon}`)
+            .title= title
+            .text= text
+            .badges
+                .badge= rainfall
+                .badge= degrees
+                .badge= weather
+
+mixin weatherBubble(text, ...variant)
+    .weather-bubble(class= variant)= text
+
+mixin reviewComment(text, author)
+    .review-comment
+        p.comment= text
+        span.author= author
