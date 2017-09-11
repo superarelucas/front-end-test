@@ -306,26 +306,26 @@
       <div class="row">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-lg-3">
+            <div class="col-xs-12 col-lg-3 center-xs start-xl">
               <h1 class="logo-font font-c-w font-w-r font-s-2 mar-t-0 mar-b-40">Brandi</h1>
               <p class="font-c-w mar-t-0">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="col-xs-12 col-lg-3">
-              <h2 class="font-c-w font-s-1 o-80 mar-t-30 mar-b-40">Subscribe</h2>
+            <div class="col-xs-12 col-lg-3 center-xs start-xl">
+              <h2 class="font-c-w font-s-1-2 o-80 mar-t-30 mar-b-40">Subscribe</h2>
               <form action="" method="post">
                 <label for="subscribe"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
                 <input type="email" name="subscribe"/>
               </form>
               <p class="font-c-w">eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div class="col-xs-12 col-lg-3">
-              <h2 class="font-c-w font-s-1 o-80 mar-t-30 mar-b-40">Explore</h2>
+            <div class="col-xs-12 col-lg-3 center-xs start-xl">
+              <h2 class="font-c-w font-s-1-2 o-80 mar-t-30 mar-b-40">Explore</h2>
               <div class="row">
-                <div class="col-6"><a class="links" href="">Envato</a><a class="links" href="">Themecurve</a><a class="links" href="">Kreativeshowcase</a><a class="links" href="">Freebiescurve</a></div>
-                <div class="col-6"><a class="links" href="">Themeforest</a><a class="links" href="">Microsoft</a><a class="links" href="">Google</a><a class="links" href="">Yahoo</a></div>
+                <div class="col-6 center-xs start-xl"><a class="links" href="">Envato</a><a class="links" href="">Themecurve</a><a class="links" href="">Kreativeshowcase</a><a class="links" href="">Freebiescurve</a></div>
+                <div class="col-6 center-xs start-xl"><a class="links" href="">Themeforest</a><a class="links" href="">Microsoft</a><a class="links" href="">Google</a><a class="links" href="">Yahoo</a></div>
               </div>
             </div>
-            <div class="col-xs-12 col-lg-3">
+            <div class="col-xs-12 col-lg-3 center-xs start-xl">
               <p class="font-c-w">Created with <i class="fa fa-heart-o font-c-blue font-w-b o-30" aria-hidden="true"> </i> by <a class="font-c-blue" href="">themecurve </a>,exclusive for kreativeshowcase </p>
               <p class="font-c-blue mar-t-100">© 2014 Brandi. All Rights Reserved.</p>
             </div>

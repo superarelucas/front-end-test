@@ -515,9 +515,7 @@ footer input:focus::-webkit-input-placeholder {
   color: #0eb493; }
 
 footer .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   color: #fff;
   transition: .3s;
   margin-bottom: 15px; }
