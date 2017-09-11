@@ -5,7 +5,7 @@
   <meta name="description" content="Projeto criado por Kaue Prata"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-  <link href="css/style.css?27" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css?28" rel="stylesheet" type="text/css"/>
   <body>
     <section class="container-fluid" id="slide-01">
       <header class="row">
@@ -43,7 +43,7 @@
     <section class="container">
       <div class="row">
         <div class="col-12 center-xs">
-          <h1 class="font-c-h font-st-upper mar-t-70">Features</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+          <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Features</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
         </div>
       </div>
       <div class="row">
@@ -86,7 +86,7 @@
     <section class="container">
       <div class="row">
         <div class="col-12 center-xs">
-          <h1 class="font-c-h font-st-upper mar-t-70">Works</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+          <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Works</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
         </div>
       </div>
       <div class="row">
@@ -169,7 +169,7 @@
     <section class="container">
       <div class="row">
         <div class="col-12 center-xs">
-          <h1 class="font-c-h font-st-upper mar-t-70">Meet Our Team</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+          <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Meet Our Team</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
         </div>
       </div>
       <div class="row">
@@ -234,7 +234,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 center-xs">
-              <h1 class="font-c-h font-st-upper mar-t-0">Some Fun Facts</h1><span class="ornament font-s-1 font-c-w"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+              <h1 class="font-c-h font-s-2 font-st-upper mar-t-0">Some Fun Facts</h1><span class="ornament font-s-1 font-c-w"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
             </div>
           </div>
           <div class="row">
@@ -254,5 +254,84 @@
         </div>
       </div>
     </div>
+    <section class="container">
+      <div class="row">
+        <div class="col-12 center-xs">
+          <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Let’s Discuss</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 center-xs">
+          <p class="font-c-blue font-w-eb o-80">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+        </div>
+      </div>
+      <div class="row contact">
+        <div class="col-12 col-md-3 col-xl-3 start-xl center-xs contact-info">
+          <h2 class="font-c-blue font-s-2 font-w-r mar-t-20">Cras at ultrices erat, sed vulputate!</h2>
+          <p class="font-c-h4 font-s-1">2345 Setwant natrer, 1234, </p>
+          <p class="font-c-h4 font-s-1">Washington. United States.</p>
+          <p class="font-s-1"><a class="font-c-h4" href="tel:(401)1234567">(401) 1234 567</a></p>
+          <p class="font-s-1"><a class="font-c-h4" href="mailto:hello@brandi.com">hello@brandi.com</a></p>
+          <p class="font-s-1"><a class="font-c-h4" href="www.brandi.com">ww.brandi.com</a></p>
+        </div>
+        <div class="col-12 col-md-8 col-xl-8 contact-form">
+          <form class="row" action="php/enviar.php" method="post">
+            <div class="col-12 col-md-6 col-xl-6">
+              <input class="mar-t-20" type="text" name="nome" placeholder="Nome"/>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6">
+              <input class="mar-t-20" type="email" name="email" placeholder="Email"/>
+            </div>
+            <div class="col-12 col-md-12 col-xl-12">
+              <input class="mar-t-20" type="" name="msg" placeholder="Message"/>
+            </div>
+            <div class="col-12 end-xl center-xs">
+              <button class="submit center-xs" type="submit"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-md-1 col-xl-1 center-xs">
+          <div class="social-buttons center-xs"><a class="social o-20" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a class="social o-20" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social o-20" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a class="social o-20" href="#"><i class="fa fa-deviantart" aria-hidden="true"></i></a><a class="social o-20" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid pad-lr-0 map">
+      <div class="row mar-lr-0">
+        <div class="col-12 pad-lr-0">
+          <iframe width="100%" height="215" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCa1c91k6hYQ2IMTXhToJC6HoeibU2vBOE&amp;q=Washington,+EUA" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-c-h">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3">
+              <h1 class="logo-font font-c-w font-w-r font-s-2 mar-t-0 mar-b-40">Brandi</h1>
+              <p class="font-c-w mar-t-0">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+              <h2 class="font-c-w font-s-1 o-80 mar-t-30 mar-b-40">Subscribe</h2>
+              <form action="" method="post">
+                <label for="subscribe"><i class="fa fa-arrow-right" aria-hidden="true"></i></label>
+                <input type="email" name="subscribe"/>
+              </form>
+              <p class="font-c-w">eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+              <h2 class="font-c-w font-s-1 o-80 mar-t-30 mar-b-40">Explore</h2>
+              <div class="row">
+                <div class="col-6"><a class="links" href="">Envato</a><a class="links" href="">Themecurve</a><a class="links" href="">Kreativeshowcase</a><a class="links" href="">Freebiescurve</a></div>
+                <div class="col-6"><a class="links" href="">Themeforest</a><a class="links" href="">Microsoft</a><a class="links" href="">Google</a><a class="links" href="">Yahoo</a></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+              <p class="font-c-w">Created with <i class="fa fa-heart-o font-c-blue font-w-b o-30" aria-hidden="true"> </i> by <a class="font-c-blue" href="">themecurve </a>,exclusive for kreativeshowcase </p>
+              <p class="font-c-blue mar-t-100">© 2014 Brandi. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

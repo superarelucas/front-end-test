@@ -35,7 +35,7 @@ html
         section.container
             .row
                 .col-12.center-xs
-                    h1.font-c-h.font-st-upper.mar-t-70 Features
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Features
                     span.ornament.font-s-1.font-c-h3
                         i.fa.fa-heart-o(aria-hidden='true')
             .row
@@ -71,7 +71,7 @@ html
         section.container
             .row
                 .col-12.center-xs
-                    h1.font-c-h.font-st-upper.mar-t-70 Works
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Works
                     span.ornament.font-s-1.font-c-h3
                         i.fa.fa-heart-o(aria-hidden='true')
             .row
@@ -99,7 +99,7 @@ html
         section.container
             .row
                 .col-12.center-xs
-                    h1.font-c-h.font-st-upper.mar-t-70 Meet Our Team
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Meet Our Team
                     span.ornament.font-s-1.font-c-h3
                         i.fa.fa-heart-o(aria-hidden='true')
             .row
@@ -121,7 +121,7 @@ html
                 .container
                     .row
                         .col-12.center-xs
-                            h1.font-c-h.font-st-upper.mar-t-0 Some Fun Facts
+                            h1.font-c-h.font-s-2.font-st-upper.mar-t-0 Some Fun Facts
                             span.ornament.font-s-1.font-c-w
                                 i.fa.fa-heart-o(aria-hidden='true')
                     .row
@@ -129,3 +129,86 @@ html
                         +item-fun('fa-users','120','Satisfied Clinets')
                         +item-fun('fa-rocket','360','Projects delivered')
                         +item-fun('fa-trophy','42','Awards Won')
+        section.container
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Let’s Discuss
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row
+                .col-12.center-xs
+                    p.font-c-blue.font-w-eb.o-80 Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row.contact
+                .col-12.col-md-3.col-xl-3.start-xl.center-xs.contact-info
+                    h2.font-c-blue.font-s-2.font-w-r.mar-t-20 Cras at ultrices erat, sed vulputate!
+                    p.font-c-h4.font-s-1 2345 Setwant natrer, 1234, 
+                    p.font-c-h4.font-s-1 Washington. United States.
+                    p.font-s-1
+                        a.font-c-h4(href="tel:(401)1234567") (401) 1234 567
+                    p.font-s-1
+                        a.font-c-h4(href="mailto:hello@brandi.com") hello@brandi.com
+                    p.font-s-1
+                        a.font-c-h4(href="www.brandi.com") ww.brandi.com
+                .col-12.col-md-8.col-xl-8.contact-form
+                    form(action="php/enviar.php", method="post").row
+                        .col-12.col-md-6.col-xl-6
+                            input.mar-t-20(type="text", name="nome" placeholder="Nome")
+                        .col-12.col-md-6.col-xl-6
+                            input.mar-t-20(type="email", name="email" placeholder="Email")
+                        .col-12.col-md-12.col-xl-12
+                            input.mar-t-20(type="", name="msg" placeholder="Message")
+                        .col-12.end-xl.center-xs
+                            button.submit.center-xs(type="submit")
+                                i.fa.fa-envelope-o(aria-hidden='true')
+                                | Send Message
+                .col-12.col-md-1.col-xl-1.center-xs
+                    .social-buttons.center-xs
+                        a.social.o-20(href= '#')
+                            i.fa.fa-behance(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-twitter(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-dribbble(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-deviantart(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-google-plus(aria-hidden='true')
+        section.container-fluid.pad-lr-0.map
+            .row.mar-lr-0
+                .col-12.pad-lr-0
+                    iframe(width='100%', height='215', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCa1c91k6hYQ2IMTXhToJC6HoeibU2vBOE\&q=Washington,+EUA', allowfullscreen='')
+        footer.container-fluid.bg-c-h
+            .row
+                .container
+                    .row
+                        .col-xs-12.col-lg-3
+                            h1.logo-font.font-c-w.font-w-r.font-s-2.mar-t-0.mar-b-40 Brandi
+                            p.font-c-w.mar-t-0 eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        .col-xs-12.col-lg-3
+                            h2.font-c-w.font-s-1.o-80.mar-t-30.mar-b-40 Subscribe
+                            form(action="", method="post")
+                                label(for="subscribe")
+                                    i.fa.fa-arrow-right(aria-hidden='true')
+                                input(type="email", name="subscribe")
+                            p.font-c-w eusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        .col-xs-12.col-lg-3
+                            h2.font-c-w.font-s-1.o-80.mar-t-30.mar-b-40 Explore
+                            .row
+                                .col-6
+                                    a.links(href="") Envato
+                                    a.links(href="") Themecurve
+                                    a.links(href="") Kreativeshowcase
+                                    a.links(href="") Freebiescurve
+                                .col-6
+                                    a.links(href="") Themeforest
+                                    a.links(href="") Microsoft
+                                    a.links(href="") Google
+                                    a.links(href="") Yahoo
+                        .col-xs-12.col-lg-3
+                            p.font-c-w
+                                | Created with 
+                                i.fa.fa-heart-o.font-c-blue.font-w-b.o-30(aria-hidden='true') 
+                                |  by 
+                                a.font-c-blue(href='') themecurve 
+                                | ,exclusive for kreativeshowcase 
+                            p.font-c-blue.mar-t-100 © 2014 Brandi. All Rights Reserved.

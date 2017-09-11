@@ -75,7 +75,7 @@ header nav ul .active {
     border-bottom: 1px solid #32b0ee; } }
 
 .title-slider {
-  margin-top: 30%; }
+  margin-top: 25%; }
 
 .slide-controler {
   display: -webkit-box;
@@ -378,6 +378,179 @@ header nav ul .active {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 20px; }
+
+.contact-info a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.contact-info p {
+  margin: 5px 0;
+  transition: .3s; }
+
+.contact-info p a:hover {
+  transition: .3s;
+  color: #0eb493; }
+
+.contact-form input {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid #c6c9ca;
+  transition: .3s; }
+
+.contact-form input:-moz-placeholder {
+  color: #c6c9ca; }
+
+.contact-form input:-ms-input-placeholder {
+  color: #c6c9ca; }
+
+.contact-form input::-webkit-input-placeholder {
+  color: #c6c9ca; }
+
+.contact-form input:focus {
+  background-color: #0eb493;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: .3s; }
+
+.contact-form input:focus:-moz-placeholder {
+  color: #fff; }
+
+.contact-form input:focus:-ms-input-placeholder {
+  color: #fff; }
+
+.contact-form input:focus::-webkit-input-placeholder {
+  color: #fff; }
+
+.contact-form .submit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 170px;
+  width: 16.6%;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 15px;
+  margin: 15px 0;
+  transition: .3s; }
+
+.contact-form .submit i {
+  margin-top: 2px;
+  margin-right: 10px;
+  color: #0eb493;
+  transition: .3s; }
+
+.contact-form .submit:hover {
+  background-color: #0eb493;
+  color: #fff;
+  transition: .3s; }
+
+.contact-form .submit:hover i {
+  color: #fff;
+  transition: .3s; }
+
+.contact .social-buttons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.contact .social-buttons a {
+  display: -webkit-inline-flex;
+  font-size: 1.5rem;
+  color: #062033;
+  padding: 10px; }
+
+.map {
+  margin-top: 30px;
+  border-bottom: #062033 solid 5px; }
+
+footer {
+  padding: 40px 15px; }
+
+footer label {
+  position: absolute;
+  right: 30px;
+  margin-top: 16px;
+  z-index: 10;
+  color: #fff; }
+
+footer input {
+  position: relative;
+  border: solid 2px #fff;
+  border-radius: 3px;
+  width: 100%;
+  background-color: #0eb493;
+  padding: 15px;
+  color: #fff;
+  z-index: 9; }
+
+footer input:-moz-placeholder {
+  color: #fff; }
+
+footer input:-ms-input-placeholder {
+  color: #fff; }
+
+footer input::-webkit-input-placeholder {
+  color: #fff; }
+
+footer input:focus {
+  background-color: #fff;
+  color: #0eb493;
+  transition: .3s;
+  z-index: 11; }
+
+footer input:focus:-moz-placeholder {
+  color: #0eb493; }
+
+footer input:focus:-ms-input-placeholder {
+  color: #0eb493; }
+
+footer input:focus::-webkit-input-placeholder {
+  color: #0eb493; }
+
+footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  transition: .3s;
+  margin-bottom: 15px; }
+
+footer .links:hover {
+  padding-left: 3px;
+  transition: .3s; }
+
+footer .fa-heart-o {
+  -webkit-animation: pulse .7s infinite linear;
+  animation: pulse .7s infinite linear; }
+
+@-webkit-keyframes "pulse" {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes "pulse" {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 .mar-t-0 {
   margin-top: 0px; }
@@ -1147,7 +1320,7 @@ header nav ul .active {
   color: #c6c9ca; }
 
 .font-c-h4 {
-  color: #32b0ee; }
+  color: #6a737b; }
 
 .font-c-w {
   color: #fff; }
@@ -1186,7 +1359,7 @@ header nav ul .active {
   background-color: #c6c9ca; }
 
 .bg-c-h4 {
-  background-color: #32b0ee; }
+  background-color: #6a737b; }
 
 .bg-c-w {
   background-color: #fff; }
