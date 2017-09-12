@@ -1,0 +1,241 @@
+html
+    include parts/head.pug
+    include parts/mixin.pug
+    body
+        section.container-fluid.slide-01#bg-slider
+            include parts/header.pug
+            section.row#home
+                .container-fluid
+                    .row.center-xs.bottom-xs
+                        .col-xs-12.col-lg-12.col-xl-12.title-slider
+                            h1.font-s-4.font-w-l.font-c-w.mar-tb-0
+                                | Meet 
+                                span.font-w-b Brandi
+                                | !
+                            p.font-s-2.font-w-l.font-c-h.mar-tb-0
+                                | /creative 
+                                span.font-c-w one page template.
+                            p.font-s-1.font-w-l.font-c-h.mar-tb-10
+                                | - 
+                                span.font-c-w We are a team of professionals 
+                                | -
+                    .social-buttons
+                        a.social
+                            i.fa.fa-twitter(aria-hidden='true')
+                        a.social
+                            i.fa.fa-facebook(aria-hidden='true')
+                        a.social
+                            i.fa.fa-google-plus(aria-hidden='true')
+                        a.social
+                            i.fa.fa-dribbble(aria-hidden='true')
+                    .slide-controler
+                        a.active#slide-01(onClick='bgslider("slide-01")')
+                        a#slide-02(onClick='bgslider("slide-02")')
+                        a#slide-03(onClick='bgslider("slide-03")')
+        section.container.has-slider
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Features
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row.features-slide-01.active
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-picture-o(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Branding
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-pencil(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Development
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-volume-down(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Consulting
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row.features-slide-02
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-picture-o(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Branding - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-pencil(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Development - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-volume-down(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Consulting - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                
+            .row.features-slide-03
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-picture-o(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Branding - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-pencil(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Development - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-volume-down(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Consulting - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                
+            .slide-controler-2.center-xs
+                a#features-slide-01.active(onClick='changeslide("features-slide-01")')
+                a#features-slide-02(onClick='changeslide("features-slide-02")')
+                a#features-slide-03(onClick='changeslide("features-slide-03")')
+        section.container
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Works
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row
+                .col-12.center-xs
+                    p.font-c-blue.font-w-eb.o-80 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+        section.container-fluid
+            .row
+                nav.col-12.center-xs
+                    ul.filter.font-w-b.font-c-blue.center-xs
+                        li.active#All(onClick='filter("All")') All
+                        li#Branding(onClick='filter("Branding")')  Branding
+                        li#Web(onClick='filter("Web")')  Web
+                        li#Logo(onClick='filter("Logo")')  Logo Design
+                        li#Photography(onClick='filter("Photography")')  Photography
+            .row
+                +item-work('Labore et dolore magnam ','Photography','content-1')
+                +item-work('Labore et dolore magnam ','Branding','content-2')
+                +item-work('Labore et dolore magnam ','Web','content-3')
+                +item-work('Labore et dolore magnam ','Logo','content-4')
+                +item-work('Labore et dolore magnam ','Photography','content-5')
+                +item-work('Labore et dolore magnam ','Logo','content-6')
+                +item-work('Labore et dolore magnam ','Web','content-7')
+                +item-work('Labore et dolore magnam ','Branding','content-8')
+                
+        section.container.has-slider
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Meet Our Team
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row
+                .col-12.center-xs
+                    p.font-c-blue.font-w-eb.o-80 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row.team-slide-01.active
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row.team-slide-02
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row.team-slide-03
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row
+                .col-12
+                    .slide-controler-2.center-xs
+                        a#team-slide-01.active(onClick='changeslide("team-slide-01")')
+                        a#team-slide-02(onClick='changeslide("team-slide-02")')
+                        a#team-slide-03(onClick='changeslide("team-slide-03")')
+        .section.container-fluid.pad-tb-50#fun-facts
+            .row.center-xs
+                .container
+                    .row
+                        .col-12.center-xs
+                            h1.font-c-h.font-s-2.font-st-upper.mar-t-0 Some Fun Facts
+                            span.ornament.font-s-1.font-c-w
+                                i.fa.fa-heart-o(aria-hidden='true')
+                    .row
+                        +item-fun('fa-clock-o','3200','Hours of Work','fun-hour')
+                        +item-fun('fa-users','120','Satisfied Clinets','fun-satis')
+                        +item-fun('fa-rocket','360','Projects delivered','fun-project')
+                        +item-fun('fa-trophy','42','Awards Won','fun-awards')
+        section.container
+            .row
+                .col-12.center-xs
+                    h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Let’s Discuss
+                    span.ornament.font-s-1.font-c-h3
+                        i.fa.fa-heart-o(aria-hidden='true')
+            .row
+                .col-12.center-xs
+                    p.font-c-blue.font-w-eb.o-80 Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row.contact
+                .col-12.col-md-3.col-xl-3.start-xl.center-xs.contact-info
+                    h2.font-c-blue.font-s-2.font-w-r.mar-t-20 Cras at ultrices erat, sed vulputate!
+                    p.font-c-h4.font-s-1 2345 Setwant natrer, 1234, 
+                    p.font-c-h4.font-s-1 Washington. United States.
+                    p.font-s-1
+                        a.font-c-h4(href="tel:(401)1234567") (401) 1234 567
+                    p.font-s-1
+                        a.font-c-h4(href="mailto:hello@brandi.com") hello@brandi.com
+                    p.font-s-1
+                        a.font-c-h4(href="www.brandi.com") ww.brandi.com
+                .col-12.col-md-8.col-xl-8.contact-form
+                    form(action="php/enviar.php", method="post").row
+                        .col-12.col-md-6.col-xl-6
+                            input.mar-t-20(type="text", name="nome" placeholder="Nome")
+                        .col-12.col-md-6.col-xl-6
+                            input.mar-t-20(type="email", name="email" placeholder="Email")
+                        .col-12.col-md-12.col-xl-12
+                            input.mar-t-20(type="", name="msg" placeholder="Message")
+                        .col-12.end-xl.center-xs
+                            button.submit.center-xs(type="submit")
+                                i.fa.fa-envelope-o(aria-hidden='true')
+                                | Send Message
+                .col-12.col-md-1.col-xl-1.center-xs
+                    .social-buttons.center-xs
+                        a.social.o-20(href= '#')
+                            i.fa.fa-behance(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-twitter(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-dribbble(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-deviantart(aria-hidden='true')
+                        a.social.o-20(href= '#')
+                            i.fa.fa-google-plus(aria-hidden='true')
+        section.container-fluid.pad-lr-0.map
+            .row.mar-lr-0
+                .col-12.pad-lr-0
+                    iframe(width='100%', height='215', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCa1c91k6hYQ2IMTXhToJC6HoeibU2vBOE\&q=Washington,+EUA', allowfullscreen='')
+        include parts/footer.pug
