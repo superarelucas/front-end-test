@@ -81,20 +81,20 @@ html
             .row
                 nav.col-12.center-xs
                     ul.filter.font-w-b.font-c-blue.center-xs
-                        li.active All
-                        li  Branding
-                        li  Web
-                        li  Logo Design
-                        li  Photography
+                        li.active#All(onClick='filter("All")') All
+                        li#Branding(onClick='filter("Branding")')  Branding
+                        li#Web(onClick='filter("Web")')  Web
+                        li#Logo(onClick='filter("Logo")')  Logo Design
+                        li#Photography(onClick='filter("Photography")')  Photography
             .row
                 +item-work('Labore et dolore magnam ','Photography','content-1')
-                +item-work('Labore et dolore magnam ','Photography','content-2')
-                +item-work('Labore et dolore magnam ','Photography','content-3')
-                +item-work('Labore et dolore magnam ','Photography','content-4')
+                +item-work('Labore et dolore magnam ','Branding','content-2')
+                +item-work('Labore et dolore magnam ','Web','content-3')
+                +item-work('Labore et dolore magnam ','Logo','content-4')
                 +item-work('Labore et dolore magnam ','Photography','content-5')
-                +item-work('Labore et dolore magnam ','Photography','content-6')
-                +item-work('Labore et dolore magnam ','Photography','content-7')
-                +item-work('Labore et dolore magnam ','Photography','content-8')
+                +item-work('Labore et dolore magnam ','Logo','content-6')
+                +item-work('Labore et dolore magnam ','Web','content-7')
+                +item-work('Labore et dolore magnam ','Branding','content-8')
                 
         section.container
             .row
@@ -177,38 +177,4 @@ html
             .row.mar-lr-0
                 .col-12.pad-lr-0
                     iframe(width='100%', height='215', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCa1c91k6hYQ2IMTXhToJC6HoeibU2vBOE\&q=Washington,+EUA', allowfullscreen='')
-        footer.container-fluid.bg-c-h
-            .row
-                .container
-                    .row
-                        .col-xs-12.col-lg-3.center-xs.start-xl
-                            h1.logo-font.font-c-w.font-w-r.font-s-2.mar-t-0.mar-b-40 Brandi
-                            p.font-c-w.mar-t-0 eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        .col-xs-12.col-lg-3.center-xs.start-xl
-                            h2.font-c-w.font-s-1-2.o-80.mar-t-30.mar-b-40 Subscribe
-                            form(action="", method="post")
-                                label(for="subscribe")
-                                    i.fa.fa-arrow-right(aria-hidden='true')
-                                input(type="email", name="subscribe")
-                            p.font-c-w eusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        .col-xs-12.col-lg-3.center-xs.start-xl
-                            h2.font-c-w.font-s-1-2.o-80.mar-t-30.mar-b-40 Explore
-                            .row
-                                .col-6.center-xs.start-xl
-                                    a.links(href="") Envato
-                                    a.links(href="") Themecurve
-                                    a.links(href="") Kreativeshowcase
-                                    a.links(href="") Freebiescurve
-                                .col-6.center-xs.start-xl
-                                    a.links(href="") Themeforest
-                                    a.links(href="") Microsoft
-                                    a.links(href="") Google
-                                    a.links(href="") Yahoo
-                        .col-xs-12.col-lg-3.center-xs.start-xl
-                            p.font-c-w
-                                | Created with 
-                                i.fa.fa-heart-o.font-c-blue.font-w-b.o-30(aria-hidden='true') 
-                                |  by 
-                                a.font-c-blue(href='') themecurve 
-                                | ,exclusive for kreativeshowcase 
-                            p.font-c-blue.mar-t-100 © 2014 Brandi. All Rights Reserved.
+        include parts/footer.pug

@@ -99,68 +99,68 @@
       <div class="row">
         <nav class="col-12 center-xs">
           <ul class="filter font-w-b font-c-blue center-xs">
-            <li class="active">All</li>
-            <li> Branding</li>
-            <li> Web</li>
-            <li> Logo Design</li>
-            <li> Photography</li>
+            <li class="active" id="All" onClick="filter(&quot;All&quot;)">All</li>
+            <li id="Branding" onClick="filter(&quot;Branding&quot;)"> Branding</li>
+            <li id="Web" onClick="filter(&quot;Web&quot;)"> Web</li>
+            <li id="Logo" onClick="filter(&quot;Logo&quot;)"> Logo Design</li>
+            <li id="Photography" onClick="filter(&quot;Photography&quot;)"> Photography</li>
           </ul>
         </nav>
       </div>
       <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Photography">
             <div class="item-content content-1">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
                 <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Branding">
             <div class="item-content content-2">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Branding</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Web">
             <div class="item-content content-3">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Web</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Logo">
             <div class="item-content content-4">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Logo</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Photography">
             <div class="item-content content-5">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
                 <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Logo">
             <div class="item-content content-6">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Logo</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Web">
             <div class="item-content content-7">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Web</span>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works" tag="Photography">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 pad-lr-0 bg-c-h item-works Branding">
             <div class="item-content content-8">
               <div class="item-info center-xs middle-xs font-c-w"><i class="fa fa-eye" aria-hidden="true"></i>
-                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Photography</span>
+                <h2 class="font-w-b">Labore et dolore magnam </h2><span>Branding</span>
               </div>
             </div>
           </div>
@@ -333,5 +333,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/filter.js"></script>
   </body>
 </html>

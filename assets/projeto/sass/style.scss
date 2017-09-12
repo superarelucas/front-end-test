@@ -248,6 +248,11 @@ header{
     
     }
 }
+
+.All,.Branding,.Logo,.Photography,.Web{
+transition: .3s;
+}
+
 .item-works{
   .item-content{
     height: 300px;

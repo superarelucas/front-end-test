@@ -219,6 +219,9 @@ header nav ul .active {
   background-color: #0eb493;
   color: #fff; }
 
+.All, .Branding, .Logo, .Photography, .Web {
+  transition: .3s; }
+
 .item-works .item-content {
   height: 300px;
   background-attachment: initial; }
