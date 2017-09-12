@@ -58,12 +58,18 @@ a{
   padding-top: 10px;
 }
 
-#slide{
+.slide{
   @extend .bg-paralax;
   height: 100vh;
   &-01{
-    @extend #slide;
+    @extend .slide;
     background-image: url('../img/slide-01.png')}
+  &-02{
+    @extend .slide;
+    background-image: url('../img/slide-02.png')}
+  &-03{
+    @extend .slide;
+    background-image: url('../img/slide-03.png')}
 }
 
 header{
@@ -585,6 +591,20 @@ transition: .3s;
         transform: scale(1);
     }
 }
+  }
+
+  .has-slider{
+    .team-slide-01,.team-slide-02,.team-slide-03,.features-slide-01,.features-slide-02,.features-slide-03{
+      opacity: 0;
+      overflow: hidden;
+      height: 0;
+      transition: 1s;
+    }
+    .row.active{
+      opacity: 1;
+      transition: 1s;
+      height: initial;
+    }
   }
 
 ///////////////////

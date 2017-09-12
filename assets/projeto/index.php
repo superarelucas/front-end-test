@@ -5,9 +5,9 @@
   <meta name="description" content="Projeto criado por Kaue Prata"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-  <link href="css/style.css?28" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css?30" rel="stylesheet" type="text/css"/>
   <body>
-    <section class="container-fluid" id="slide-01">
+    <section class="container-fluid slide-01" id="bg-slider">
       <header class="row">
         <div class="container pad-lr-0">
           <div class="row mar-lr-0">
@@ -36,18 +36,18 @@
             </div>
           </div>
           <div class="social-buttons"><a class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a></div>
-          <div class="slide-controler"><a class="active" slide-control="slide-01"></a><a slide-control="slide-01"></a><a slide-control="slide-01"></a></div>
+          <div class="slide-controler"><a class="active" id="slide-01" onClick="bgslider(&quot;slide-01&quot;)"></a><a id="slide-02" onClick="bgslider(&quot;slide-02&quot;)"></a><a id="slide-03" onClick="bgslider(&quot;slide-03&quot;)"></a></div>
         </div>
       </section>
     </section>
-    <section class="container">
+    <section class="container has-slider">
       <div class="row">
         <div class="col-12 center-xs">
           <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Features</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-xl-4 slide-item" slide-control="slide-01">
+      <div class="row features-slide-01 active">
+        <div class="col-xs-12 col-xl-4 slide-item">
           <div class="container-fluid pad-lr-0">
             <div class="row mar-lr-0">
               <div class="col-3 center-xs"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-xl-4 slide-item" slide-control="slide-01">
+        <div class="col-xs-12 col-xl-4 slide-item">
           <div class="container-fluid pad-lr-0">
             <div class="row mar-lr-0">
               <div class="col-3 center-xs"><i class="fa fa-pencil" aria-hidden="true"></i></div>
@@ -69,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-xl-4 slide-item" slide-control="slide-01">
+        <div class="col-xs-12 col-xl-4 slide-item">
           <div class="container-fluid pad-lr-0">
             <div class="row mar-lr-0">
               <div class="col-3 center-xs"><i class="fa fa-volume-down" aria-hidden="true"></i></div>
@@ -80,8 +80,78 @@
             </div>
           </div>
         </div>
-        <div class="slide-controler-2 center-xs"><a class="active" slide-control="slide-01"></a><a slide-control="slide-01"></a><a slide-control="slide-01"></a></div>
       </div>
+      <div class="row features-slide-02">
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Branding - 2</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Development - 2</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-volume-down" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Consulting - 2</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row features-slide-03">
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Branding - 3</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Development - 3</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-xl-4 slide-item">
+          <div class="container-fluid pad-lr-0">
+            <div class="row mar-lr-0">
+              <div class="col-3 center-xs"><i class="fa fa-volume-down" aria-hidden="true"></i></div>
+              <div class="col-9">
+                <h1 class="font-c-blue font-w-sb mar-tb-0">Consulting - 3</h1>
+                <p class="font-c-blue font-s-1 o-70">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-controler-2 center-xs"><a class="active" id="features-slide-01" onClick="changeslide(&quot;features-slide-01&quot;)"></a><a id="features-slide-02" onClick="changeslide(&quot;features-slide-02&quot;)"></a><a id="features-slide-03" onClick="changeslide(&quot;features-slide-03&quot;)"></a></div>
     </section>
     <section class="container">
       <div class="row">
@@ -166,7 +236,7 @@
           </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container has-slider">
       <div class="row">
         <div class="col-12 center-xs">
           <h1 class="font-c-h font-s-2 font-st-upper mar-t-70">Meet Our Team</h1><span class="ornament font-s-1 font-c-h3"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
@@ -177,7 +247,7 @@
           <p class="font-c-blue font-w-eb o-80">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row team-slide-01 active">
           <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
             <div class="item-content content-1">
               <div class="item-info center-xs middle-xs font-c-w">
@@ -223,9 +293,101 @@
             </div>
           </div>
       </div>
+      <div class="row team-slide-02">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-2">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">John Filmr Doe</h1><span class="font-c-blue o-50 job">Managing Director</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-3">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Chystine Hineu</h1><span class="font-c-blue o-50 job">Lead Designer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-4">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Martin Matrone</h1><span class="font-c-blue o-50 job">Lead Developer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-1">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Steve Flaulkin</h1><span class="font-c-blue o-50 job">Sr. UI Designer</span>
+            </div>
+          </div>
+      </div>
+      <div class="row team-slide-03">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-3">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">John Filmr Doe</h1><span class="font-c-blue o-50 job">Managing Director</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-4">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Chystine Hineu</h1><span class="font-c-blue o-50 job">Lead Designer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-1">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Martin Matrone</h1><span class="font-c-blue o-50 job">Lead Developer</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 item-team">
+            <div class="item-content content-2">
+              <div class="item-info center-xs middle-xs font-c-w">
+                <h2 class="font-w-b font-s-1">Nemo enim ipsam voluptatem quia voluptas </h2><span>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
+                <div class="social-buttons"><a class="social" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="social" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="data center-xs">
+              <h1 class="font-s-1 name">Steve Flaulkin</h1><span class="font-c-blue o-50 job">Sr. UI Designer</span>
+            </div>
+          </div>
+      </div>
       <div class="row">
         <div class="col-12">
-          <div class="slide-controler-2 center-xs"><a class="active" slide-control="slide-01"></a><a slide-control="slide-01"></a><a slide-control="slide-01"></a></div>
+          <div class="slide-controler-2 center-xs"><a class="active" id="team-slide-01" onClick="changeslide(&quot;team-slide-01&quot;)"></a><a id="team-slide-02" onClick="changeslide(&quot;team-slide-02&quot;)"></a><a id="team-slide-03" onClick="changeslide(&quot;team-slide-03&quot;)"></a></div>
         </div>
       </div>
     </section>
@@ -239,16 +401,16 @@
           </div>
           <div class="row">
               <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-clock-o" aria-hidden="true"></i>
-                <h3 class="font-s-5 font-w-sb mar-tb-10">3200</h3><span class="font-s-1-5 font-st-upper">Hours of Work</span>
+                <h3 class="font-s-5 font-w-sb mar-tb-10" id="fun-hour">3200</h3><span class="font-s-1-5 font-st-upper">Hours of Work</span>
               </div>
               <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-users" aria-hidden="true"></i>
-                <h3 class="font-s-5 font-w-sb mar-tb-10">120</h3><span class="font-s-1-5 font-st-upper">Satisfied Clinets</span>
+                <h3 class="font-s-5 font-w-sb mar-tb-10" id="fun-satis">120</h3><span class="font-s-1-5 font-st-upper">Satisfied Clinets</span>
               </div>
               <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-rocket" aria-hidden="true"></i>
-                <h3 class="font-s-5 font-w-sb mar-tb-10">360</h3><span class="font-s-1-5 font-st-upper">Projects delivered</span>
+                <h3 class="font-s-5 font-w-sb mar-tb-10" id="fun-project">360</h3><span class="font-s-1-5 font-st-upper">Projects delivered</span>
               </div>
               <div class="col-12 col-xl-3 font-c-w item-fun"><i class="fa font-s-4 item fa-trophy" aria-hidden="true"></i>
-                <h3 class="font-s-5 font-w-sb mar-tb-10">42</h3><span class="font-s-1-5 font-st-upper">Awards Won</span>
+                <h3 class="font-s-5 font-w-sb mar-tb-10" id="fun-awards">42</h3><span class="font-s-1-5 font-st-upper">Awards Won</span>
               </div>
           </div>
         </div>
@@ -334,5 +496,8 @@
       </div>
     </footer>
     <script src="js/filter.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/rollernumber.js"></script>
+    <script src="js/bg-slider.js"></script>
   </body>
 </html>

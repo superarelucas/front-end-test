@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
-.bg-paralax, #slide, #slide-01, .item-works .item-content, .item-team .item-content, #fun-facts {
+.bg-paralax, .slide, .slide-01, .slide-02, .slide-03, .item-works .item-content, .item-team .item-content, #fun-facts {
   transition: background-image 0.2s ease-in-out;
   background-attachment: fixed;
   background-position: center;
@@ -25,11 +25,17 @@ a {
   text-decoration: none;
   padding-top: 10px; }
 
-#slide, #slide-01 {
+.slide, .slide-01, .slide-02, .slide-03 {
   height: 100vh; }
 
-#slide-01 {
+.slide-01 {
   background-image: url("../img/slide-01.png"); }
+
+.slide-02 {
+  background-image: url("../img/slide-02.png"); }
+
+.slide-03 {
+  background-image: url("../img/slide-03.png"); }
 
 header {
   background-color: rgba(16, 22, 54, 0.2);
@@ -552,6 +558,17 @@ footer .fa-heart-o {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+.has-slider .team-slide-01, .has-slider .team-slide-02, .has-slider .team-slide-03, .has-slider .features-slide-01, .has-slider .features-slide-02, .has-slider .features-slide-03 {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: 1s; }
+
+.has-slider .row.active {
+  opacity: 1;
+  transition: 1s;
+  height: initial; }
 
 .mar-t-0 {
   margin-top: 0px; }

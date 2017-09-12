@@ -2,7 +2,7 @@ html
     include parts/head.pug
     include parts/mixin.pug
     body
-        section.container-fluid#slide-01
+        section.container-fluid.slide-01#bg-slider
             include parts/header.pug
             section.row#home
                 .container-fluid
@@ -29,17 +29,17 @@ html
                         a.social
                             i.fa.fa-dribbble(aria-hidden='true')
                     .slide-controler
-                        a.active( slide-control='slide-01')
-                        a( slide-control='slide-01')
-                        a( slide-control='slide-01')
-        section.container
+                        a.active#slide-01(onClick='bgslider("slide-01")')
+                        a#slide-02(onClick='bgslider("slide-02")')
+                        a#slide-03(onClick='bgslider("slide-03")')
+        section.container.has-slider
             .row
                 .col-12.center-xs
                     h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Features
                     span.ornament.font-s-1.font-c-h3
                         i.fa.fa-heart-o(aria-hidden='true')
-            .row
-                .col-xs-12.col-xl-4.slide-item(slide-control='slide-01')
+            .row.features-slide-01.active
+                .col-xs-12.col-xl-4.slide-item
                     .container-fluid.pad-lr-0
                         .row.mar-lr-0
                             .col-3.center-xs
@@ -47,7 +47,7 @@ html
                             .col-9
                                 h1.font-c-blue.font-w-sb.mar-tb-0 Branding
                                 p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                .col-xs-12.col-xl-4.slide-item(slide-control='slide-01')
+                .col-xs-12.col-xl-4.slide-item
                     .container-fluid.pad-lr-0
                         .row.mar-lr-0
                             .col-3.center-xs
@@ -55,7 +55,7 @@ html
                             .col-9
                                 h1.font-c-blue.font-w-sb.mar-tb-0 Development
                                 p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                .col-xs-12.col-xl-4.slide-item(slide-control='slide-01')
+                .col-xs-12.col-xl-4.slide-item
                     .container-fluid.pad-lr-0
                         .row.mar-lr-0
                             .col-3.center-xs
@@ -63,11 +63,62 @@ html
                             .col-9
                                 h1.font-c-blue.font-w-sb.mar-tb-0 Consulting
                                 p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            .row.features-slide-02
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-picture-o(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Branding - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-pencil(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Development - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-volume-down(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Consulting - 2
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                 
-                .slide-controler-2.center-xs
-                        a.active(slide-control='slide-01')
-                        a(slide-control='slide-01')
-                        a(slide-control='slide-01')
+            .row.features-slide-03
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-picture-o(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Branding - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-pencil(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Development - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                .col-xs-12.col-xl-4.slide-item
+                    .container-fluid.pad-lr-0
+                        .row.mar-lr-0
+                            .col-3.center-xs
+                                i.fa.fa-volume-down(aria-hidden='true')
+                            .col-9
+                                h1.font-c-blue.font-w-sb.mar-tb-0 Consulting - 3
+                                p.font-c-blue.font-s-1.o-70 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                
+            .slide-controler-2.center-xs
+                a#features-slide-01.active(onClick='changeslide("features-slide-01")')
+                a#features-slide-02(onClick='changeslide("features-slide-02")')
+                a#features-slide-03(onClick='changeslide("features-slide-03")')
         section.container
             .row
                 .col-12.center-xs
@@ -96,7 +147,7 @@ html
                 +item-work('Labore et dolore magnam ','Web','content-7')
                 +item-work('Labore et dolore magnam ','Branding','content-8')
                 
-        section.container
+        section.container.has-slider
             .row
                 .col-12.center-xs
                     h1.font-c-h.font-s-2.font-st-upper.mar-t-70 Meet Our Team
@@ -105,17 +156,27 @@ html
             .row
                 .col-12.center-xs
                     p.font-c-blue.font-w-eb.o-80 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-            .row
+            .row.team-slide-01.active
                +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','John Filmr Doe','Managing Director')
                +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','Chystine Hineu','Lead Designer')
                +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','Martin Matrone','Lead Developer')
                +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row.team-slide-02
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','Steve Flaulkin','Sr. UI Designer')
+            .row.team-slide-03
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-3','#','#','#','John Filmr Doe','Managing Director')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-4','#','#','#','Chystine Hineu','Lead Designer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-1','#','#','#','Martin Matrone','Lead Developer')
+               +item-team('Nemo enim ipsam voluptatem quia voluptas ','sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.','content-2','#','#','#','Steve Flaulkin','Sr. UI Designer')
             .row
                 .col-12
                     .slide-controler-2.center-xs
-                        a.active(slide-control='slide-01')
-                        a(slide-control='slide-01')
-                        a(slide-control='slide-01')
+                        a#team-slide-01.active(onClick='changeslide("team-slide-01")')
+                        a#team-slide-02(onClick='changeslide("team-slide-02")')
+                        a#team-slide-03(onClick='changeslide("team-slide-03")')
         .section.container-fluid.pad-tb-50#fun-facts
             .row.center-xs
                 .container
@@ -125,10 +186,10 @@ html
                             span.ornament.font-s-1.font-c-w
                                 i.fa.fa-heart-o(aria-hidden='true')
                     .row
-                        +item-fun('fa-clock-o','3200','Hours of Work')
-                        +item-fun('fa-users','120','Satisfied Clinets')
-                        +item-fun('fa-rocket','360','Projects delivered')
-                        +item-fun('fa-trophy','42','Awards Won')
+                        +item-fun('fa-clock-o','3200','Hours of Work','fun-hour')
+                        +item-fun('fa-users','120','Satisfied Clinets','fun-satis')
+                        +item-fun('fa-rocket','360','Projects delivered','fun-project')
+                        +item-fun('fa-trophy','42','Awards Won','fun-awards')
         section.container
             .row
                 .col-12.center-xs

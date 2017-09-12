@@ -8,19 +8,22 @@ function filter(classe){
     if(classe==="All"){
         for (all=0; all < categoriasMutaveis.length; all++) {
             var efeitoall = document.getElementsByClassName(categoriasMutaveis[all]);
+            document.getElementById(categoriasMutaveis[all]).classList.remove("active");
             for(all2=0; all2 < efeitoall.length; all2++){//Aplicando o Efeito ALL em todos os elementos
                 efeitoall[all2].style.transform = "scale(1)";
                 efeitoall[all2].style.filter = "grayscale(0%)";
+                document.getElementById(classe).classList.add("active");
             }
         }
     }
     else{
-        for (i=0; i < categoriasMutaveis.length; i++) { //Buscando e removendo termo
+        for (i=0; i < categoriasMutaveis.length; i++) { //Buscando e removendo termo do Array
             console.log(categoriasMutaveis[i]);
 
             if(categoriasMutaveis[i]===classe){
                 var efeitoup = document.getElementsByClassName(categoriasMutaveis[i]);
                 for(ii=0; ii < efeitoup.length; ii++){//Aplicando o Efeito UP nos elementos do termo
+                    document.getElementById(categoriasMutaveis[i]).classList.add("active");
                     efeitoup[ii].style.transform = "scale(1.05)";
                     efeitoup[ii].style.filter = "grayscale(0%)";
                 }
@@ -32,6 +35,8 @@ function filter(classe){
         for(iii=0; iii < categoriasMutaveis.length; iii++){//Buscando o Restante
         var efeitodown = document.getElementsByClassName(categoriasMutaveis[iii]);
         for(iiii=0; iiii < efeitodown.length; iiii++){//Aplicando o Efeito DOWN nos elementos Restantes
+            document.getElementById(categoriasMutaveis[iii]).classList.remove("active");
+            document.getElementById('All').classList.remove("active");
             efeitodown[iiii].style.transform = "scale(.5)";
             efeitodown[iiii].style.filter = "grayscale(100%)";
         }
