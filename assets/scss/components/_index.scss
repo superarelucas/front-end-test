@@ -1,0 +1,597 @@
+header {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 0 10px 2px #000;
+	z-index: 2;
+
+	.navbar{
+		&-default {
+			background-color: transparent;
+			border-color: transparent;
+			margin-bottom: 0;
+		}
+
+		&-brand {
+			font-size: 28px;
+			font-family: $font-pacifico;
+			color: $white;
+			line-height: 1.2;
+			text-align: left;
+			padding: 0px;
+			padding-right: 20px;
+		}
+	}
+
+	.brandi {
+		&--mensagem {
+			font-size: 16px;
+			color: rgba(50, 176, 238, 0.302);
+			line-height: 1.2;
+			vertical-align: middle;
+			margin-top: 10px;
+
+			&::before {
+				content: "";
+				border-left: 1px solid rgba(50, 176, 238, 0.302);
+				padding-right: 7px;
+			}
+		}
+
+		@media(min-width: 768px){
+			& {
+				width: 35%;
+			}
+		}
+	}
+
+	.menu {
+		text-align: left;
+
+		a {
+			font-size: 13px;
+			color: $white;
+			line-height: 1.2;
+			text-transform: capitalize;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $blue;
+				transition: all 0.2s ease;
+			}
+
+		}
+	}
+}
+
+.jumbotron {
+	margin-bottom: 0;
+
+	&--image {
+		background: url("../../images/header_img.png") no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.text-principal {
+		text-align: center;
+		margin-top: 268px;
+
+		h1 {
+			font-size: 62px;
+			color: $white;
+			line-height: 1.2;
+			text-transform: capitalize;
+		}
+
+		.sub-title {
+			line-height: 1.2;
+			font-size: 48px;
+			color: $white;
+
+			span {
+				color: $green;
+			}
+		}
+
+		hr {
+			display: inline-block;
+			width: 3%;
+			margin: 0;
+			vertical-align: middle;
+			color: $green;
+		}
+
+		&--auxiliar {
+			font-size: 18px;
+			color: $white;
+			line-height: 1.2;
+			text-align: center;
+			margin: 0 15px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.redes-sociais {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.icon {
+	margin: 0 7px;
+	color: rgba(#fff, 0.32);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white;
+		transition: all 0.2s ease;
+	}
+
+	&--gray {
+		margin: 0 7px;
+	}
+}
+
+.features {
+	background-color: $gray;
+	padding-bottom: 15px;
+
+	&--media {
+		.media-body {
+			h4 {
+				font-size: 20px;
+				color: $blue-dark;
+				line-height: 1.2;
+				text-align: left;
+			}
+
+			p {
+				font-size: 13px;
+				color: rgba(#062033, 0.7);
+				line-height: 1.615;
+				text-align: left;
+			}
+		}
+	}
+}
+
+.text--topics {
+	margin-bottom: 60px;
+
+	h1 {
+		font-size: 28px;
+		color: $blue-ligth;
+		line-height: 1.2;
+		text-align: center;
+		margin-top: 70px;
+	}
+
+	hr {
+		display: inline-block;
+		width: 10%;
+		margin: 0 0 0 0;
+		vertical-align: middle;
+		color: $blue-dark;
+	}
+}
+
+.works {
+	background-color: $white;
+	padding-bottom: 60px;
+
+	p {
+		font-size: 18px;
+		color: rgba(#062033, 0.8);
+		line-height: 1.333;
+		margin-bottom: 30px;
+	}
+
+	.list-option {
+		margin-bottom: 30px;
+
+		ul{
+			li {
+				&.active {
+					border-radius: 6px;
+					background-color: $green;
+					padding: 7px 19px;
+				}
+
+				a {
+					font-size: 14px;
+					color: $blue-dark;
+					font-weight: bold;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+
+	.imagem-layers {
+		display: inline-block;
+
+		.layer {
+			position: relative;
+
+			&--hover {
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+				top: 0;
+				height: 100%;
+				background-color: rgba(#0FEB9E, 0.9);
+				display: none;
+
+				.eyes {
+					border-radius: 50%;
+					border: 2px solid rgba(255, 255, 255, 0.32);
+					width: 50px;
+					height: 50px;
+					position: relative;
+					display: inline-block;
+					margin-top: 90px;
+
+					.icon {
+						color: $white;
+						position: absolute;
+						top: 15%;
+						left: 5%;
+					}
+				}
+
+				h5 {
+					font-size: 18px;
+					color: $white;
+					font-weight: bold;
+					line-height: 1.333;
+				}
+
+				p {
+					font-size: 16px;
+					color: $white;
+					line-height: 1.333;
+				}
+			}
+		}
+
+		img {
+			@media(max-width:992px) {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.team {
+	background-color: $white;
+	padding-bottom: 60px;
+	
+	p {
+		font-size: 18px;
+		color: rgba(#062033, 0.8);
+		line-height: 1.333;
+		margin-bottom: 45px;
+	}
+
+	.carousel-team {
+		margin-top: 30px;
+	}
+
+	&--media {
+		.imagem-person {
+			position: relative;
+		}
+		.media-body {
+			h4 {
+				font-size: 18px;
+				color: $blue-dark;
+				line-height: 1.333;
+				margin-top: 15px;
+			}
+
+			p {
+				font-size: 13px;
+				color: rgba(#062033, 0.56);
+				line-height: 1.846;
+				margin-bottom: 0;
+			}
+		}
+
+		&.active {
+			.media-body {
+				h4 {
+					color: $green;
+				}
+			}
+		}
+	}
+
+	&--hover {
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		top: 0;
+		height: 100%;
+		background-color: rgba(#0FEB9E, 0.9);
+		display: none;
+
+		.list-icons {
+			li {
+				height: 40px;
+			}
+			.icon {
+				color: $white;
+				background-color: rgba(#000, 0.3);
+				width: 100%;
+				height: 100%;
+				padding-top: 6px;
+			}
+		}
+
+		h5 {
+			font-size: 16px;
+			color: $white;
+			font-weight: bold;
+			line-height: 1.5;
+			text-align: center;
+		}
+
+		p {
+			font-size: 14px;
+			color: $white;
+			line-height: 1.333;
+		}
+	}
+}
+
+.facts {
+	background: linear-gradient(to right, rgba(7,40,64,0.9) 58%, rgba(7,40,64,0.87)),
+	url("../../images/background-fun.png") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: all 0.2s ease;
+	padding-bottom: 150px;
+	padding-top: 20px;
+
+	.rounded {
+		border-radius: 50%;
+		border: 2px solid rgba(#fff, 0.32);
+		width: 126px;
+		height: 126px;
+		position: relative;
+		display: inline-block;
+
+		.icon {
+			color: $white;
+			position: absolute;
+			top: 25%;
+			left: 25%;
+		}
+	}
+
+	article {
+		@media(max-width:768px) {
+			margin: 15px auto;
+		}
+	}
+
+	h4 {
+		margin-top: 15px;
+		font-size: 60px;
+		color: $white;
+		line-height: 1.2;
+	}
+
+	p {
+		font-size: 18px;
+		color: $white;
+		line-height: 1.2;
+	}
+}
+
+.discuss {
+	background-color: $white;
+
+	p {
+		font-size: 18px;
+		color: rgba(#062033, 0.8);
+		line-height: 1.333;
+		margin-bottom: 30px;
+	}
+
+	h4 {
+		font-size: 22px;
+		color: $blue-dark;
+		line-height: 1.455;
+	}
+
+	span {
+		font-size: 12px;
+		color: $blue-dark;
+	}
+
+	h3 {
+		font-size: 24px;
+		color: $blue-dark;
+		font-weight: bold;
+		line-height: 1;
+	}
+
+	form {
+		.gform-body {
+			input {
+				border: none;
+				border-bottom: 1px solid rgba(#000, 0.2);
+				outline: none;
+				width: 49%;
+				display: inline-block;
+				float: right;
+				height: 40px;
+				margin-bottom: 15px;
+				padding-left: 15px;
+
+				&:first-child {
+					margin-right: 15px;
+					float: left;
+				}
+
+				&:last-child {
+					width: 100%;
+					float: left;
+				}
+
+				@media(max-width:1200px) {
+					& {
+						width: 43%;
+					}
+				}
+
+				@media(max-width:992px) {
+					& {
+						width: 45%;
+					}
+				}
+
+				@media(max-width:768px) {
+					& {
+						width: 100%;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		.gform-footer {
+			margin-top: 15px;
+			clear: both;
+
+			a {
+				font-size: 16px;
+				color: $black;
+				line-height: 1.5;
+
+				.icon {
+					color: $blue-ligth;
+				}
+			}
+		}
+	}
+
+	ul {
+		li {
+			margin: 15px 0;
+
+			@media(max-width:768px) {
+				& {
+					display: inline-block;
+				}
+			}
+
+			.icon {
+				color: rgba(#062033, 0.2);
+				&:hover,
+				&:focus,
+				&:active {
+					color: $blue-dark;
+					transition: all 0.2s ease;
+				}
+
+			}
+		}
+	}
+
+	iframe {
+		width: 100%;
+		height: 220px;
+		margin-top: 85px;
+	}
+}
+
+footer {
+	padding: 100px 0;
+	border-top:10px solid $blue-dark;
+	background-color: $blue-ligth;
+
+	.brand {
+		font-size: 28px;
+		font-family: $font-pacifico;
+		color: $white;
+		line-height: 1.2;
+		text-align: left;
+		padding: 0px;
+		padding-right: 20px;
+	}
+
+	p {
+		font-size: 13px;
+		color: $white;
+		line-height: 1.846;
+		text-align: left;
+	}
+
+	h4 {
+		font-size: 14px;
+		color: rgba(#fff, 0.8);
+		font-weight: bold;
+		line-height: 1.714;
+		text-align: left;
+		margin-top: 20px;
+	}
+
+	.last-section {
+		padding-top: 50px;
+
+		.icon--gray {
+			color: $blue-dark;
+		}
+
+		span {
+			color: $blue-dark;
+		}
+	}
+
+	.created {
+		padding-top: 45px;
+
+		span {
+			color: $blue-dark;
+		}
+	}
+}
+
+.form-email {
+	position: relative;
+	margin-bottom: 15px;
+
+	.gform-body {
+		input {
+			width: 100%;
+			background-color: transparent;
+			border: 1px solid $white;
+			height: 45px;
+			padding-left: 15px;
+			color: $white;
+
+			&::placeholder {
+				font-size: 13px;
+				color: rgba(#5B646E, 0.502);
+				line-height: 1.846;
+				text-align: left;
+			}
+		}
+	}
+
+	.gform-footer {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}
+
+.sucesso {
+	text-align: center;
+	color: $blue-dark;
+	font-size: 40px;
+}
