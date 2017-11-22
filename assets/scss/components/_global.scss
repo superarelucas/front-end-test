@@ -1,0 +1,55 @@
+body {
+	font-family: $font-open-sans;
+
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+		}
+	}
+
+	.owl-carousel {
+		margin-bottom:55px;
+
+		.owl-item img {
+			width: auto;
+		}
+
+		.owl-dots {
+			text-align: center;
+			margin-top: 30px;
+
+			.owl-dot {
+				background-color: transparent;
+				border-radius: 50%;
+				display: inline-block;
+				height: 8px !important;
+				margin: 0 4px;
+				width: 8px !important;
+				border: 1px solid $blue-dark;
+
+				&.active {
+					background-color: $blue-dark;
+				}
+			}
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	input {
+		&::placeholder {
+			font-size: 13px;
+			color: rgba(#5B646E, 0.502);
+			line-height: 1.846;
+			text-align: left;
+		}
+	}
+}
