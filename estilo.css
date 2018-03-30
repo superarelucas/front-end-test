@@ -1,0 +1,498 @@
+/*
+* Autora: Brunna Silva;
+*
+*/
+
+
+/* =============== Layout =============== */
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+    font-size: 13px;
+    color: #6a737b;
+}
+
+ .destaque{
+ 	margin-top: 0px;
+ 	padding: 60px;
+ }
+
+/* Barra de navegação */
+.img-logo {
+    height: auto;
+    width: 216px;
+    margin: 7px;
+    display: block;
+    background: url(imagens/logo.png) no-repeat;
+    background-size: cover;
+    color: transparent;
+}
+
+nav.navbar-transparente{
+	padding: 00px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+	line-height: 23px;
+} 
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    border-top: 1px solid #32B0EE;
+    margin-top: 0px;
+    height: 40px;
+}
+
+/* Capa Slide */
+.capa {
+    background-image: url(imagens/header.png);
+    background-size: cover;
+    height: 949px;
+}
+
+ .destaque-slide{
+ 	margin-top: 0px;
+ 	padding: 0px;
+}
+
+.caption:before, .caption:after {
+    content: "____";
+    color: #0eb493;
+    position: relative;
+    bottom: 6px;
+    padding: 12px;
+}
+
+.title {
+    margin: 0 auto;
+    padding-top: 500px;
+    width: 50%;
+    text-align: center;
+    color: #ffffff;
+}  
+
+.title h1{
+	font-size: 60px;
+}
+
+.title h2{
+	font-size: 40px;
+}
+
+.title a{
+	color: #fff;
+	font-size: 20px;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.title a:hover{
+	color: #fff;
+	opacity: 1.5;
+}
+
+    
+.carousel-inner,.carousel,.item, {
+  height:100%;
+ */  background-position:center center;
+  background-size:cover;
+  position: relative;
+}
+
+.slide-wrapper{
+	display:inline;
+}
+
+.slide-wrapper .container{
+	padding:0px;
+}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ 
+	transform: translate3d(0, 100%, 0); 
+	-webkit-transform: translate3d(0, 100%, 0); 
+	-ms-transform: translate3d(0, 100%, 0); 
+	-moz-transform: translate3d(0, 100%, 0); 
+	-o-transform: translate3d(0, 100%, 0);  
+	top: 0;
+}
+
+.carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ 
+	transform: translate3d(0,-100%, 0); 
+	-webkit-transform: translate3d(0,-100%, 0);  
+	-moz-transform: translate3d(0,-100%, 0);
+	-ms-transform: translate3d(0,-100%, 0); 
+	-o-transform: translate3d(0,-100%, 0); 
+	top: 0;
+}
+
+.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{
+	transform:translate3d(0,0,0); 
+	-webkit-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);; 
+	-moz-transform:translate3d(0,0,0); 
+	-o-transform:translate3d(0,0,0); 
+	top:0;
+}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators{
+position:absolute;
+top:0;
+bottom:0;
+margin:auto;
+height:20px;
+right:10px; left:auto;
+width:auto;
+}
+.carousel-indicators li{
+	display:block; 
+	margin-bottom:5px; 
+	border:1px solid #fff; 
+}
+
+.carousel-indicators li.active{
+	margin-bottom:5px; 
+	background: #fff;
+}
+
+
+/* =========== Conteúdo =========== */
+
+/* Feature */
+ #feature{
+ 	background: #f4f7f9;
+ }
+
+.titulos h2{
+  	color: #0eb493;
+  	font-weight: 800;
+  	padding: 15px;
+  	text-transform: uppercase;
+}
+
+.separador{
+	padding-bottom: 15px;	
+}
+
+.separador-icon{
+	font-size: 15px;
+}
+
+.separador:before, .separador:after {
+    content: "______________________";
+    color: #e6e8ea;
+    position: relative;
+    bottom: 6px;
+}
+
+#divisor{
+	text-align: center;
+    color: #e6e8ea;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.features-icon {
+    border: 1px solid #0eb493;
+    border-radius: 50%;
+    color: #0eb493;
+    float: left;
+    padding: 10px 13px;
+}
+
+.features-desc {
+    margin-left: 70px;
+    position: relative;
+    top: 5px;
+}
+
+
+/* Works */
+.works{
+	background: #fff;
+}
+
+.descricao{
+	font-weight: 600;
+	padding: 15px;
+    font-size: 18px;
+	color: #000;
+}
+
+.works-link{
+	text-align: center;
+}
+
+.works-link ul li{
+	display: inline-block;
+}
+
+.works-link a{
+	color: #000;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.works-link a:hover{
+	color: #fff;
+	background-color: #0eb493;
+    border-radius: 6px;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.works img{
+	width: 470px;
+    height: 292px;
+}
+
+.quadro1{
+	background: #cc9966;
+	padding: 0px;
+}
+
+.quadro2{
+	background: #666666;
+	padding: 0px;
+}
+
+/* Team */
+
+
+
+.team img{
+    width: 273px;
+    height: 303px;
+    position: relative;
+    -webkit-filter:grayscale(100%);
+
+}
+
+ .image:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
+}
+
+.team h4 {
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 15px 0 8px;
+}
+
+.team a{
+	color: #000;
+	text-decoration: none;
+}
+
+.team a:hover{
+	color: #0eb493;
+}
+
+/* Fun  */
+
+.fun{
+ 	background-image: url('imagens/fundo.png');
+ 	background-size: cover;
+	background-color: rgba(6,32,51,.8);
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 0;
+}
+
+.fun .divisor:before,
+.fun .divisor:after {
+	color: #737C85;
+}
+
+.fun .divisor i {
+	color: #fff;
+}
+
+.overlay {
+	background-color: rgba(6,32,51,.8);
+	padding: 70px 0;
+}
+
+.fun-icon{
+	font-size: 30px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 40px;
+    color: #fff;
+    display: inline-block;
+    margin: 30px;
+}
+
+.fun h1{
+	color: #fff;
+	font-weight: 700;
+	font-size: 60px;
+}
+
+.fun p{
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.fun p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.conteudo:after .conteudo:before{
+	z-index: 10;
+}
+
+.formulario h1{
+    color: #062033;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+
+.formulario .form-control{
+    border-color: -moz-use-text-color -moz-use-text-color #cccccc;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.formulario .input-field{
+	width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.formulario button{
+    border: 0 none;
+    color: #000;
+    background: #fff;
+    font-size: 22px;
+    line-height: 24px;
+    padding: 10px;
+    text-align: right;
+    float: right;
+}
+
+.formulario .fa-envelope{
+	color: #0eb493;
+}
+
+
+.social-lateral {
+    margin-top: 17px;
+    list-style-type: none;
+}
+
+.social-lateral li a{
+    color: #cdd2d6;
+    margin-bottom: 11px;
+    margin-left: -25px;
+    display: block;
+    font-size: 23px;
+}
+
+.mapa {
+    background-image: url(imagens/mapa.png);
+    background-size: cover;
+    padding: 130px;
+}
+
+
+/* ========== Footer ========== */
+footer{
+	padding: 70px;
+    background: #0eb493;
+    color: #fff;
+    border-top: 10px solid #000;
+}
+
+footer a{
+	color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+	color: #000;
+    text-decoration: none;
+}
+
+
+footer h6{
+	font-weight: 900;
+    letter-spacing: 1.3px;
+    padding-bottom: 26px;
+}
+
+.img-logo-footer {
+    height: auto;
+    width: 216px;
+    margin: 7px;
+    display: block;
+    background: url(imagens/logo-footer.png) no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.footer-coluna ul{
+	list-style-type: none;
+	margin-left: -39px;
+}
+
+#footer-coluna{
+    margin-top: 61px;
+    margin-left: -47px;
+}
+
+.subscribe #sub {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 24px;
+    margin: 60px 19px 0px 0px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.subscribe #subscribe {
+    background-color: transparent; 
+    border: 2px solid #fff;
+    border-radius: 2px;
+    height: 40px;
+    text-indent: 10px;
+    width: 100%;
+}
+
+.footer-single .subscribe {
+    margin-bottom: 15px;
+    position: relative;
+}
