@@ -89,6 +89,10 @@ nav ul li{
     padding-top: 100px;
 }
 
+.features h2, .features p{
+    text-align: center;
+}
+
 .features .usability{
     transition: transform .2s;
 }
@@ -124,10 +128,15 @@ nav ul li{
 
 .widgets{
     margin-top: 100px;
+    text-align: center;
 }
 
 .screenshots{
     margin-top: 100px;
+}
+
+.screenshots h2,.screenshots p{
+    text-align: center;
 }
 
 .screenshots .screen1 h6, .screen2 h6, .screen3 h6{
@@ -270,12 +279,11 @@ footer ul li{
 
 footer ul li a{
     text-decoration: none;
-    color: white;
+    color: #a5a5b9;
 }
 
 footer .footer_conteudo{
     display: block;
-    max-width: 1000px;
     margin: auto;
     color: white;
     padding-top: 100px;
@@ -294,9 +302,7 @@ footer .footer_conteudo .weather{
     display: inline-block;
 }
 
-.footer_content li{
-    margin-right: 100px;
-}
+
 
 @media (min-width: 320px){
     .nova_classe {
@@ -409,4 +415,6 @@ footer .footer_conteudo .weather{
 
   small{
       float: right;
+      padding-bottom: 50px;
+      color: #4e527a;
   }

@@ -14,9 +14,9 @@
 </head>
 <body>
     <main>
-        <header id="hm" class="container-fluid d-flex justify-content-center">
+        <header id="hm" class="">
             <!-- BOOTSTRAP NAVBAR RESPONSIVO -->
-            <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down">
+            <nav class="navbar navbar-expand-lg navbar-light container" data-aos="fade-down">
                     <a class="logo navbar-brand text-white" href="#">Fun Weather</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -47,29 +47,31 @@
         </header>
 
         <!-- PRIMEIRO CONTEUDO COM ICONES FLUTUANTES E BG ANIMADO -->
-        <div id="fs" class="first_screen container-fluid d-flex justify-content-center">
-            <div class="row fadeIn">
-                <div class="conteudo_direita col-lg-6 col-sm-12">
-                    <h1><b>Get the most fun weather app</b></h1>
-                    <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
-                    <a href="#dw"><button>Download</button></a>
-                    <a href="#pf"><button class="features_btn">Features</button></a>
-                </div>
-                <div class="nova_classe col-lg-6 col-sm-12">
-                    <img class="sol_img" src="assets/images/sunny_circle.png" alt="sunny_cicle">
-                    <img src="assets/images/phone.png" alt="phone">
-                    <img class="nove_img" src="assets/images/9_circle.png" alt="nove_circle">
-                    <img class="london_img" src="assets/images/london_circle.png" alt="london_circle">
-                    <img class="rio_img" src="assets/images/rio_circle.png" alt="rio_circle">
+        <div id="fs" class="first_screen">
+            <div class="container">
+                <div class="row fadeIn">
+                    <div class="conteudo_direita col-lg-6 col-sm-12">
+                        <h1><b>Get the most fun weather app</b></h1>
+                        <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                        <a href="#dw"><button>Download</button></a>
+                        <a href="#pf"><button class="features_btn">Features</button></a>
+                    </div>
+                    <div class="nova_classe col-lg-6 col-sm-12">
+                        <img class="sol_img" src="assets/images/sunny_circle.png" alt="sunny_cicle">
+                        <img src="assets/images/phone.png" alt="phone">
+                        <img class="nove_img" src="assets/images/9_circle.png" alt="nove_circle">
+                        <img class="london_img" src="assets/images/london_circle.png" alt="london_circle">
+                        <img class="rio_img" src="assets/images/rio_circle.png" alt="rio_circle">
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- SECTIONS ANIMADA COM :HOVER -->
-        <div class="container d-flex justify-content-center" data-aos="zoom-in">
+        <div class="container" data-aos="zoom-in">
             <div id="pf" class="features">
-                <h2 class="d-flex justify-content-center"><b>Perfect Features</b></h2>
-                <p class="d-flex justify-content-center text-secondary">Only necessary</p>
+                <h2 class=""><b>Perfect Features</b></h2>
+                <p class="text-secondary">Only necessary</p>
                 <div class="features_conteudo row">
                     <div class="usability col-lg-4 col-sm-12 row">
                         <div class="col-4">
@@ -104,10 +106,10 @@
 
 
         <!-- DRAG AND DROP POSSIVEL DE ARRASTAR -->
-        <div class="container d-flex justify-content-center">
-            <div class="widgets">
-                <h2 class="d-flex justify-content-center"><b>Simple Widgets</b></h2>
-                <p class="d-flex justify-content-center text-secondary">Drag and Drop</p>
+        <div class="widgets">
+            <div class="container">
+                <h2><b>Simple Widgets</b></h2>
+                <p class="text-secondary">Drag and Drop</p>
                 <div class="drag_drop">
                     <div>
                         <img id="drag1" src="assets/images/rio_drag.png" alt="rio" draggable="true" ondragstart="drag(event)">
@@ -118,7 +120,7 @@
                     <div>
                         <img id="drag3" src="assets/images/london_drag.png" alt="london" draggable="true" ondragstart="drag(event)">
                     </div>
-                    <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="container" id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
                     </div>
                 </div>
             </div>
@@ -126,10 +128,10 @@
 
 
         <!-- SCREENSHOTS DAS TELAS MOBILE COM ANIMACOES LEFT E RIGHT -->
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="screenshots">
-                <h2 class="d-flex justify-content-center"><b>Screenshots</b></h2>
-                <p class="d-flex justify-content-center text-secondary">The brightest images</p>
+        <div class="screenshots">
+            <div class="container">
+                <h2><b>Screenshots</b></h2>
+                <p class="text-secondary">The brightest images</p>
                 <div class="screen1 row">
                     <div class="screen1_div col-lg-6 col-sm-12" data-aos="fade-right">
                         <img src="assets/images/screen1.png" alt="cloudy_screen">
@@ -165,8 +167,8 @@
 
 
         <!-- AVALIACOES DOS CLIENTES COM ANIMACAO FLIP -->
-        <div class="container d-flex justify-content-center">
-            <div id="rw" class="reviews">
+        <div class="reviews">
+            <div id="rw" class="container">
                 <h2 class="d-flex justify-content-center fadeIn"><b>What people are saying</b></h2>
                 <p class="d-flex justify-content-center text-secondary fadeIn">Reviews</p>
                 <div class="row">
@@ -192,8 +194,8 @@
 
 
         <!-- DIV DOWNLOAD COM PARALLAX DO BG -->
-        <div class="dnwld container-fluid d-flex justify-content-center">
-            <div id="dw" class="download">
+        <div class="dnwld">
+            <div id="dw" class="download container">
                 <div class="download_conteudo">
                     <h2>How Donwload the App?</h2>
                     <p class="col-lg-4 col-sm-12">Just download the app from the store. Simple, nice and user-friendly application of theweather. Only relevant and useful information.</p>
@@ -204,22 +206,24 @@
         </div>
 
         <footer>
-            <div class="footer_conteudo justify-content-center d-flex">
-                <p><span class="fun">Fun</span><span class="weather">Weather.</span></p>
-                <ul>
-                    <li><a href="#fs">Home</a></li>
-                    <li><a href="#pf">Features</a></li>
-                    <li><a href="#rw">Reviews</a></li>
-                    <li><a href="#dw">Download</a></li>
-                </ul>
-                <div class="social_media_icons text-white">
-                    <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <div class="footer_conteudo container">
+                <div class="row">
+                    <p><span class="fun">Fun</span><span class="weather">Weather.</span></p>
+                    <ul>
+                        <li><a href="#fs">Home</a></li>
+                        <li><a href="#pf">Features</a></li>
+                        <li><a href="#rw">Reviews</a></li>
+                        <li><a href="#dw">Download</a></li>
+                    </ul>
+                    <div class="social_media_icons text-white">
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
+                <hr>
+                <small>&copy; 2018 All Rights Lucas Palmieri</small>
             </div>
-            <hr>
-            <small>&copy; 2018 All Rights Lucas Palmieri</small>
         </footer>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
