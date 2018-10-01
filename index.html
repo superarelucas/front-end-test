@@ -6,10 +6,11 @@
     <title>Fun Weather</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
     <main>
@@ -55,11 +56,11 @@
                     <a href="#pf"><button class="features_btn">Features</button></a>
                 </div>
                 <div class="nova_classe col-lg-6 col-sm-12">
-                    <img class="sol_img" src="sunny_circle.png" alt="sunny_cicle">
-                    <img src="phone.png" alt="phone">
-                    <img class="nove_img" src="9_circle.png" alt="nove_circle">
-                    <img class="london_img" src="london_circle.png" alt="london_circle">
-                    <img class="rio_img" src="rio_circle.png" alt="rio_circle">
+                    <img class="sol_img" src="assets/images/sunny_circle.png" alt="sunny_cicle">
+                    <img src="assets/images/phone.png" alt="phone">
+                    <img class="nove_img" src="assets/images/9_circle.png" alt="nove_circle">
+                    <img class="london_img" src="assets/images/london_circle.png" alt="london_circle">
+                    <img class="rio_img" src="assets/images/rio_circle.png" alt="rio_circle">
                 </div>
             </div>
         </div>
@@ -72,7 +73,7 @@
                 <div class="features_conteudo row">
                     <div class="usability col-lg-4 col-sm-12 row">
                         <div class="col-4">
-                            <img src="diamond.png" alt="diamond_icon">
+                            <img src="assets/images/diamond.png" alt="diamond_icon">
                         </div>
                         <div class="col-8">
                             <h6><b>Usability</b></h6>
@@ -81,7 +82,7 @@
                     </div>
                     <div class="paralax col-lg-4 col-sm-12 row">
                         <div class="col-4">
-                            <img src="paralax.png" alt="paralax_icon">
+                            <img src="assets/images/paralax.png" alt="paralax_icon">
                         </div>
                         <div class="parallax col-8">
                             <h6><b>Parallax Effect</b></h6>
@@ -90,7 +91,7 @@
                     </div>
                     <div class="unlimites col-lg-4 col-sm-12 row">
                         <div class="col-4">
-                            <img src="unlimites.png" alt="unlimites_icon">
+                            <img src="assets/images/unlimites.png" alt="unlimites_icon">
                         </div>
                         <div class="col-8">
                                 <h6><b>Unlimites Colors</b></h6>
@@ -109,13 +110,13 @@
                 <p class="d-flex justify-content-center text-secondary">Drag and Drop</p>
                 <div class="drag_drop">
                     <div>
-                        <img id="drag1" src="rio_drag.png" alt="rio" draggable="true" ondragstart="drag(event)">
+                        <img id="drag1" src="assets/images/rio_drag.png" alt="rio" draggable="true" ondragstart="drag(event)">
                     </div>
                     <div>
-                        <img id="drag2" src="moscow_drag.png" alt="moscow" draggable="true" ondragstart="drag(event)">
+                        <img id="drag2" src="assets/images/moscow_drag.png" alt="moscow" draggable="true" ondragstart="drag(event)">
                     </div>
                     <div>
-                        <img id="drag3" src="london_drag.png" alt="london" draggable="true" ondragstart="drag(event)">
+                        <img id="drag3" src="assets/images/london_drag.png" alt="london" draggable="true" ondragstart="drag(event)">
                     </div>
                     <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
                     </div>
@@ -131,30 +132,30 @@
                 <p class="d-flex justify-content-center text-secondary">The brightest images</p>
                 <div class="screen1 row">
                     <div class="screen1_div col-lg-6 col-sm-12" data-aos="fade-right">
-                        <img src="screen1.png" alt="cloudy_screen">
+                        <img src="assets/images/screen1.png" alt="cloudy_screen">
                     </div>
                     <div class="screen1_right_conteudo col-lg-6 col-sm-12" data-aos="fade-left">
-                            <img src="cloudy_icon.png" alt="cloudy_icon">
+                        <img src="assets/images/cloudy_icon.png" alt="cloudy_icon">
                         <h6><b>When the clouds</b></h6>
                         <p><b>Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</b></p>
                     </div>
                 </div>
                 <div class="screen2 row">
                     <div class="screen2_left_conteudo col-lg-6 col-sm-12" data-aos="fade-right">
-                        <img src="sunny_icon.png" alt="sunny_icon">
-                        <h6><b>When the clouds</b></h6>
-                        <p><b>Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</b></p>
+                    <img src="assets/images/sunny_icon.png" alt="sunny_icon">
+                    <h6><b>When the clouds</b></h6>
+                    <p><b>Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</b></p>
                     </div>
                     <div class="imagem_screen2 col-lg-6 col-sm-12" data-aos="fade-left">
-                        <img src="screen2.png" alt="sunny_screen">
+                        <img src="assets/images/screen2.png" alt="sunny_screen">
                     </div>
                 </div>
                 <div class="screen3 row">
                     <div class="col-lg-6 col-sm-12" data-aos="fade-right">
-                            <img src="screen3.png" alt="rainny_screen">
+                            <img src="assets/images/screen3.png" alt="rainny_screen">
                     </div>
                     <div class="screen3_right_conteudo col-lg-6 col-sm-12" data-aos="fade-left"> 
-                        <img src="rainny_icon.png" alt="rainny_icon">
+                        <img src="assets/images/rainny_icon.png" alt="rainny_icon">
                         <h6><b>When the clouds</b></h6>
                         <p><b>Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</b></p>
                     </div>
@@ -196,8 +197,8 @@
                 <div class="download_conteudo">
                     <h2>How Donwload the App?</h2>
                     <p class="col-lg-4 col-sm-12">Just download the app from the store. Simple, nice and user-friendly application of theweather. Only relevant and useful information.</p>
-                    <a href="https://www.apple.com/br/ios/app-store/"><img src="applestore.png" alt="apple_store_btn"></a>
-                    <a href="https://play.google.com/store?hl=pt_BR"><img src="googleplay.png" alt="google_play_bnt"></a>
+                    <a href="https://www.apple.com/br/ios/app-store/"><img src="assets/images/applestore.png" alt="apple_store_btn"></a>
+                    <a href="https://play.google.com/store?hl=pt_BR"><img src="assets/images/googleplay.png" alt="google_play_bnt"></a>
                 </div>
             </div>
         </div>
@@ -206,7 +207,7 @@
             <div class="footer_conteudo justify-content-center d-flex">
                 <p><span class="fun">Fun</span><span class="weather">Weather.</span></p>
                 <ul>
-                    <li><a href="#hm">Home</a></li>
+                    <li><a href="#fs">Home</a></li>
                     <li><a href="#pf">Features</a></li>
                     <li><a href="#rw">Reviews</a></li>
                     <li><a href="#dw">Download</a></li>
@@ -217,6 +218,8 @@
                     <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
+            <hr>
+            <small>&copy; 2018 All Rights Lucas Palmieri</small>
         </footer>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

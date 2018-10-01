@@ -31,7 +31,7 @@ nav ul li{
 
 .first_screen{
     background-color: #648cff;
-    background-image: url("wave1.png");
+    background-image: url("../images/wave1.png");
     background-repeat: repeat-x;
     background-position: bottom;
     padding-top: 100px;
@@ -241,7 +241,7 @@ nav ul li{
 
 .dnwld{
     background-color: #648cff;
-    background-image: url('phones_download.png');
+    background-image: url('../images/phones_download.png');
     background-position: right; 
     background-position-y: 400px;
     background-attachment: fixed;
@@ -322,6 +322,10 @@ footer .footer_conteudo .weather{
     .screen3_right_conteudo{
         margin-top: 20px;
     }
+
+    .circle_cloudy, .cloudy_circle{
+        display: none;
+    }
 }
 
 .fadeIn {
@@ -395,12 +399,14 @@ footer .footer_conteudo .weather{
     animation: float 6s ease-in-out infinite;
   }
 
-  .drag_drop{
-  }
 
   #drop{
     width: 344px;
     height: 142px;
     border: 1px dashed #aaaaaa;
     border-radius: 10px;
+  }
+
+  small{
+      float: right;
   }
