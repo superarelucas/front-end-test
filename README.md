@@ -1,61 +1,32 @@
-# Superare - Teste Front-End
+##Considerações
 
-Olá caro desenvolvedor front-end, nesse teste analisaremos seu conhecimento geral e inclusive velocidade de desenvolvimento. Abaixo explicaremos tudo o que será necessário, lembrando que, tecnologias mais recentes, aumento de complexidade, foco em performance, serão pontos positivos na sua avaliação.
+-Para rodar:
+1° - Clone o projeto
+2° - Entre na branch
+3° - Instale node.js, caso não tenha instalado na maquina e o yarn
+4° - Digite no terminal yarn install
+5° - Digite no terminal yarn start
 
-## Descrição do teste
-Essa avaliação consiste em testar seus conhecimentos de HTML, CSS, JavaScript e etc. Você será responsável por desenvolver um layout simples, presente na pasta **assets** e com algumas partes já recortadas e separadas devidamente.
+-Desenvolvi numa tela de 1366x768
 
-O tempo ideal para realização da tarefa é de **3 dias**. Também consideramos que, se demorar pouco mais do que isso, mas entregar um projeto melhor estruturado e com tecnologias mais recentes, também será tão válido quanto o de 3 dias.
+-Demorei em torno de 6h para desenvolver, considerando o tempo de setup e etc. Passei um bom tempo mexendo com as imagens.
 
-* Prazo ideal: 3 dias
-* Prazo máximo: 7 dias
+-Desenvolvi bem casualmente, não tive pressa, porem não fui muito exigente tambem, considerando que o teste busca entender minhas habilidades mesmo.
 
-Lembrando: Dentro da pasta assets, existem dois arquivos .psd. Você deve fazer **um ou outro**, não os dois (a não ser que realmente consiga fazer no tempo estimado):
+-Usei uma stack pequena e simples de react, criando o projeto atráves do create react app, por ser um projeto simples
 
-**front-end-test-page-01**
-[<img src="https://github.com/superarelucas/front-end-test/blob/master/assets/front-end-test-page-01.jpg?raw=true">]()
-**front-end-test-page-02**
-[<img src="https://github.com/superarelucas/front-end-test/blob/master/assets/front-end-test-page-02.jpg?raw=true">]()
+-Desenvolvi com flexbox o que busca ter compatibilidade com diferentes tipos de telas, mas sinto que seria necessario mais trabalho nas imagens pra tornar o site todo compativel com diferentes resoluções, alguma biblioteca de grid tambem seria uma boa.
 
-## O que você precisará fazer
-Uma das duas opções abaixo é imprescindível que seja feita. Não aceitaremos pacote .zip, .rar ou qualquer outra extensão/arquivo que não seja enviado via GIT.
+-Acredito não ter desenvolvido da melhor maneira possivel, não acho que estou acostumado a desenvolver do mesmo modo que o teste esperava que eu estivesse, eu meio que passei 1/3 do tempo de desenvolvimento só arrumando imagens no photoshop
 
-* Faça um fork desse repositório e clone para a sua máquina.
-* Crie *uma* das duas páginas dentro da pasta assets.
-* Dê um commit no projeto e avise-nos via e-mail quando finalizar (junto com o link para o seu repositório).
+-Busquei fazer a aplicação de maneira escalavel
 
-OU (ganha pontos a mais):
+-Acho que os nomes das classes não ficaram muito bons, como eu acredito que create-react-app não usa css-loaders, tive que usar nomes unicos para cada classe, o que me trouxe um pouco de dificuldade.
 
-* Clone esse repositório para sua máquina.
-* Crie uma branch com o nome *teste-front-end-SEUNOME*.
-* Faça um commit da sua branch.
-* Dê um pull request da sua branch.
+-O main content está todo estatico, precisaria quebrar as imagens mais e refazer componentes para adicionar funcionalidades, o mesmo é valido para a seção de download
 
-## Quais tecnologias deve usar
-Atente-se a essas requisições, a falta de uma ou mais delas será motivo de penalização.
+-Acho que tem alguns detalhes de css que podem ter me passado despercebidos
 
-* Bootstrap como framework para construção do layout;
-* HTML compatível com IE8+ (Cross-browsing);
-* CSS semântico utilizando alguma metodologia de desenvolvimento: ([BEM](http://getbem.com/introduction/), [OOCSS](http://oocss.org/), [SMACSS](https://smacss.com/) ou [SUITCSS](https://suitcss.github.io/));
-* JavaScript (Vanilla é sempre um ponto a mais);
-* Lighthouse para teste de SEO, acessibilidade e performance;
-* FontAwesome para ícones de redes sociais o outros presentes nas páginas.
+-Talvez não tenha entendindo alguma funcionalidade que estava sub entendida
 
-## Pontos extras
-Seria muito interessante se você pudesse trabalhar com algumas das tecnologias abaixo (Já que utilizamos todas elas no dia-a-dia :D)
-
-* Uso de pré-processador HTML (Pug ou Haml) + Modular/Componentizado;
-* Uso de pré-processador CSS (SCSS/SASS, Stylus ou PostCSS) + Modular/Componentizado;
-* Uso de vanilla JS + design/module pattern (Ex.: ExtJS, Dojo...);
-* Uso de ES6 / ES7;
-* Uso de task-runners (Gulp ou Grunt) ou até mesmo bundler (Webpack);
-* Implementação de animações em componentes da página (Parallax, mouseover...);
-* Implementação de PHP para qualquer envio de formulário ou necessidade específica (Ex.: Contato);
-* Implementação de uma RestAPI para exibição de algum conteúdo que se encaixe na página (Ex.: Comentários) - [JSON Placeholder](https://jsonplaceholder.typicode.com/);
-* Funcionalidades/tecnologias extras no geral serão sempre bem-vindas, desde que explicadas e bem codadas.
-
-Caso tenha ficado alguma dúvida entre em contato com [lucas@superaremedia.com.br](mailto:lucas@superaremedia.com.br).
-
----
-
-[<img src="http://superaremedia.com.br/img/Logo_Superare.png">](http://superaremedia.com.br/)
+-Qualquer duvida, fique a vontade pra vir falar comigo

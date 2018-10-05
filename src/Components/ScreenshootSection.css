@@ -1,0 +1,11 @@
+.screenshot-section-container {
+  margin-top: -40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screenshot-section-image {
+  width: 100vw;
+}

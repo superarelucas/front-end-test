@@ -1,0 +1,11 @@
+.widget-section-container {
+  margin-top: -20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-section-image {
+  width: 100vw;
+}
