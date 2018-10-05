@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import screenshootSection from '../assets/screenshoot.png';
+import './ScreenshootSection.css';
 
-export default class ScreenshootSection extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
-}
+const ScreenshootSection = () => (
+  <div className="screenshot-section-container">
+    <img src={screenshootSection} alt="ScreenshootSection" className="screenshot-section-image" />
+  </div>
+);
+
+export default ScreenshootSection;
