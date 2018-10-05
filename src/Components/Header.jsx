@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { animateScroll as scroll } from 'react-scroll';
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import headerBackground from '../assets/first-screen-background.png';
 import headerPhoneImage from '../assets/first-screen-phone-image.png';
 import downloadButton from '../assets/first-screen-download-button.png';
@@ -62,6 +64,11 @@ const Header = () => (
             alt="phonePhoto"
             className="header-download-image"
           />
+        </div>
+      </div>
+      <div className="header-scroll-button-container" onClick={() => scroll.scrollTo(700)}>
+        <div className="header-scroll-button">
+          <FontAwesomeIcon color="#A5A5B9" icon={faChevronDown} />
         </div>
       </div>
     </div>

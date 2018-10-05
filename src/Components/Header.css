@@ -1,6 +1,6 @@
 .header-background{
   width: 100%;
-  height: 250vh;
+  height: 230vh;
 }
 
 .header-background-container {
@@ -52,6 +52,7 @@
 
 .header-download-container {
   display: flex;
+  height: 80%;
 }
 
 .header-download-text-container {
@@ -90,4 +91,21 @@
 
 .header-download-image {
   height: 80%;
+}
+
+.header-scroll-button-container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.header-scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  color: #FC6A42;
+  width: 4%;
+  height: 40px;
 }
