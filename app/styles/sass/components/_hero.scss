@@ -13,12 +13,12 @@
             font-size: px-to-rem(62px);
         }
 
-        > .subtitle {
+        > .sub {
             font-size: px-to-rem(48px);
             margin: 15px 0 20px 0;
         }
 
-        > .subtitle .flashy {
+        > .sub .flashy {
             color: $color-brand;
         }
 
@@ -88,7 +88,7 @@
                 font-size: px-to-rem(28px);
             }
 
-            > .subtitle {
+            > .sub {
                 font-size: px-to-rem(20px);
             }
 
