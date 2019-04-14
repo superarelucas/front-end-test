@@ -1,0 +1,22 @@
+.tns-nav {
+
+    button {
+        display: inline-block;
+        padding: 0;
+        margin: 5px 0;
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid #585858;
+        outline: none;
+        transition: all 200ms;
+
+        &:hover,
+        &.tns-nav-active {
+            background-color: #fff;
+            border-color: #fff;
+        }
+    }
+
+}

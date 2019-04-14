@@ -1,0 +1,104 @@
+.hero {
+    position: relative;
+
+    &__item {
+        padding-top: 400px;
+        padding-bottom: 50px;
+        text-align: center;
+        background: url('../images/hero.png') no-repeat center #000;
+        @extend .font-light;
+        color: $text-light;
+
+        > .title {
+            font-size: px-to-rem(62px);
+        }
+
+        > .subtitle {
+            font-size: px-to-rem(48px);
+            margin: 15px 0 20px 0;
+        }
+
+        > .subtitle .flashy {
+            color: $color-brand;
+        }
+
+        > .info {
+            font-size: px-to-rem(18px);
+            display: inline-block;
+
+            &:after,
+            &:before {
+                content: '';
+                width: 28px;
+                height: 1px;
+                background-color: $color-brand;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            &:after {
+                margin-left: 28px;
+            }
+
+            &:before {
+                margin-right: 28px;
+            }
+        }
+    }
+
+    &__social-media {
+        margin-top: 100px;
+
+        .item {
+            display: inline-block;
+            margin: 0 2px;
+        }
+
+        .link {
+            padding: 6px;
+            display: inline-block;
+            font-size: 20px;
+            color: $text-light;
+            opacity: .5;
+            transition: all 200ms;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    // adjustment in positioning only
+    .tns-nav {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__item {
+            padding-top: 200px;
+
+            > .title {
+                font-size: px-to-rem(28px);
+            }
+
+            > .subtitle {
+                font-size: px-to-rem(20px);
+            }
+
+            > .info {
+                font-size: px-to-rem(12px);
+            }
+        }
+
+        .tns-nav {
+            right: 10px;
+        }
+    }
+}

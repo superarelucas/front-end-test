@@ -1,10 +1,13 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', function(event) {
 
     var hero = tns({
-        container: '.hero',
+        container: '.hero__wrapper',
         items: 1,
         slideBy: 'page',
-        autoplay: true
+        autoplay: false,
+        axis: 'vertical',
+        controls: false,
+        navPosition: 'bottom'
     });
 
 });
