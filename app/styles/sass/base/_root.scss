@@ -8,3 +8,13 @@ html {
     font-weight: 400;
     color: $text-dark;
 }
+
+::-moz-selection {
+    color: #fff;
+    background-color: rgba($color-brand, 0.4);
+}
+
+::selection {
+    color: #fff;
+    background-color: rgba($color-brand, 0.4);
+}
