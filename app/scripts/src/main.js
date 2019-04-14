@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', function(event) {
         autoplay: false,
         axis: 'vertical',
         controls: false,
-        navPosition: 'bottom'
+        navPosition: 'bottom',
+        speed: 500
     });
 
 });
