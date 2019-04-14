@@ -8,3 +8,7 @@
 .clearfix {
     @include clearfix;
 }
+
+.overflow-hidden {
+    overflow: hidden !important;
+}

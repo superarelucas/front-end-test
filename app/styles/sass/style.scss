@@ -1,6 +1,7 @@
 // Tools and Settings: Global SASS variables, functions and mixins
 @import 'settings/settings';
 @import 'settings/fonts';
+@import 'settings/z-index';
 
 @import 'tools/clearfix';
 @import 'tools/pixels-to-rem';
@@ -13,11 +14,14 @@
 
 // Objects: Selectors which define undecorated design patterns
 @import 'objects/tns';
+@import 'objects/hamburgers';
 
 // Components: The bulk of our code: Defined peices of the site selected with classes and using BEM where appropriate
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
+@import 'components/container';
+@import 'components/modal';
 
 // Overrides, helpers and utilities; our most specific selectors that should always trump earlier rules
 @import 'utilities/helpers';
