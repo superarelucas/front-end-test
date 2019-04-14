@@ -3,7 +3,7 @@
     button {
         display: inline-block;
         padding: 0;
-        margin: 5px 0;
+        margin: 5px;
         width: 10px;
         height: 10px;
         background-color: transparent;
@@ -19,4 +19,18 @@
         }
     }
 
+}
+
+.tns-inline .tns-nav {
+    text-align: center;
+
+    button {
+        border-color: $color-gray;
+
+        &:hover,
+        &.tns-nav-active {
+            background-color: #062033;
+            border-color: #062033;
+        }
+    }
 }

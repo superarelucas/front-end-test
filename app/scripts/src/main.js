@@ -11,6 +11,21 @@ window.addEventListener('DOMContentLoaded', function(event) {
         speed: 500
     });
 
+    var features = tns({
+        container: '.features__carousel',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controls: false,
+        navPosition: 'bottom',
+        speed: 500,
+        responsive: {
+            768: {
+                items: 3
+            }
+        }
+    });
+
     var toggle = document.querySelector('.toggle-menu');
     var header = document.querySelector('.header');
     var modal = document.querySelector('.modal');
