@@ -8,4 +8,10 @@
     @media screen and (min-width: 768px) {
         padding: 0 240px;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

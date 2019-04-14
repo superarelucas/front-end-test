@@ -26,6 +26,24 @@ window.addEventListener('DOMContentLoaded', function(event) {
         }
     });
 
+    var team = tns({
+        container: '.team__carousel',
+        items: 1,
+        slideBy: 'page',
+        autoplay: false,
+        controls: false,
+        navPosition: 'bottom',
+        speed: 500,
+        responsive: {
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 4
+            }
+        }
+    });
+
     var toggle = document.querySelector('.toggle-menu');
     var header = document.querySelector('.header');
     var modal = document.querySelector('.modal');

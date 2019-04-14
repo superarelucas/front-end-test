@@ -82,7 +82,7 @@
         left: inherit;
         position: fixed;
         transform: translateX(90vw);
-        transition: all 400ms ease-out;
+        transition: all 300ms ease-out;
 
         &.open {
             transform: translateX(0);
