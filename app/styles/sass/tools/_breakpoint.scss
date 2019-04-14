@@ -1,0 +1,37 @@
+// Breakpoints
+
+// @include breakpoint(xs) {}
+
+@mixin breakpoint($point) {
+    @if $point == xs {
+        @media
+            (max-width: 48em) { @content ; }
+    }
+
+    @else if $point == sm-to-up {
+        @media
+            (min-width: 48em) { @content ; }
+    }
+
+    @else if $point == sm {
+        @media
+            (min-width: 48em) and
+            (max-width: 64em) { @content ; }
+    }
+
+    @else if $point == md-to-up {
+        @media
+            (min-width: 64em) { @content ; }
+    }
+
+    @else if $point == md {
+        @media
+            (min-width: 64em) and
+            (max-width: 75em) { @content ; }
+    }
+
+    @else if $point == lg-to-up {
+        @media
+            (min-width: 75em) { @content ; }
+    }
+}
