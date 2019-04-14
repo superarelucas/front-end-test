@@ -1,11 +1,9 @@
 // Tools and Settings: Global SASS variables, functions and mixins
 @import 'settings/settings';
+@import 'settings/fonts';
 
-@import 'tools/breakpoint';
 @import 'tools/clearfix';
-@import 'tools/keyframe';
 @import 'tools/pixels-to-rem';
-@import 'tools/prefix';
 
 // Generic: Very far reaching selectors and font imports
 @import 'generic/reset';
