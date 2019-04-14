@@ -6,6 +6,7 @@
         padding-bottom: 50px;
         text-align: center;
         background: url('../images/hero.png') no-repeat center #000;
+        background-size: cover;
         @extend .font-light;
         color: $text-light;
 
