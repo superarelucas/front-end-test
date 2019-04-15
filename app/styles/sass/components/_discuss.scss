@@ -1,0 +1,133 @@
+.discuss {
+    padding-top: 100px;
+
+    &__grid {
+        @extend .container;
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .o-subtitle {
+        margin-bottom: 80px;
+    }
+
+    &__address {
+        max-width: 310px;
+        padding-right: 55px;
+
+        > h4 {
+            font-size: px-to-rem(22px);
+            line-height: px-to-rem(32px);
+            margin-bottom: 35px;
+            color: #062033;
+        }
+
+        > p {
+            font-size: px-to-rem(13px);
+            line-height: px-to-rem(24px);
+            color: #6a737b;
+        }
+    }
+
+    &__message {
+        max-width: 70%;
+        width: 100%;
+
+        > .title {
+            color: #062033;
+            font-size: px-to-rem(24px);
+            line-height: px-to-rem(32px);
+            margin-bottom: 45px;
+            @extend .font-bold;
+        }
+
+        > .input {
+            border: 0;
+            border-bottom: 1px solid #cccccc;
+            font-size: 13px;
+            padding: 18px 0;
+            margin-bottom: 30px;
+            outline: none;
+
+            &.inline {
+                width: 48%;
+            }
+
+            &.block {
+                display: block;
+                width: 100%;
+            }
+
+            &.float {
+                float: right;
+            }
+
+            &::placeholder {
+                color: #bfbebe;
+            }
+        }
+
+        > .submit {
+            font-size: px-to-rem(16px);
+            float: right;
+            background: none;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+
+            i {
+                color: $color-brand;
+                margin-right: 10px;
+                font-size: 20px;
+                vertical-align: text-top;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        &__grid {
+            flex-direction: column;
+        }
+
+        &__address {
+            max-width: none;
+            padding-right: 0;
+            margin-bottom: 50px;
+
+            > h4 {
+                font-size: px-to-rem(16px);
+                line-height: px-to-rem(20px);
+                margin-bottom: 15px;
+            }
+
+            > p {
+                font-size: px-to-rem(12px);
+                line-height: px-to-rem(20px);
+            }
+        }
+
+        &__message {
+            max-width: 100%;
+
+            > .title {
+                font-size: px-to-rem(20px);
+                margin-bottom: 10px;
+            }
+
+            > .input {
+                margin-bottom: 20px;
+                padding: 10px 0;
+            }
+
+            > .submit {
+                font-size: px-to-rem(14px);
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
