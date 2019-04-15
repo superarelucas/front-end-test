@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function(event) {
 
     var works = new Vue({
         el: '#works',
-        data() {
+        data: function() {
             return {
                 categories: [
                     {
