@@ -1,0 +1,104 @@
+.footer {
+    padding: 90px 0;
+    background-color: $color-brand;
+    color: #fff;
+
+    &__wrapper {
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+            flex-basis: 22%;
+        }
+    }
+
+    &__brand {
+        font-size: px-to-rem(28px);
+        @extend .font-family-pacifico;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-size: px-to-rem(14px);
+        margin-bottom: 40px;
+        display: block;
+        @extend .font-bold;
+        min-height: 28px;
+        display: flex;
+        align-items: center;
+        opacity: 0.9;
+    }
+
+    &__subscribe {
+        position: relative;
+
+        input {
+            border: 2px solid #fff;
+            border-radius: 2px;
+            padding: 10px 30px 10px 10px;
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            outline: none;
+            margin-bottom: 15px;
+            font-size: px-to-rem(14px);
+            color: inherit;
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 22px;
+            padding: 9px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+
+        .item {
+            display: inline-block;
+            width: 49%;
+            margin-bottom: 15px;
+            font-size: px-to-rem(13px);
+
+            @media screen and (min-width: 768px) and (max-width: 1140px) {
+                display: block;
+            }
+        }
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    p {
+        font-size: px-to-rem(13px);
+        line-height: px-to-rem(24px);
+    }
+
+    strong {
+        @extend .font-bold;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            &.empty {
+                margin: 0;
+            }
+        }
+    }
+}
