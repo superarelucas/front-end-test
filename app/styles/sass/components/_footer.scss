@@ -44,6 +44,12 @@
             margin-bottom: 15px;
             font-size: px-to-rem(14px);
             color: inherit;
+
+            &::placeholder {
+                color: #fff;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
         }
 
         i {
