@@ -158,9 +158,9 @@
                 <div class="works__item"
                      v-for="work in works"
                      :key="work.id"
-                     v-show="work.category == active || active == 'all'">
+                     v-show="work.category == active || active == 'all'"
+                     :style="{ 'background-image': 'url(' + work.image + ')' }">
 
-                    <img class="image" :src="work.image" :alt="work.alt">
                     <span class="hover">
                         <a :href="work.url" class="hover-link"><i class="far fa-eye"></i></a>
                         <h4 class="hover-title">{{ work.title }}</h4>
@@ -185,7 +185,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-john.png" alt="John Filmr Doe">
+                        <img class="image" src="../images/team-john.png" alt="John Filmr Doe">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -204,7 +204,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-chystine.png" alt="Chystine Hineu">
+                        <img class="image" src="../images/team-chystine.png" alt="Chystine Hineu">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -223,7 +223,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-martin.png" alt="Martin Matrone">
+                        <img class="image" src="../images/team-martin.png" alt="Martin Matrone">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -242,7 +242,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-steve.png" alt="Steve Flaulkin">
+                        <img class="image" src="../images/team-steve.png" alt="Steve Flaulkin">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -261,7 +261,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-john.png" alt="John Filmr Doe">
+                        <img class="image" src="../images/team-john.png" alt="John Filmr Doe">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -280,7 +280,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-chystine.png" alt="Chystine Hineu">
+                        <img class="image" src="../images/team-chystine.png" alt="Chystine Hineu">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -299,7 +299,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-martin.png" alt="Martin Matrone">
+                        <img class="image" src="../images/team-martin.png" alt="Martin Matrone">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
@@ -318,7 +318,7 @@
                 <!-- item -->
                 <div class="team__item">
                     <div class="box">
-                        <img class="image" src="images/team-steve.png" alt="Steve Flaulkin">
+                        <img class="image" src="../images/team-steve.png" alt="Steve Flaulkin">
                         <div class="hover">
                             <h5>Nemo enim ipsam voluptatem quia voluptas</h5>
                             <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>

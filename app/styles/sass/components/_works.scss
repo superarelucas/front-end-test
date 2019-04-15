@@ -44,7 +44,10 @@
         flex-basis: 25%;
         position: relative;
         color: #fff;
-        max-height: 270px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .image {
             max-width: 100%;
