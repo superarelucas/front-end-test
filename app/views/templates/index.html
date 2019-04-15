@@ -142,7 +142,33 @@
         <h3 class="o-subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</h3>
 
         <div id="works">
-            {{ message }}
+
+            <ul class="works__panel">
+                <li class="works__panel-option"
+                    v-for="category in categories"
+                    :class="{active: category.id == active}"
+                    @click="active = category.id"
+                    :key="category.id">
+                    {{ category.name }}
+                </li>
+            </ul>
+
+            <div class="works__wrapper">
+                <!-- item -->
+                <div class="works__item"
+                     v-for="work in works"
+                     :key="work.id"
+                     v-show="work.category == active || active == 'all'">
+
+                    <img class="image" :src="work.image" :alt="work.alt">
+                    <span class="hover">
+                        <a :href="work.url" class="hover-link"><i class="far fa-eye"></i></a>
+                        <h4 class="hover-title">{{ work.title }}</h4>
+                        <p class="hover-category">{{ work.category }}</p>
+                    </span>
+                </div>
+            </div>
+
         </div>
     </section>
 
