@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include "templates/includes/head.html" %}
+
+  <body class="{% block bodyClass %}{% endblock %}">
+    <main>
+      <header>
+        <!-- Navigation -->
+        {% include "templates/includes/nav.html" %}
+        {% block header %}{% endblock %}
+      </header>
+
+      {% block content %}{% endblock %}
+
+      <!-- Footer -->
+      {% include "templates/includes/footer.html" %}
+    </main>
+{#
+    {% block beforeScripts %}{% endblock %}
+    <script src="{{ asset('js/main.js') }}"></script>
+    {% block afterScripts %}{% endblock %} #}
+  </body>
+</html>

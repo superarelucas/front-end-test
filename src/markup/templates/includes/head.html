@@ -1,0 +1,47 @@
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="name" content="{{ appName }}" />
+  <meta name="author" content="{{ author }}" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="{{ appName }}" />
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-title" content="{{ appName }}" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
+  />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="{{ maskIcon }}" />
+
+  <meta name="msapplication-TileColor" content="{{ tileColor }}" />
+  <meta name="theme-color" content="{{ themeColor }}" />
+
+  <!-- FACEBOOK -->
+  <meta property="og:type" content="og.type" />
+  <meta property="og:locale" content="{{ og.locale }}" />
+  <meta property="og:site_name" content="{{ og.siteName }}" />
+  <meta property="fb:app_id" content="{{ fbAppID }}" />
+
+  {% block meta %}{% endblock %}
+
+  <!-- Styles -->
+  {% block beforeStyles %}{% endblock %}
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+  {% block afterStyles %}{% endblock %}
+</head>

@@ -1,0 +1,33 @@
+.navbar-brand {
+  img {
+    max-width: 200px;
+    max-height: 45px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+    }
+  }
+}
+
+.navbar-nav {
+  @include media-breakpoint-up(md) {
+    .nav-item:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+// .navbar {
+//   z-index: $zindex-sticky;
+// }
+
+// .navbar-expand-xl {
+//   @include media-breakpoint-up(xl) {
+//     .navbar {
+//       $navbar-padding-y: 22px;
+
+//       padding-top: $navbar-padding-y;
+//       padding-bottom: $navbar-padding-y;
+//     }
+//   }
+// }

@@ -1,0 +1,24 @@
+
+// Reset arrows Swiper
+.swiper-button-prev,
+.swiper-button-next .swiper-container-rtl,
+.swiper-button-next,
+.swiper-button-prev .swiper-container-rtl {
+  background-image: none;
+}
+
+.swiper-pagination-bullets-white {
+  .swiper-pagination-bullet {
+    background-color: $white;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: auto;
+  height: auto;
+}
