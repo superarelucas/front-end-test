@@ -23,7 +23,7 @@
     <div class="container py-5">
       <div class="text-center text-white mb-5">
         <div class="">
-          <h1 class="display-4">Meet Brandi!</h1>
+          <h1 class="display-4" id="home">Meet Brandi!</h1>
           <p class="h2">
             <span class="text-success">/creative</span>
             on page template.
@@ -63,7 +63,7 @@
 
   <div class="bg-light py-5">
     <div class="container">
-      <h2 class="title-fancy">Features</h2>
+      <h2 class="title-fancy" id="features">Features</h2>
       <div class="heart-block mb-5">
         <i class="far fa-heart mx-2"></i>
       </div>
@@ -193,7 +193,7 @@
 
   <div class="pt-5">
     <div class="container">
-      <h2 class="title-fancy">Works</h2>
+      <h2 class="title-fancy" id="works">Works</h2>
       <div class="heart-block mb-5">
         <i class="far fa-heart mx-2"></i>
       </div>
@@ -448,7 +448,7 @@
   </div>
 
   <div class="container py-4">
-    <h2 class="title-fancy">Meet our team</h2>
+    <h2 class="title-fancy" id="team">Meet our team</h2>
     <div class="heart-block mb-5">
       <i class="far fa-heart mx-2"></i>
     </div>
@@ -740,7 +740,7 @@
               srcset="images/icons/clock-circle@2x.png 2x"
               alt="">
           </div>
-          <div class="display-4">3200</div>
+          <div class="display-4" id="number-work-hours">0</div>
           <div class="lead text-uppercase">Hours of work</div>
         </div>
         <div class="col-md-3 mb-5 mb-md-0">
@@ -750,7 +750,7 @@
               srcset="images/icons/people-circle@2x.png 2x"
               alt="">
           </div>
-          <div class="display-4">120</div>
+          <div class="display-4" id="number-satisfied-clients">0</div>
           <div class="lead text-uppercase">Satisfied clients</div>
         </div>
         <div class="col-md-3 mb-5 mb-md-0">
@@ -760,7 +760,7 @@
               srcset="images/icons/rocket-circle@2x.png 2x"
               alt="">
           </div>
-          <div class="display-4">360</div>
+          <div class="display-4" id="number-projects-delivered">0</div>
           <div class="lead text-uppercase">Projects delivered</div>
         </div>
         <div class="col-md-3 mb-5 mb-md-0">
@@ -770,7 +770,7 @@
               srcset="images/icons/tropheu-circle@2x.png 2x"
               alt="">
           </div>
-          <div class="display-4">42</div>
+          <div class="display-4" id="number-wards-won">0</div>
           <div class="lead text-uppercase">Wards won</div>
         </div>
       </div>
@@ -778,7 +778,7 @@
   </div>
 
   <div class="container py-5">
-    <h2 class="title-fancy">Let's discuss</h2>
+    <h2 class="title-fancy" id="contact">Let's discuss</h2>
     <div class="heart-block mb-5">
       <i class="far fa-heart mx-2"></i>
     </div>
@@ -802,33 +802,57 @@
       <div class="col-md-8">
         <h3 class="mb-4">Say hello!</h3>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="form-name" class="sr-only">Name</label>
-              <input type="text" name="name" id="form-name" placeholder="Name" class="form-control">
+        <form action="/" method="post" autocomplete="on">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group form-floating-label">
+                <input
+                  type="text"
+                  name="name"
+                  id="form-name"
+                  placeholder="Name"
+                  autocomplete="name"
+                  minlength="2"
+                  class="form-control"
+                  required>
+
+                <label for="form-name">Name</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group form-floating-label">
+                <input
+                  type="email"
+                  name="email"
+                  id="form-email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  class="form-control"
+                  required>
+                <label for="form-email">E-mail</label>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="form-email" class="sr-only">E-mail</label>
-              <input type="email" name="email" id="form-email" placeholder="Email" class="form-control">
-            </div>
+          <div class="form-group form-floating-label">
+            <textarea
+              name="message"
+              id="form-message"
+              rows="1"
+              class="form-control"
+              autocomplete="off"
+              placeholder="Message"></textarea>
+            <label for="form-message">Message</label>
           </div>
-        </div>
 
-        <div class="form-group">
-          <label for="form-message" class="sr-only">Message</label>
-          <textarea name="message" id="form-message" rows="1" class="form-control" placeholder="Message"></textarea>
-        </div>
-
-        <div class="form-group text-right">
-          <button type="submit" class="btn btn-link">
-            <i class="far fa-envelope mr-2"></i>
-            <span class="text-dark">Send message</span>
-          </button>
-        </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btn btn-link">
+              <i class="far fa-envelope mr-2"></i>
+              <span class="text-dark">Send message</span>
+            </button>
+          </div>
+        </form>
       </div>
       <div class="col-md-auto">
         <ul class="list-unstyled list-contact-social">

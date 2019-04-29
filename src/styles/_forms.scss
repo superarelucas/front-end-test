@@ -1,0 +1,55 @@
+.form-floating-label {
+  position: relative;
+  transition: all .3s ease;
+
+  label {
+    position: absolute;
+    top: .7rem;
+    left: 0;
+    padding-left: $input-padding-x-lg;
+    font-size: $small-font-size;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  .form-control {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    transition: box-shadow .3s ease;
+
+    &:focus {
+      box-shadow: 0 3px 6px rgba($black, .4);
+    }
+  }
+
+  .form-control:not(:placeholder-shown) {
+    padding-top: 1.2rem;
+    padding-bottom: .2rem;
+  }
+
+  .form-control:not(:placeholder-shown) + label {
+    opacity: 1;
+    transform: translateY(-11px);
+  }
+}
+
+.input-group-underlined {
+  position: relative;
+
+  .btn {
+    color: $white;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border-color: $white;
+  }
+}
+
+.input-group-append {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
