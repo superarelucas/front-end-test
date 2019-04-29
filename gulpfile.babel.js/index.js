@@ -5,7 +5,7 @@ import size from 'gulp-size'
 import del from 'del'
 
 import { scripts, serviceWorker, lintScripts } from './scripts'
-import { docs, buildSassdoc, buildJsdoc } from './docs'
+import { docs, buildJsdoc } from './docs'
 import { styles, lintStyles } from './styles'
 import { images } from './images'
 import revision from './revision'
@@ -44,6 +44,7 @@ const watchFiles = () => {
   watch(config.paths.scripts.all, scripts)
   watch(config.paths.styles.all, styles)
   watch(config.paths.markup.all, markup)
+  watch(config.paths.images.src, copy)
 }
 
 if (config.isProduction()) {
@@ -61,6 +62,7 @@ if (config.isProduction()) {
 function serve(done) {
   server.init({
     watch: true,
+    open: true,
     // Customize the Browsersync console logging prefix
     logPrefix: config.packageName,
     // Run as an https by uncommenting 'https: true'
@@ -84,7 +86,6 @@ export {
   markup,
   styles,
   lintStyles,
-  buildSassdoc,
   scripts,
   buildJsdoc,
   lintScripts,

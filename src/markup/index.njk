@@ -1,0 +1,867 @@
+{% extends "templates/base.njk" %}
+
+{% block meta %}
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+  <meta property="og:image:height" content="">
+  <meta property="og:image:width" content="">
+  <meta property="og:description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="{{ publicURL }}">
+
+  <link rel="canonical" href="{{ publicURL }}">
+
+  <title>
+    {{ product.name }} · {{ product.slogan }} · {{ company.name }}
+  </title>
+{% endblock %}
+
+{% block content %}
+  <div class="banner-highlight">
+    <div class="container py-5">
+      <div class="text-center text-white mb-5">
+        <div class="">
+          <h1 class="display-4">Meet Brandi!</h1>
+          <p class="h2">
+            <span class="text-success">/creative</span>
+            on page template.
+          </p>
+          <p>We are a team of professionals</p>
+        </div>
+      </div>
+
+      <ul class="list-inline list-social-icons text-center mb-0">
+        <li class="list-inline-item">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-link btn-sm">
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-link btn-sm">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-link btn-sm">
+            <i class="fab fa-google-plus-g"></i>
+            <span class="sr-only">Google+</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-link btn-sm">
+            <i class="fab fa-dribbble"></i>
+            <span class="sr-only">Dribbble</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bg-light py-5">
+    <div class="container">
+      <h2 class="title-fancy">Features</h2>
+      <div class="heart-block mb-5">
+        <i class="far fa-heart mx-2"></i>
+      </div>
+
+      <div class="swiper-container" id="features-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/feather-circle.png"
+                  srcset="images/icons/feather-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Branding</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/pencil-circle.png"
+                  srcset="images/icons/pencil-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Development</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/megaphone-circle.png"
+                  srcset="images/icons/megaphone-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Consulting</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/feather-circle.png"
+                  srcset="images/icons/feather-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Branding</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/pencil-circle.png"
+                  srcset="images/icons/pencil-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Development</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-auto pr-0">
+                <img
+                  src="images/icons/megaphone-circle.png"
+                  srcset="images/icons/megaphone-circle@2x.png 2x"
+                  alt="">
+              </div>
+              <div class="col">
+                <h3 class="h5">Consulting</h3>
+
+                <p class="small">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination position-relative mt-5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-5">
+    <div class="container">
+      <h2 class="title-fancy">Works</h2>
+      <div class="heart-block mb-5">
+        <i class="far fa-heart mx-2"></i>
+      </div>
+
+      <p class="mb-5 lead">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore
+      </p>
+
+      <ul
+        class="nav nav-pills small justify-content-center"
+        id="works-tablist"
+        role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="works-all-tab"
+            data-toggle="tab"
+            href="#works-all-pane"
+            role="tab"
+            aria-controls="works-all-pane"
+            aria-selected="true">
+            All
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="works-branding-tab"
+            data-toggle="tab"
+            href="#works-branding-pane"
+            role="tab"
+            aria-controls="works-branding-pane"
+            aria-selected="false">
+            Branding
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="works-web-tab"
+            data-toggle="tab"
+            href="#works-web-pane"
+            role="tab"
+            aria-controls="works-web-pane"
+            aria-selected="false">
+            Web
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="works-logo-design-tab"
+            data-toggle="tab"
+            href="#works-logo-design-pane"
+            role="tab"
+            aria-controls="works-logo-design-pane"
+            aria-selected="false">
+            Logo Desgin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="works-photograpfy-tab"
+            data-toggle="tab"
+            href="#works-photograpfy-pane"
+            role="tab"
+            aria-controls="works-photography-pane"
+            aria-selected="false">
+            Photography
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-content py-5" id="worksTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="home"
+      role="tabpanel"
+      aria-labelledby="home-tab">
+      <div class="swiper-container" id="gallery-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-1.png"
+                srcset="images/gallery/Rectangle-1@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-2.png"
+                srcset="images/gallery/Rectangle-2@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-3.png"
+                srcset="images/gallery/Rectangle-3@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-4.png"
+                srcset="images/gallery/Rectangle-4@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-5.png"
+                srcset="images/gallery/Rectangle-5@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-6.png"
+                srcset="images/gallery/Rectangle-6@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-7.png"
+                srcset="images/gallery/Rectangle-7@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide gallery-item hover-show">
+            <a href="#" class="">
+              <img
+                src="images/gallery/Rectangle-7.png"
+                srcset="images/gallery/Rectangle-7@2x.png 2x"
+                alt="Labore et dolore magnam"
+                class="bg-img">
+              <div class="hover-show-content">
+                <div>
+                  <img
+                    src="images/icons/icon-Eye.png"
+                    srcset="images/icons/icon-Eye@2x.png 2x"
+                    class="mb-3"
+                    alt="">
+                  <div>Labore et dolore magnam</div>
+                  <div class="small">Photography</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-navigation"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <h2 class="title-fancy">Meet our team</h2>
+    <div class="heart-block mb-5">
+      <i class="far fa-heart mx-2"></i>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p class="mb-5 text-center">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore
+        </p>
+      </div>
+    </div>
+
+    <div class="swiper-container mb-5" id="team-slide">
+      <div class="swiper-wrapper text-center">
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-1.jpg"
+              srcset="images/team/Rectangle-1@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-2.jpg"
+              srcset="images/team/Rectangle-2@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-3.jpg"
+              srcset="images/team/Rectangle-3@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-4.jpg"
+              srcset="images/team/Rectangle-4@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-4.jpg"
+              srcset="images/team/Rectangle-4@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+        <div class="swiper-slide hover-show">
+          <div class="position-relative mb-3">
+            <img
+              src="images/team/Rectangle-4.jpg"
+              srcset="images/team/Rectangle-4@2x.jpg 2x"
+              alt="Labore et dolore magnam"
+              class="img-fluid">
+            <div class="hover-show-content align-items-start">
+              <div>
+                <p class="">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem.
+                </p>
+                <ul class="list-inline team-social-list">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-twitter"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" rel="noopener" class="team-social-icon">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span class="sr-only">Google+</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lead">John Filmr Doe</h3>
+          <h4 class="small">Managing Director</h4>
+
+        </div>
+      </div>
+
+      <div class="swiper-pagination position-relative mt-5"></div>
+    </div>
+  </div>
+
+  <div class="banner-fun-facts py-5">
+    <div class="container py-md-5">
+      <div class="position-relative">
+        <h2 class="title-fancy text-white">Some Fun Facts</h2>
+        <div class="heart-block-white mb-5">
+          <i class="far fa-heart mx-2"></i>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 mb-5 mb-md-0">
+          <div class="mb-4">
+            <img
+              src="images/icons/clock-circle.png"
+              srcset="images/icons/clock-circle@2x.png 2x"
+              alt="">
+          </div>
+          <div class="display-4">3200</div>
+          <div class="lead text-uppercase">Hours of work</div>
+        </div>
+        <div class="col-md-3 mb-5 mb-md-0">
+          <div class="mb-4">
+            <img
+              src="images/icons/people-circle.png"
+              srcset="images/icons/people-circle@2x.png 2x"
+              alt="">
+          </div>
+          <div class="display-4">120</div>
+          <div class="lead text-uppercase">Satisfied clients</div>
+        </div>
+        <div class="col-md-3 mb-5 mb-md-0">
+          <div class="mb-4">
+            <img
+              src="images/icons/rocket-circle.png"
+              srcset="images/icons/rocket-circle@2x.png 2x"
+              alt="">
+          </div>
+          <div class="display-4">360</div>
+          <div class="lead text-uppercase">Projects delivered</div>
+        </div>
+        <div class="col-md-3 mb-5 mb-md-0">
+          <div class="mb-4">
+            <img
+              src="images/icons/tropheu-circle.png"
+              srcset="images/icons/tropheu-circle@2x.png 2x"
+              alt="">
+          </div>
+          <div class="display-4">42</div>
+          <div class="lead text-uppercase">Wards won</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <h2 class="title-fancy">Let's discuss</h2>
+    <div class="heart-block mb-5">
+      <i class="far fa-heart mx-2"></i>
+    </div>
+
+    <p class="text-center mb-5">
+      Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+      ipsa quae ab illo inventore
+    </p>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h4 class="mb-4">Cras at ultrices erat, sed vulputate!</h4>
+        <address class="small">
+          2345 Setwant natrer, 1234,<br>
+          Washington. United States.<br>
+          <a href="tel:+14011234567" class="text-reset">(401) 1234 567</a><br>
+          <a href="mailto:hello@brandi.com" class="text-reset">hello@brandi.com</a><br>
+          <a href="/" class="text-reset">ww.brandi.com</a><br>
+        </address>
+      </div>
+      <div class="col-md-8">
+        <h3 class="mb-4">Say hello!</h3>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form-name" class="sr-only">Name</label>
+              <input type="text" name="name" id="form-name" placeholder="Name" class="form-control">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form-email" class="sr-only">E-mail</label>
+              <input type="email" name="email" id="form-email" placeholder="Email" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="form-message" class="sr-only">Message</label>
+          <textarea name="message" id="form-message" rows="1" class="form-control" placeholder="Message"></textarea>
+        </div>
+
+        <div class="form-group text-right">
+          <button type="submit" class="btn btn-link">
+            <i class="far fa-envelope mr-2"></i>
+            <span class="text-dark">Send message</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <ul class="list-unstyled list-contact-social">
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Behance">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Dribbble">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener">
+              <img
+                src="images/icons/forrst.png"
+                srcset="images/icons/forrst@2x.png 2x"
+                alt="Forrst">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener" aria-label="Google+">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

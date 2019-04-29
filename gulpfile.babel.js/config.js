@@ -28,9 +28,9 @@ let paths = {
     dest: 'src/assets/images/'
   },
   markup: {
-    src: 'src/markup/*.html',
+    src: 'src/markup/*.njk',
     dest: 'dist/',
-    all: 'src/markup/**/*.html'
+    all: 'src/markup/**/*.{njk, html}'
   },
   copy: ['src/assets/**/*', 'src/styles/*.{jpg,jpeg,png,gif,svg,webp}']
 }

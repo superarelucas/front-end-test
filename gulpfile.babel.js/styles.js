@@ -32,7 +32,7 @@ const lintStyles = () => {
  * @returns {Stream}
  */
 const buildStyles = () => {
-  const plugins = [autoprefixer(), reporter()]
+  const plugins = [autoprefixer(), reporter({ clearReportedMessages: true })]
 
   if (config.isProduction()) {
     plugins.push(cssnano())

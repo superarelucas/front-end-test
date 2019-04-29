@@ -36,12 +36,6 @@ export default {
   asset: function(fileName) {
     const ctx = this.ctx
 
-    if (!fs.existsSync(`${ctx.config.paths.base.dest}/${fileName}`)) {
-      console.error(`Arquivo ${fileName} não escontrado.`)
-
-      return ''
-    }
-
     if (ctx.config.isProduction()) {
       const fileNameRevisioned = ctx[fileName]
 
@@ -56,6 +50,12 @@ export default {
       return `${
         ctx.config.isProduction() ? ctx.publicURL : ''
       }${fileNameRevisioned}`
+    }
+
+    if (!fs.existsSync(`${ctx.config.paths.base.dest}/${fileName}`)) {
+      console.error(`Arquivo ${fileName} não escontrado.`)
+
+      return ''
     }
 
     return fileName

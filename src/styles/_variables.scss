@@ -1,10 +1,26 @@
 // Colors
 $primary: #0eb493 !default;
+$secondary: #217566 !default;
+$success: #0feb9e !default;
+$dark: #101636 !default;
+$light: #f4f7f9 !default;
+$blue-dark: #062033 !default;
+$body-color: $blue-dark !default;
 $navbar-dark-color: #fff !default;
 
 // stylelint-disable value-keyword-case
 // Typography
-$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: arial, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // stylelint-enable value-keyword-case
+$font-weight-normal: 400 !default;
+
+$display4-size: 3.875rem !default;
+
+$lead-font-size: 1.125rem !default;
+$lead-font-weight: $font-weight-normal !default;
 
 $alert-margin-bottom: 0 !default;
+
+$navbar-brand-font-size: 1.75rem !default;
+
+$nav-pills-border-radius: .375rem !default;

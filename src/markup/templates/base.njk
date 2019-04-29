@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  {% include "templates/includes/head.html" %}
+  {% include "templates/includes/head.njk" %}
 
   <body class="{% block bodyClass %}{% endblock %}">
     <main>
       <header>
         <!-- Navigation -->
-        {% include "templates/includes/nav.html" %}
+        {% include "templates/includes/nav.njk" %}
         {% block header %}{% endblock %}
       </header>
 
       {% block content %}{% endblock %}
 
       <!-- Footer -->
-      {% include "templates/includes/footer.html" %}
+      {% include "templates/includes/footer.njk" %}
     </main>
-{#
+
     {% block beforeScripts %}{% endblock %}
     <script src="{{ asset('js/main.js') }}"></script>
-    {% block afterScripts %}{% endblock %} #}
+    {% block afterScripts %}{% endblock %}
   </body>
 </html>

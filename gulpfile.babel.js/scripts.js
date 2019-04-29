@@ -47,10 +47,8 @@ const buildScripts = () => {
     ignore: [/\/node_modules\/(?!dom7|ssr-window|swiper\/)/],
     presets: [
       [
-        '@babel/env',
+        '@babel/preset-env',
         {
-          useBuiltIns: 'usage',
-          corejs: 3,
           forceAllTransforms: true,
           debug: config.debug
         }
@@ -58,9 +56,10 @@ const buildScripts = () => {
     ]
   })
 
-  if (config.isProduction()) {
-    bundler.plugin('tinyify')
-  }
+  // Causando erro
+  // if (config.isProduction()) {
+  //   bundler.plugin('tinyify')
+  // }
 
   return bundler
     .bundle()

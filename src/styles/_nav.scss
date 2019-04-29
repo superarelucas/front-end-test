@@ -12,22 +12,41 @@
 .navbar-nav {
   @include media-breakpoint-up(md) {
     .nav-item:not(:first-child) {
-      margin-left: 3rem;
+      margin-left: 2.1875rem;
     }
   }
 }
 
-// .navbar {
-//   z-index: $zindex-sticky;
-// }
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: $small-font-size;
 
-// .navbar-expand-xl {
-//   @include media-breakpoint-up(xl) {
-//     .navbar {
-//       $navbar-padding-y: 22px;
+  &.navbar-dark {
+    &.bg-dark {
+      // stylelint-disable-next-line declaration-no-important
+      background-color: rgba($dark, .2) !important;
+    }
+  }
 
-//       padding-top: $navbar-padding-y;
-//       padding-bottom: $navbar-padding-y;
-//     }
-//   }
-// }
+  .nav-item {
+    &.active {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: -11px;
+        right: 0;
+        left: 0;
+        content: "";
+        border-top: solid 2px  #32b0ee;
+      }
+    }
+  }
+}
+
+.nav-link {
+  padding: .625rem 1.25rem;
+}

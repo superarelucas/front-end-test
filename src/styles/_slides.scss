@@ -7,6 +7,11 @@
   background-image: none;
 }
 
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: solid 1px $blue-dark;
+}
+
 .swiper-pagination-bullets-white {
   .swiper-pagination-bullet {
     background-color: $white;
@@ -14,6 +19,7 @@
 }
 
 .swiper-pagination-bullet-active {
+  background-color: $blue-dark;
   opacity: 1;
 }
 

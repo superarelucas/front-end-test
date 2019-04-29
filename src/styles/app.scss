@@ -48,3 +48,143 @@
 @import "buttons";
 @import "nav";
 @import "slides";
+@import "gallery";
+
+.banner-highlight {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 56px;
+  background-color: $secondary;
+}
+
+.tagline {
+  padding-left: 1.25rem;
+  font-size: .8125rem;
+  color: #61918d;
+  border-left: solid 1px #237988;
+}
+
+.list-social-icons {
+  a {
+    color: rgba($white, .3);
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.title-fancy {
+  font-size: $h3-font-size;
+  color: $primary;
+  text-align: center;
+}
+
+.heart-block,
+.heart-block-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 230px;
+  margin: map-get($spacers, 4) auto map-get($spacers, 5);
+  color: rgba($blue-dark, 10%);
+
+  &::before,
+  &::after {
+    width: 100%;
+    max-width: 90px;
+    content: "";
+    border-top: solid 1px rgba($blue-dark, 10%);
+  }
+}
+
+.heart-block-white {
+  color: $white;
+  &::before,
+  &::after {
+    border-top: solid 1px rgba($white, .5);
+  }
+}
+
+.team-social-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: $white;
+  background-color: rgba($black, .3);
+  transition: $transition-base;
+
+  &:hover {
+    color: $white;
+    border-radius: 50%;
+  }
+}
+
+.team-social-list {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-fun-facts {
+  position: relative;
+  color: $white;
+  text-align: center;
+  background: url("../images/banner.jpg") no-repeat center;
+  background-size: cover;
+
+  @include media-breakpoint-up(md) {
+    background-attachment: fixed;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    content: "";
+    background-color: rgba($blue-dark, .8);
+  }
+}
+
+.list-contact-social {
+  text-align: center;
+
+  li {
+    display: inline;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: .5rem;
+    color: #cdd2d6;
+
+    // &:hover {
+    //   color: darken(#cdd2d6, 10%);
+    // }
+  }
+}
+
+.main-footer {
+  padding-top: map-get($spacers, 5);
+  padding-bottom: map-get($spacers, 5);
+  font-size: $small-font-size;
+  color: $white;
+  background-color: #21b697;
+
+  a {
+    color: $white;
+  }
+}
