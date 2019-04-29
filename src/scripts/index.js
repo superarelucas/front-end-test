@@ -1,5 +1,6 @@
 import './bootstrap'
 import Swiper from 'swiper'
+import { CountUp } from 'countup.js/dist/countup'
 import swiperA11y from './utils/swiperA11y'
 import { getBreakpoint } from './utils'
 import registerServiceWorker from './registerServiceWorker'
@@ -68,6 +69,46 @@ $(document).ready(() => {
         slidesPerView: 4
       }
     }
+  })
+
+  const animateNumbersListener = () => {
+    const section = $('.banner-fun-facts')
+
+    if ($(window).scrollTop() >= section.offset().top) {
+      $(window).off('scroll', animateNumbersListener)
+
+      const numbers = [
+        { el: 'number-work-hours', val: 3200 },
+        { el: 'number-satisfied-clients', val: 120 },
+        { el: 'number-projects-delivered', val: 360 },
+        { el: 'number-wards-won', val: 42 }
+      ]
+
+      numbers.map(count => {
+        let countup = new CountUp(count.el, count.val)
+
+        if (!countup.error) {
+          countup.start()
+        } else {
+          console.error(countup.error)
+        }
+      })
+    }
+  }
+
+  $(window).on('scroll', animateNumbersListener)
+  $(window).on('scroll', () => {
+    let toggleNavbarOpacity
+
+    clearTimeout(toggleNavbarOpacity)
+
+    toggleNavbarOpacity = setTimeout(() => {
+      if ($(window).scrollTop() > $('.banner-highlight').height()) {
+        $('.navbar').removeClass('bg-dark-transparent')
+      } else {
+        $('.navbar').addClass('bg-dark-transparent')
+      }
+    }, 250)
   })
 })
 
