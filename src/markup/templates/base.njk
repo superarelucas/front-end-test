@@ -3,7 +3,11 @@
 
   {% include "templates/includes/head.njk" %}
 
-  <body class="{% block bodyClass %}{% endblock %}">
+  <body
+    class="{% block bodyClass %}{% endblock %}"
+    data-spy="scroll"
+    data-target="#navbar-supported-content"
+    data-offset="0">
     <main>
       <header>
         <!-- Navigation -->

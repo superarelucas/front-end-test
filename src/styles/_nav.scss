@@ -18,33 +18,40 @@
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: $zindex-fixed;
   font-size: $small-font-size;
 
-  &.navbar-dark {
-    &.bg-dark {
-      // stylelint-disable-next-line declaration-no-important
-      background-color: rgba($dark, .2) !important;
+  .nav-link {
+    &.active {
+      background-color: rgba($black, .3);
     }
   }
 
-  .nav-item {
-    &.active {
-      position: relative;
+  @include media-breakpoint-up(md) {
+    .nav-link {
+      &.active {
+        position: relative;
 
-      &::after {
-        position: absolute;
-        top: -11px;
-        right: 0;
-        left: 0;
-        content: "";
-        border-top: solid 2px  #32b0ee;
+        &::after {
+          position: absolute;
+          top: -9px;
+          right: 0;
+          left: 0;
+          content: "";
+          border-top: solid 1px  #32b0ee;
+        }
       }
     }
   }
+}
+
+.bg-dark-transparent {
+  // stylelint-disable-next-line declaration-no-important
+  background-color: rgba($dark, .2) !important;
 }
 
 .nav-link {
