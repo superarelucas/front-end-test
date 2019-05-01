@@ -1,0 +1,16 @@
+.header-navbar {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #648CFF;
+    color: #fff
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.50em;
+    color: #fff
+}
+.navbar-dark{
+color: #D3D8E4
+}
+a{
+    color: #FFF;
+}

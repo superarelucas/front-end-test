@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+<!--Head-->
+
+<head>
+    <title>Teste FrontEnd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/headerBootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/top-jumbotron.css" rel="stylesheet" type="text/css">
+    <link href="css/features-jumbotron.css" rel="stylesheet" type="text/css">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/screenshot-jumbotron.css" rel="stylesheet" type="text/css">
+    <link href="css/reviews-jumbotron.css" rel="stylesheet" type="text/css">
+    <link href="css/download-jumbotron.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+
+    <link href="css/body.css" rel="stylesheet" type="text/css">
+</head>
+<!--End of Head-->
+<!--Navigation topbar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top header-navbar">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-auto mr-auto" href="#">FUN WEATHER.</a>
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Downloads">Downloads</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div>
+                        <a href="#" class="fab fa-facebook-f nav-link mr-2"></a>
+                        <a href="#" class="fab fa-instagram nav-link mr-2"></a>
+                        <a href="#" class="fab fa-google-plus-g nav-link"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End of Navigation topbar-->
+<!--top-jumbotron-->
+<div class="jumbotron-fluid top_jumbotron mb-5" id="Home">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h1 class="display-4 text-white font-weight-bold mb-5">Get the most fun weather app</h1>
+                <button type="button" class="btn btn-lg btn-primary mt-5 mb-3">Download</button>
+                <button type="button" class="btn btn-lg btn-secondary ml-3 mt-5 mb-3">Features</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="circle-dg">9°</div>
+                <div class="circle-rio text-uppercase">rio</div>
+                <div class="circle-sun text-uppercase text-white">sunny</div>
+                <div class="circle-lon text-uppercase text-white">london</div>
+
+                <img src="img/Phone.png" alt="Phone" id="phone" class="img-fluid">
+            </div>
+        </div>
+        <div class="scrolldown mt-5">
+            <a href="#features" class="fas fa-chevron-down"></a>
+        </div>
+    </div>
+</div>
+<!--End of top-jumbotron-->
+<!--features-jumbotron-->
+<div class="jumbotron-fluid features-jumbotron" id="Features">
+    <div class="container">
+        <div class="title text-center mb-5">
+            <h1 class="text-capitalize font-weight-bold mb-3">perfect features</h1>
+            <p class="paragraph text-capitalize">only necessary</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="img/diamond.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h3 class="text-capitalize mb-3 h-features">usability</h3>
+                        <p class="paragraph">Sometimes the simplest things are the hardest to find. So we created a new
+                            line for everyday life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="img/parallax.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h3 class="text-capitalize mb-3 h-features">parallax effect</h3>
+                        <p class="paragraph">Sometimes the simplest things are the hardest to find. So we created a new
+                            line for everyday life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="img/colordrop.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h3 class="text-capitalize mb-3 h-features">unlimited colors</h3>
+                        <p class="paragraph">Sometimes the simplest things are the hardest to find. So we created a new
+                            line for everyday life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of features-jumbotron-->
+<!--carousel-->
+<div class="carousel slide my-3" id="Carrossel" data-ride="carousel">
+    <div class="title text-center mb-5">
+        <h1 class="text-capitalize font-weight-bold mb-3">simple widgets</h1>
+        <p class="paragraph">Drag and Drop</p>
+    </div>
+    <div class="container">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/image-left.png" alt="img1" class="img-fluid d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="img/image-right.png" alt="img2" class="img-fluid d-block mx-auto">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#Carrossel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#Carrossel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Seguinte</span>
+        </a>
+    </div>
+</div>
+<!--end of carousel-->
+<!--screenshot-jumbotron-->
+<div class="jumbotron-fluid screenshot-jumbotron">
+    <div class="container">
+        <div class="title text-center mb-5">
+            <h1 class="text-capitalize font-weight-bold mb-3">screenshots</h1>
+            <p class="paragraph text-capitalize">the brightest image</p>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 text-center">
+                <div class="circle-right text-uppercase text-white yellow">cloudy</div>
+                <div class="circle-left text-uppercase text-white blue-lighter">15°</div>
+
+                <img src="img/cloudy-phone.png" alt="Phone" class="img-fluid">
+            </div>
+            <div class="col mt-5">
+                <img src="img/cloudy-icon.png" alt="cloudy-icon">
+                <br>
+                <div class="title mb-5">
+                    <h1 class="text-capitalize font-weight-bold mb-3 align-middle">when the clouds</h1>
+                    <p class="paragraph screenshots">Variable information on the air humidity, the feeling of the
+                        weather, and the ability to share this with your friends</p>
+                    <img src="img/cloudy-circles.png" alt="cloudy-circles">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col mt-5">
+                <img src="img/sunny-icon.png" alt="sunny-icon">
+                <br>
+                <div class="title mb-5">
+                    <h1 class="text-capitalize font-weight-bold mb-3">when the sun</h1>
+                    <p class="paragraph screenshots">Sometimes the simplest things are the hardest to find. So we
+                        created a new line for everyday life. Sometimes the simplest things</p>
+                    <img src="img/cloudy-circles.png" alt="cloudy-circles">
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="circle-right text-uppercase text-white orange-lighter">sunny</div>
+                <div class="circle-left text-uppercase text-white orange-darker">25°</div>
+
+                <img src="img/sunny-phone.png" alt="Phone" class="img-fluid screen">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 text-center">
+                <div class="circle-right text-uppercase text-white aqua">rainy</div>
+                <div class="circle-left text-uppercase text-white blue-darker">9°</div>
+
+                <img src="img/rainy-phone.png" alt="Phone" class="img-fluid">
+            </div>
+            <div class="col mt-5">
+                <img src="img/rainy-icon.png" alt="rainy-icon">
+                <br>
+                <div class="title mb-5">
+                    <h1 class="text-capitalize font-weight-bold mb-3">when the rain</h1>
+                    <p class="paragraph screenshots">Sometimes the simplest things are the hardest to find. So we
+                        created a new line for everyday life. Sometimes the simplest things</p>
+                    <img src="img/cloudy-circles.png" alt="cloudy-circles">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of screenshot-jumbotron-->
+<!--review-jumbotron-->
+<div class="jumbotron-fluid reviews-jumbotron" id="Reviews">
+    <div class="container">
+        <div class="title text-center mb-5">
+            <h1 class="text-capitalize font-weight-bold mb-3">What people are saying</h1>
+            <p class="paragraph text-capitalize">the brightest image</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <img src="img/quotation-marks-start.png" alt="quotation-marks-start"
+                    class="quotation-marks-start pull-left">
+                <div class="review mt-3 font-weight-bold">
+                    <p class="">What art offers is space - a certain breathing room for the spirit.
+                    </p>
+                    <p class="paragraph">John Updike</p>
+                </div>
+                <img src="img/quotation-marks-end.png" alt="quotation-marks-end" class="quotation-marks-end pull-right">
+            </div>
+            <div class="col-md-6 mt-5">
+                <img src="img/quotation-marks-start.png" alt="quotation-marks-start"
+                    class="quotation-marks-start pull-left">
+                <div class="review mt-3 font-weight-bold">
+                    <p class="">We do not see nature with our eyes, but with our understandings and our hearts.
+                    </p>
+                    <p class="paragraph">William Hazlitt</p>
+                </div>
+                <img src="img/quotation-marks-end.png" alt="quotation-marks-end" class="quotation-marks-end pull-right">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-6 mt-5">
+                <img src="img/quotation-marks-start.png" alt="quotation-marks-start"
+                    class="quotation-marks-start pull-left">
+                <div class="review mt-3 font-weight-bold">
+                    <p class="">The only courage that matters is the kind that gets you from one moment to the next.
+                    </p>
+                    <p class="paragraph">Mignon McLaughlin</p>
+                </div>
+                <img src="img/quotation-marks-end.png" alt="quotation-marks-end" class="quotation-marks-end pull-right">
+            </div>
+            <div class="col-md-6 mt-5">
+                <img src="img/quotation-marks-start.png" alt="quotation-marks-start"
+                    class="quotation-marks-start pull-left">
+                <div class="review mt-3 font-weight-bold">
+                    <p class="">No man has a good enough memory to be a successful liar.
+                    </p>
+                    <p class="paragraph">Abraham Lincoln</p>
+                </div>
+                <img src="img/quotation-marks-end.png" alt="quotation-marks-end" class="quotation-marks-end pull-right">
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of review-jumbotron-->
+<!--download-jumbotron-->
+<div class="jumbotron-fluid download-jumbotron" id="Downloads">
+    <div class="container">
+        <div class="row download-section">
+            <div class="col-md-6">
+                <h2 class="text-capitalize text-white font-weight-bold mb-5">How Download the app?</h2>
+                <h5 class="text-white">Just download the app from the store. Simple, nice and user-friendly
+                    application of theweather. Only relevant and useful information.</h5>
+                <img src="img/appstore-download.png" alt="appstore-download" class="img-fluid mt-3">
+                <img src="img/google-play-download.png" alt="google-play-download" class="img-fluid ml-2 mt-3">
+            </div>
+            <div class="col-md-6">
+                <img src="img/download-phones.png" alt="download-phones" class="img-fluid mt-5">
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of download-jumbotron-->
+<!--footer-->
+<footer class="page-footer font-small blue pt-4 text-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#footerNavbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ml-auto mr-auto" href="#">
+                    <span class="fun">FUN</span>
+                    <span class="weather">WEATHER.</span>
+                </a>
+                <div class="collapse navbar-collapse" id="footerNavbarSite">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Downloads">Downloads</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div>
+                                <a href="#" class="fab fa-facebook-f nav-link mr-2"></a>
+                                <a href="#" class="fab fa-instagram nav-link mr-2"></a>
+                                <a href="#" class="fab fa-google-plus-g nav-link"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="footer-copyright text-center py-3">Made with
+        <i class="fa fa-heart"></i>
+        by Bootstrap Themes 2016. All Rights Reserved
+    </div>
+</footer>
+<!--End of footer-->
+<!--scripts-->
+<script src="node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<!--End of scripts-->
+</body>
+
+</html>
