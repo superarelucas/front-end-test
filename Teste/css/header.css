@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    font-family: 'Ubuntu', sans-serif; 
+    text-align: center;
+    background-color: #648CFF;
+    overflow: hidden;
+    padding: 20px 10px; 
+    position: fixed;
+    width: 100%;
+}
+header * { 
+    font-weight: bold;
+    margin:5px;
+    color: #DDDEE1;
+    height:10%;
+    float: left;
+    display: block;
+    z-index: 10;
+}
+.logo{
+    margin-left:5%;
+    font-weight: bold;
+    font-size: 1.50em;
+    color: #fff
+}
+
+header a{
+    color: #DDDEE1;
+
+}
+header-right{
+    float: right;
+}
+.socialIcons{
+    margin-right: 5%;
+    float: right;
+}
+.socialIcons *{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.menuButtons * {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.menuButtons{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+}
+.headerContainer{
+width: 100%;
+}

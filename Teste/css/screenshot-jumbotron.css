@@ -1,0 +1,37 @@
+.screenshots{
+    font-size: 23px
+}
+.circle-left, .circle-right{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    line-height: 90px;
+}
+.circle-left{
+    top: 65%;
+    left: 10%;
+}
+.circle-right{
+    top: 25%;
+    right: 10%;
+}
+.blue-lighter{
+    background-color: #6CA3FF
+}
+.blue-darker{
+    background-color: #7693C8
+}
+.orange-lighter{
+    background-color: #F2A14E
+}
+.orange-darker{
+    background-color: #FC6A42
+}
+.yellow{
+background-color: #FCEC64
+}
+.aqua{
+background-color: #B8FAEE
+}

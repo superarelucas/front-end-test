@@ -1,0 +1,15 @@
+.quotation-marks-end{
+    bottom: 0;
+    right: 0;
+    display: block;
+    float: right;
+}
+.quotation-marks-start{
+    top: 0;
+    left: 0;
+    display: block;
+}
+.review{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
