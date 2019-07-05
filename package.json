@@ -4,7 +4,7 @@
   "description": "Description of your project",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.18.7",
+    "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.4.0",

@@ -4,3 +4,4 @@ node_modules/
 app/styles/styles.css
 app/scripts/app.js
 app/views/*.html
+dist/

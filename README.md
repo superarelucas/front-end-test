@@ -1,7 +1,5 @@
-Superare - Teste Front-End
+Getting started
 ==========================
-
-https://github.com/superarelucas/front-end-test
 
 * First download or clone this repo :)
 * Then run `npm install` to install dev dependencies. Use sudo if needed.
@@ -19,5 +17,4 @@ When you're ready to deploy, simply do the following:
 
 ## Node Versions Supported
 The following Node versions have been tested
-* 4.x
-* 6.x
+* ^6.x
