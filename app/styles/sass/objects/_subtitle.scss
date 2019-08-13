@@ -1,0 +1,17 @@
+.o-subtitle {
+    color: #5b646e;
+    line-height: 24px;
+    font-size: px-to-rem(18px);
+    @extend .font-semi-bold;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 240px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

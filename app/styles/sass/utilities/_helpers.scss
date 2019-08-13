@@ -1,0 +1,14 @@
+// Display
+.d-inline       { display: inline !important;}
+.d-block        { display: block !important;}
+.d-inline-block { display: inline-block !important;}
+.d-hidden       { display: none !important;}
+
+// Clearfix
+.clearfix {
+    @include clearfix;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}

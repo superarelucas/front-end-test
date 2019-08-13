@@ -1,0 +1,125 @@
+.toggle-menu {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    outline: none;
+    z-index: map-get($z-index, toggle-menu);
+
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: map-get($z-index, header);
+    color: $text-light;
+    background-color: rgba(0,0,0,0.15);
+
+    &__wrapper {
+        @extend .container;
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        margin-left: auto;
+    }
+
+    &__menu-item {
+        display: inline-block;
+        margin-left: 28px;
+    }
+
+    &__menu-link {
+        font-size: px-to-rem(13px);
+        padding: 25px 5px 20px 5px;
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+        border-top: 1px solid transparent;
+        transition: all 300ms;
+
+        &.active,
+        &:hover {
+            border-top-color: #32b0ee;
+        }
+    }
+
+    &__brand {
+        font-size: px-to-rem(28px);
+        @extend .font-family-pacifico;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &__tagline {
+        @extend .font-light;
+        font-size: px-to-rem(13px);
+        opacity: 0.3;
+
+        &:before {
+            content: '';
+            width: 1px;
+            height: 18px;
+            background-color: $color-brand;
+            vertical-align: text-top;
+            display: inline-block;
+            margin: 0 20px 0 30px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 100vh;
+        width: 90vw;
+        background-color: #000;
+        right: 0;
+        left: inherit;
+        position: fixed;
+        transform: translateX(90vw);
+        transition: all 300ms ease-out;
+
+        &.open {
+            transform: translateX(0);
+        }
+
+        &__brand {
+            margin-top: 100px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__tagline:before {
+            display: none;
+        }
+
+        &__menu {
+            margin-left: unset;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        &__menu-item {
+            display: block;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        &__menu-link {
+            padding: 8px;
+            border-bottom: 1px solid transparent;
+            border-top: none;
+
+            &.active {
+                border-bottom-color: #32b0ee;
+            }
+        }
+    }
+}

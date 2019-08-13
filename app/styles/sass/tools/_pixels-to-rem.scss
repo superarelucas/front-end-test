@@ -1,0 +1,10 @@
+// PIXELS TO REM/EM
+
+// font-size: px-to-rem(12px)
+
+@function px-to-rem($size) {
+    $remSize: $size / 16px;
+
+    //Default font size on html element is 100%, equivalent to 16px;
+    @return #{$remSize}rem;
+}

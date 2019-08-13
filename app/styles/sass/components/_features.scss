@@ -1,0 +1,64 @@
+.features {
+    padding: 70px 0;
+    background-color: #f4f7f9;
+
+    &__carousel {
+        margin-bottom: 70px;
+    }
+
+    &__item {
+        padding: 0 15px;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1.4px solid $color-brand;
+        color: $color-brand;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+    &__content {
+        width: 80%;
+        display: inline-block;
+    }
+
+    &__title {
+        @extend .font-semi-bold;
+        font-size: px-to-rem(20px);
+        margin-bottom: 20px;
+        margin-top: 4px;
+        color: #062033;
+    }
+
+    &__info {
+        line-height: 22px;
+        font-size: 13px;
+        color: #6b6b6b;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        &__carousel {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            text-align: center;
+        }
+
+        &__info {
+            text-align: left;
+        }
+
+        &__content {
+            width: 100%;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: $text-dark;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: rgba($color-brand, 0.4);
+}
+
+::selection {
+    color: #fff;
+    background-color: rgba($color-brand, 0.4);
+}

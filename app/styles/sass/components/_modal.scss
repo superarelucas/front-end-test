@@ -1,0 +1,19 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    display: none;
+    transition: all 500ms;
+    z-index: map-get($z-index, modal);
+    animation: fade 500ms;
+
+    &.active {
+        display: block;
+    }
+
+    @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+}

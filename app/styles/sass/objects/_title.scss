@@ -1,0 +1,29 @@
+.o-title {
+    font-size: px-to-rem(28px);
+    color: $color-brand;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    @extend .font-extra-bold;
+    text-align: center;
+}
+
+.o-title-decoration {
+    color: $color-gray;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &:before,
+    &:after {
+        content: '';
+        width: 90px;
+        height: 1px;
+        background-color: $color-gray;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    i {
+        margin: 0 15px;
+    }
+}
